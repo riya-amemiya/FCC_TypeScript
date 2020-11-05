@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as Maths from './FCC_modules/Math'
+import {Maths} from './FCC_modules/Math'
 import * as ReactDOM from 'react-dom'
 import html from './FCC_modules/HTML'
 import * as Ajax from './FCC_modules/Ajax'
@@ -123,6 +123,130 @@ const Zeller = (y = 2000, m = 1, d = 1, lan = 'jp') =>
     }
     return w;
 }
+const Gcd = (f: number = 1, x: number = 1) =>
+{
+    if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number")
+    {
+        //最大公約数
+        let r: number, tmp: number;
+        if (f < x)
+        {
+            tmp = f;
+            f = x;
+            x = tmp;
+        }
+        /* ユークリッドの互除法 */
+        r = f % x;
+        while (r !== 0)
+        {
+            f = x;
+            x = r;
+            r = f % x;
+        }
+        return x;
+    } else console.error('Number型を引数に指定してください')
+}
+const nPr = (n: number = 1, r: number = 1) =>
+{
+    if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
+    {
+        //nPr
+        let y: number;
+        let x = 0;
+        y = n;
+        while (x === 0)
+        {
+            if (r === 1)
+            {
+                y = y * r;
+            }
+            r--;
+            if (r === 0) x++;
+            else
+            {
+                n--;
+                if (n === 0)
+                {
+                    x++;
+                    break;
+                }
+                y = y * n;
+            }
+        }
+        return y;
+    }
+    else console.error('Number型を引数に指定してください')
+}
+const Random = (num: number): number =>
+{
+    return Math.floor(Math.random() * num);
+}
+const k = (num: number) =>
+{
+    Number(num)
+    num += 273
+    return num
+}
+const nCr = (n: number, r: number) =>
+{
+    //nCr
+    let x: number;
+    let z: number;
+    let y: number;
+    let age = 1;
+    y = n;
+    z = r;
+    x = 0;
+    while (x == 0)
+    {
+        if (r == 1)
+        {
+            y = y * r;
+        }
+        r--;
+        if (r == 0)
+        {
+            x++;
+        } else
+        {
+            n--;
+            if (n == 0)
+            {
+                x++;
+                break;
+            }
+            y = y * n;
+        }
+    }
+    for (let i = 2; i <= z; i++)
+    {
+        age *= i;
+    }
+    y = y / age;
+    return y;
+}
+const nCrs = (n: number, r: number) =>
+{
+    //重複を許して取り出す
+    n = n + r - 1;
+    n = nCr(n, r);
+    return n;
+}
+const Pow = (num: number, n: number) =>
+{
+    //xのy乗
+    let nums = num;
+    for (let i = 2; i <= n; i++)
+    {
+        nums *= num;
+    }
+    return nums;
+}
+const wait= (callBack:any):void=>{
+    window.onload = function () {
+        callBack()
+    };
+}
 export
 {
     Ajax,
@@ -134,5 +258,13 @@ export
     birthday,
     html,
     cal,
-    Zeller
+    Zeller,
+    nPr,
+    Gcd,
+    Random,
+    k,
+    nCr,
+    nCrs,
+    Pow,
+    wait
 }

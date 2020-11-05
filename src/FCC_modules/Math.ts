@@ -1,46 +1,102 @@
-const Gcd = (f: number = 1, x: number = 1) =>
-{
-    if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number")
+class maths {
+    constructor(private _num: number){}
+    get num ():number{
+        return this._num
+    }
+    public nPr(n: number | maths,r: number | maths):this{
+        if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
+        {
+            //nPr
+            let y: number;
+            let x = 0;
+            y = n;
+            while (x === 0)
+            {
+                if (r === 1)
+                {
+                    y = y * r;
+                }
+                r--;
+                if (r === 0) x++;
+                else
+                {
+                    n--;
+                    if (n === 0)
+                    {
+                        x++;
+                        break;
+                    }
+                    y = y * n;
+                }
+            }
+            this._num += y
+            return this;
+        }else console.error('Number型を引数に指定してください')
+    }
+    public Pow(num:any, n:any):this
     {
-        //最大公約数
-        let r: number, tmp: number;
-        if (f < x)
+        //xのy乗
+        let nums:number = num;
+        for (let i = 2; i <= n; i++)
         {
-            tmp = f;
-            f = x;
-            x = tmp;
+            nums *= num;
         }
-        /* ユークリッドの互除法 */
-        r = f % x;
-        while (r !== 0)
+        this._num += nums
+        return this;
+    }
+    public Gcd(f: number | maths = 1, x: number | maths = 1):this
+    {
+        if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number")
         {
-            f = x;
-            x = r;
+            //最大公約数
+            let r: number, tmp: number;
+            if (f < x)
+            {
+                tmp = f;
+                f = x;
+                x = tmp;
+            }
+            /* ユークリッドの互除法 */
             r = f % x;
-        }
-        return x;
-    } else console.error('Number型を引数に指定してください')
-}
-const nPr = (n: number = 1, r: number = 1) =>
-{
-    if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
+            while (r !== 0)
+            {
+                f = x;
+                x = r;
+                r = f % x;
+            }
+            this._num += x;
+            return this;
+        } else console.error('Number型を引数に指定してください')
+    }
+    public Random(num?: number):this
     {
-        //nPr
+        this._num += Math.floor(Math.random() * num);
+        return this
+    }
+    public nCr(n?: number, r?: number):this
+    {
+        //nCr
+        let x: number;
+        let z: number;
         let y: number;
-        let x = 0;
+        let age = 1;
         y = n;
-        while (x === 0)
+        z = r;
+        x = 0;
+        while (x == 0)
         {
-            if (r === 1)
+            if (r == 1)
             {
                 y = y * r;
             }
             r--;
-            if (r === 0) x++;
-            else
+            if (r == 0)
+            {
+                x++;
+            } else
             {
                 n--;
-                if (n === 0)
+                if (n == 0)
                 {
                     x++;
                     break;
@@ -48,73 +104,22 @@ const nPr = (n: number = 1, r: number = 1) =>
                 y = y * n;
             }
         }
-        return y;
-    }
-    else console.error('Number型を引数に指定してください')
-}
-const Random = (num: number): number =>
-{
-    return Math.floor(Math.random() * num);
-}
-const k = (num: number) =>
-{
-    Number(num)
-    num += 273
-    return num
-}
-const nCr = (n: number, r: number) =>
-{
-    //nCr
-    let x: number;
-    let z: number;
-    let y: number;
-    let age = 1;
-    y = n;
-    z = r;
-    x = 0;
-    while (x == 0)
-    {
-        if (r == 1)
+        for (let i = 2; i <= z; i++)
         {
-            y = y * r;
+            age *= i;
         }
-        r--;
-        if (r == 0)
-        {
-            x++;
-        } else
-        {
-            n--;
-            if (n == 0)
-            {
-                x++;
-                break;
-            }
-            y = y * n;
-        }
+        y = y / age;
+        this._num += y
+        return this;
     }
-    for (let i = 2; i <= z; i++)
+    public nCrs(n: any, r?:number):this
     {
-        age *= i;
+        //重複を許して取り出す
+        n = n + r - 1;
+        n = this.nCr(n, r);
+        this._num += n
+        return this;
     }
-    y = y / age;
-    return y;
 }
-const nCrs = (n: number, r: number) =>
-{
-    //重複を許して取り出す
-    n = n + r - 1;
-    n = nCr(n, r);
-    return n;
-}
-const Pow = (num: number, n: number) =>
-{
-    //xのy乗
-    let nums = num;
-    for (let i = 2; i <= n; i++)
-    {
-        nums *= num;
-    }
-    return nums;
-}
-export { nPr, Gcd,Random, k, nCr,nCrs,Pow}
+const Maths = new maths(0)
+export {Maths}

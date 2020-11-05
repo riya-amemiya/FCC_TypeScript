@@ -19,7 +19,7 @@ class HTML
             return this
         }
     }
-    public hasclass(id :string="", get :string=""):this
+    public hasclass(get :string=""):this
     {
         this._dom.className === get
         return this

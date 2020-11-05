@@ -18,7 +18,7 @@ class HTML {
     }
   }
 
-  hasclass(id = "", get = "") {
+  hasclass(get = "") {
     this._dom.className === get;
     return this;
   }
