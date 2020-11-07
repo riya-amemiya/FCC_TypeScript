@@ -1,25 +1,26 @@
 class HTML {
   constructor(_dom) {
     this._dom = _dom;
+    return this._dom;
   }
 
   getid(id) {
     if (id.indexOf('.') != -1) {
       id = id.replace('.', '');
-      this._dom = document.getElementsByClassName(id);
+      this._dom = document.getElementsByClassName(id)[0];
       return this;
     } else if (id.indexOf('#') != -1) {
       id = id.replace('#', '');
       this._dom = document.getElementById(id);
       return this;
     } else {
-      this._dom = document.getElementsByTagName(id);
+      this._dom = document.getElementsByTagName(id)[0];
       return this;
     }
   }
 
   hasclass(get = "") {
-    this._dom.className === get;
+    this._dom = this._dom.className === get;
     return this;
   }
 
@@ -36,11 +37,11 @@ class HTML {
   }
 
   html(html = "") {
-    this._dom.innrHTML = html ? this._dom.innerHTML = html : this._dom.innerHTML;
+    html ? this._dom.innerHTML = html : this._dom = this._dom.innerHTML;
     return this;
   }
 
 }
 
-const html = new HTML(null);
-export default html;
+const Html = new HTML(null);
+export { Html };

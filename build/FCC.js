@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Maths } from './FCC_modules/Math';
 import * as ReactDOM from 'react-dom';
-import html from './FCC_modules/HTML';
+import { Html } from './FCC_modules/HTML';
 import * as Ajax from './FCC_modules/Ajax';
 let Hello = 'Hello';
 
@@ -13,6 +13,19 @@ const zero = num => {
 
 const render = (Dom, id) => {
   ReactDOM.render( /*#__PURE__*/React.createElement(Dom, null), document.getElementById(id));
+};
+
+let error_language = {
+  text: 'ja',
+
+  get() {
+    return this.text;
+  },
+
+  set(text) {
+    this.text = text;
+  }
+
 };
 
 const birthday = (yer, mon, day) => {
@@ -171,49 +184,53 @@ const k = num => {
 };
 
 const nCr = (n, r) => {
-  //nCr
-  let x;
-  let z;
-  let y;
-  let age = 1;
-  y = n;
-  z = r;
-  x = 0;
+  if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
+    //nCr
+    let x;
+    let z;
+    let y;
+    let age = 1;
+    y = n;
+    z = r;
+    x = 0;
 
-  while (x == 0) {
-    if (r == 1) {
-      y = y * r;
-    }
-
-    r--;
-
-    if (r == 0) {
-      x++;
-    } else {
-      n--;
-
-      if (n == 0) {
-        x++;
-        break;
+    while (x == 0) {
+      if (r == 1) {
+        y = y * r;
       }
 
-      y = y * n;
+      r--;
+
+      if (r == 0) {
+        x++;
+      } else {
+        n--;
+
+        if (n == 0) {
+          x++;
+          break;
+        }
+
+        y = y * n;
+      }
     }
-  }
 
-  for (let i = 2; i <= z; i++) {
-    age *= i;
-  }
+    for (let i = 2; i <= z; i++) {
+      age *= i;
+    }
 
-  y = y / age;
-  return y;
+    y = y / age;
+    return y;
+  } else if (/ja|ja_JP/.test(error_language.get())) console.error('Number型を引数に指定してください');else if (/en|en-US/.test(error_language.get())) console.error('Please specify Number type as an argument');
 };
 
 const nCrs = (n, r) => {
-  //重複を許して取り出す
-  n = n + r - 1;
-  n = nCr(n, r);
-  return n;
+  if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
+    //重複を許して取り出す
+    n = n + r - 1;
+    n = nCr(n, r);
+    return n;
+  } else console.error('Number型を引数に指定してください');
 };
 
 const Pow = (num, n) => {
@@ -233,4 +250,4 @@ const wait = callBack => {
   };
 };
 
-export { Ajax, Hello, zero, HelloWorld, Maths, render, birthday, html, cal, Zeller, nPr, Gcd, Random, k, nCr, nCrs, Pow, wait };
+export { Ajax, Hello, zero, HelloWorld, Maths, render, birthday, Html, cal, Zeller, nPr, Gcd, Random, k, nCr, nCrs, Pow, wait, error_language };

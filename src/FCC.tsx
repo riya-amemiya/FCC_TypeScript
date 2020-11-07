@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Maths} from './FCC_modules/Math'
 import * as ReactDOM from 'react-dom'
-import html from './FCC_modules/HTML'
+import {Html} from './FCC_modules/HTML'
 import * as Ajax from './FCC_modules/Ajax'
 type int = number;
 let Hello: 'Hello' = 'Hello'
@@ -10,6 +10,15 @@ const zero = (num: int | string) => { if (num === 0) return true; else return fa
 const render = (Dom: ()=> JSX.Element,id: string) =>
 {
     ReactDOM.render(<Dom/>,document.getElementById(id))
+}
+let error_language = {
+    text: 'ja',
+    get (){
+        return this.text
+    },
+    set(text:string){
+        this.text = text
+    }
 }
 const birthday = (yer: int, mon: int, day: int):int =>
 {
@@ -189,48 +198,56 @@ const k = (num: number) =>
 }
 const nCr = (n: number, r: number) =>
 {
-    //nCr
-    let x: number;
-    let z: number;
-    let y: number;
-    let age = 1;
-    y = n;
-    z = r;
-    x = 0;
-    while (x == 0)
-    {
-        if (r == 1)
+    if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
+        //nCr
+        let x: number;
+        let z: number;
+        let y: number;
+        let age = 1;
+        y = n;
+        z = r;
+        x = 0;
+        while (x == 0)
         {
-            y = y * r;
-        }
-        r--;
-        if (r == 0)
-        {
-            x++;
-        } else
-        {
-            n--;
-            if (n == 0)
+            if (r == 1)
+            {
+                y = y * r;
+            }
+            r--;
+            if (r == 0)
             {
                 x++;
-                break;
+            } else
+            {
+                n--;
+                if (n == 0)
+                {
+                    x++;
+                    break;
+                }
+                y = y * n;
             }
-            y = y * n;
         }
+        for (let i = 2; i <= z; i++)
+        {
+            age *= i;
+        }
+        y = y / age;
+        return y;
     }
-    for (let i = 2; i <= z; i++)
-    {
-        age *= i;
-    }
-    y = y / age;
-    return y;
+    else if(/ja|ja_JP/.test(error_language.get()))console.error('Number型を引数に指定してください')
+    else if(/en|en-US/.test(error_language.get()))console.error('Please specify Number type as an argument')
+    else console.log('言語コードが不正な値です');console.error('Number型を引数に指定してください')
 }
 const nCrs = (n: number, r: number) =>
 {
-    //重複を許して取り出す
-    n = n + r - 1;
-    n = nCr(n, r);
-    return n;
+    if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
+        //重複を許して取り出す
+        n = n + r - 1;
+        n = nCr(n, r);
+        return n;
+    }
+    else console.error('Number型を引数に指定してください')
 }
 const Pow = (num: number, n: number) =>
 {
@@ -256,7 +273,7 @@ export
     Maths,
     render,
     birthday,
-    html,
+    Html,
     cal,
     Zeller,
     nPr,
@@ -266,5 +283,6 @@ export
     nCr,
     nCrs,
     Pow,
-    wait
+    wait,
+    error_language
 }
