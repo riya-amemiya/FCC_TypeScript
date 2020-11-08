@@ -4,9 +4,16 @@ import * as ReactDOM from 'react-dom'
 import {Html} from './FCC_modules/HTML'
 import * as Ajax from './FCC_modules/Ajax'
 type int = number;
-let Hello: 'Hello' = 'Hello'
+interface joketype{
+    Hello: 'Hello',
+    World: 'World'
+}
+const joke:joketype = {
+    Hello:'Hello',
+    World:'World'
+}
 const HelloWorld = ():JSX.Element => <h1>Hello World</h1>;
-const zero = (num: int | string) => { if (num === 0) return true; else return false }
+const zero = (num: int | string): boolean => { if (num === 0) return true; else return false }
 const render = (Dom: ()=> JSX.Element,id: string) =>
 {
     ReactDOM.render(<Dom/>,document.getElementById(id))
@@ -16,8 +23,12 @@ let error_language = {
     get (){
         return this.text
     },
-    set(text:string){
-        this.text = text
+    set(error_language:string){
+        this.text = error_language
+    },
+    haslanguage(haslanguage:string){
+        if(~this.text.indexOf(haslanguage))return true
+        else return false
     }
 }
 const birthday = (yer: int, mon: int, day: int):int =>
@@ -51,7 +62,7 @@ class calClass
     }
 }
 const cal = new calClass(0)
-const Zeller = (y = 2000, m = 1, d = 1, lan = 'jp') =>
+const Zeller = (y = 2000, m = 1, d = 1) =>
 {
     if (m < 3)
     {
@@ -61,71 +72,71 @@ const Zeller = (y = 2000, m = 1, d = 1, lan = 'jp') =>
     let w:number | string = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
     if (w == 0)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en') )
         {
             w = "Sunday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "日曜日";
         }
     } else if (w == 1)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Manday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "月曜日";
         }
     } else if (w == 2)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Tuesday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "火曜日";
         }
     } else if (w == 3)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Wedneday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "水曜日";
         }
     } else if (w == 4)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Thursday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "木曜日";
         }
     } else if (w == 5)
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Friday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "金曜日";
         }
     } else
     {
-        if (lan = 'en')
+        if (error_language.haslanguage('en'))
         {
             w = "Saturday"
         }
-        else if (lan = 'jp')
+        else if (error_language.haslanguage('ja'))
         {
             w = "土曜日";
         }
@@ -153,7 +164,8 @@ const Gcd = (f: number = 1, x: number = 1) =>
             r = f % x;
         }
         return x;
-    } else console.error('Number型を引数に指定してください')
+    }
+    else console.error('Number型を引数に指定してください')
 }
 const nPr = (n: number = 1, r: number = 1) =>
 {
@@ -237,7 +249,7 @@ const nCr = (n: number, r: number) =>
     }
     else if(/ja|ja_JP/.test(error_language.get()))console.error('Number型を引数に指定してください')
     else if(/en|en-US/.test(error_language.get()))console.error('Please specify Number type as an argument')
-    else console.log('言語コードが不正な値です');console.error('Number型を引数に指定してください')
+    else console.log('言語コードが不正な値です');console.log('ja_JPでerrorステータスを出力します');console.error('Number型を引数に指定してください')
 }
 const nCrs = (n: number, r: number) =>
 {
@@ -264,10 +276,12 @@ const wait= (callBack:any):void=>{
         callBack()
     };
 }
+const version:string = '1.0'
 export
 {
+    version,
     Ajax,
-    Hello,
+    joke,
     zero,
     HelloWorld,
     Maths,
