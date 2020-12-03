@@ -12,7 +12,7 @@ module.exports = {
     },
     // 環境によってはsrc/index.ts
     entry: {
-        index: './build/index.js',
+        FCC: './build/FCC.js',
         demo: './demo/js/index.js'
     },
 
