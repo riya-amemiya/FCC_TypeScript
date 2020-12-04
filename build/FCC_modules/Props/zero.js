@@ -1,3 +1,3 @@
-export default function zero(num) {
+export default function Zero(num) {
   if (num === 0) return true;else return false;
 }

@@ -130,5 +130,6 @@ class maths {
 
 }
 
-const Maths = new maths(0);
-export { Maths };
+const Maths_Local = new maths(0);
+const Maths = Maths_Local;
+export default Maths;

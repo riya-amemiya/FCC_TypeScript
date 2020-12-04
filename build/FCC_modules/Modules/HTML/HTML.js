@@ -43,5 +43,6 @@ class HTML {
 
 }
 
-const Html = new HTML(null);
-export { Html };
+const HTML_Local = new HTML(null);
+const Html = HTML_Local;
+export default Html;

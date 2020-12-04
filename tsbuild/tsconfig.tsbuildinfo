@@ -191,6 +191,21 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "../src/fcc_modules/modules/math.ts": {
+        "version": "6218a497390c863763f89b378ee469d9ac0f5fe8e85c14d5b3c8af5defa9c688",
+        "signature": "148f754fc8f2a9abcef602957481d9f0e24a720ca12e726075fa03c3f96154d4",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/modules/html.ts": {
+        "version": "757872a0539d5601d6db4abcbd9f518ce22f8fd9ca7e384df896665e8d60d8c9",
+        "signature": "86d1d448df2ac43c8586fdf36701215224b4e026cfc48c5c167655fb62aa5b51",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/modules/ajax.ts": {
+        "version": "4d1e6e935d6be138678c32d0cf2c30bfe85ada1507a83f1f0c22cf0d43921e21",
+        "signature": "7154bcad4ba88cec7840ec61cf3c9abea773abbc9af3bd0f3a0c02f8fdf55ed8",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@types/react/global.d.ts": {
         "version": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
         "signature": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
@@ -211,9 +226,64 @@
         "signature": "bc0442bf081aef1f744186372dc384f891ebdf7f3985a13788b7a7f65d353465",
         "affectsGlobalScope": true
       },
-      "../src/fcc_modules/math.ts": {
-        "version": "6218a497390c863763f89b378ee469d9ac0f5fe8e85c14d5b3c8af5defa9c688",
-        "signature": "148f754fc8f2a9abcef602957481d9f0e24a720ca12e726075fa03c3f96154d4",
+      "../src/fcc_modules/modules/helloworld.tsx": {
+        "version": "8c79134426779d7b732b04f1f6d38bdde8141436011bca379265d9e64a5dfb40",
+        "signature": "2a1970cc71bb052110cb3ae05d362c36fee1fc2b128574a7400e53b166162dc3",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/modules/calclass.tsx": {
+        "version": "7ccc9ea837ed3fb0b0fbe46b5f2d6af890890b73fdbaf8dff4592603d73b510a",
+        "signature": "5b5dd0760a085101bc43245488053bed759b956334aab455518af20353da7f86",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/gcd.tsx": {
+        "version": "600a6fff73c7f5c711fb8e4f14579418d24bd0d064f6e3bc6d9b8dec86099203",
+        "signature": "595527d9468c90b23f2644816b2afe8ba8ccae3abbbaceb7af020f985b73d19a",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/k.tsx": {
+        "version": "d519026b5fc12020b1b5993de2f10567e3539c203e698323377dd4aad4a5e10e",
+        "signature": "f84a529dd36631bbb71badf5d9829605a066dcab3feeda3a3aa419e15efe4506",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/ncr.tsx": {
+        "version": "c3c0821ae9210630f7638301bf304236b939ac2b0ea9f2e6f523ef6f88265bfb",
+        "signature": "b8474b0784f81823793d160c4af74ee6fd83ab2906c77e6059b59b3a30087282",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/ncrs.tsx": {
+        "version": "44dd18c7073e899e770ead2b48aba3c653bb7505909ae693e4b6cb0d4bf59352",
+        "signature": "0f3e43ee6fa1936e0b3327188bdb39dfc6b11447c78ed27788c57a79f52a5b46",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/npr.tsx": {
+        "version": "3f0cb093d450ce8a64e672b85190f0bba4ef91f7ded19ffe4936eee0484e3686",
+        "signature": "a2bae56e66963f3c0d9dcb20a3b84da3b6dcf7272a4f5d69ad0132a7cf872b4b",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/pow.tsx": {
+        "version": "23d89e6fa11471865b027cea76532f4344ea5aac09202d6afbbce66e057c40e4",
+        "signature": "6f7685edbb352fd9047b5e507d10338282ca0df0add681f965e34cbfd9aacb29",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/random.tsx": {
+        "version": "156ffd36bbe4df64db17b506a2ba5bfca14b3d0ce94aa39929a9e412290e94fb",
+        "signature": "8b25ce54842ba555f7d72ce3694e6b698cb428cf9d45efdf348646093b52d528",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/props/zeller.tsx": {
+        "version": "140d93eafa65fb17616f0d25c7dacbf8b921566e860ff4f205a50d968a039f59",
+        "signature": "b0c08e10c76bbda42ac6e6873abfcd805a5531e778f0f92f62285c51df33e468",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/props/zero.tsx": {
+        "version": "d7af62ad37715fe07c482feb328e69ef93f7f908c133a95cd7d7207b68a738b3",
+        "signature": "121ab4c14609b48b8d9763378c92c75918a6e8d622530e73f8ae9e0950385dd3",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/props/birthday.tsx": {
+        "version": "b5e47fc0fa565cd9a0ea455376fcac97fe72512317e84b97f1eb6c1a932dbafa",
+        "signature": "47e0254528ca821220bffde1af257e3d7f5d4c89ae33aabaf2431a9d49841de2",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/react-dom/index.d.ts": {
@@ -221,54 +291,24 @@
         "signature": "8483a29c17f7feb768a1f4333cf12ccf1e7341bd89dadcf407e012d5315228d0",
         "affectsGlobalScope": false
       },
-      "../src/fcc_modules/html.ts": {
-        "version": "757872a0539d5601d6db4abcbd9f518ce22f8fd9ca7e384df896665e8d60d8c9",
-        "signature": "86d1d448df2ac43c8586fdf36701215224b4e026cfc48c5c167655fb62aa5b51",
+      "../src/fcc_modules/props/render.tsx": {
+        "version": "cfa1cbefe8b7c4e87a135ac16eeac19d36caaef8b4ba0479a6e4d95f95b68a08",
+        "signature": "6470cd369f518e7697f843d1d481e3a2356d48d19be5cd3c383f025cdb28a3f3",
         "affectsGlobalScope": false
       },
-      "../src/fcc_modules/ajax.ts": {
-        "version": "4d1e6e935d6be138678c32d0cf2c30bfe85ada1507a83f1f0c22cf0d43921e21",
-        "signature": "7154bcad4ba88cec7840ec61cf3c9abea773abbc9af3bd0f3a0c02f8fdf55ed8",
+      "../src/fcc_modules/props/wait.tsx": {
+        "version": "cba82d108fff0ac8abc9f5fa0588cdf40bec443a887b4c13190a9b80677b85cd",
+        "signature": "ce98a3992e97a15debdf657991decaddc66034a2d30d9710c8b251ccaa38a8aa",
         "affectsGlobalScope": false
       },
-      "../src/fcc.tsx": {
-        "version": "42132dbff97117edc556d2bd4d0f43f72eb383d66085837f6e10d6c4da822afc",
-        "signature": "eeda4e40a8318f5ee27ca3b797c3faa6ab42341077ed9c3743a4a477e2f7441b",
+      "../src/fcc_export.tsx": {
+        "version": "a01874e3b326a9879f3401a4923673356078c3f27694f7f60d7070dd8a6418ed",
+        "signature": "8d2f86b8fab3c6a32b49b209621dabfda150dfce3aba2fcd6b37133f639d172d",
         "affectsGlobalScope": false
       },
-      "../src/index.ts": {
-        "version": "19f424adf37a2ebf803df4a58b47eac1183920c4fdb5fd05b71b4af6a68126d0",
-        "signature": "f8751a2a390d89f237ba842bd0fed4f3a1a062ddde0b2e042d4bc836ca5cbb73",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/fcc_modules/math.d.ts": {
-        "version": "148f754fc8f2a9abcef602957481d9f0e24a720ca12e726075fa03c3f96154d4",
-        "signature": "148f754fc8f2a9abcef602957481d9f0e24a720ca12e726075fa03c3f96154d4",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/fcc_modules/html.d.ts": {
-        "version": "86d1d448df2ac43c8586fdf36701215224b4e026cfc48c5c167655fb62aa5b51",
-        "signature": "86d1d448df2ac43c8586fdf36701215224b4e026cfc48c5c167655fb62aa5b51",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/fcc_modules/ajax.d.ts": {
-        "version": "7154bcad4ba88cec7840ec61cf3c9abea773abbc9af3bd0f3a0c02f8fdf55ed8",
-        "signature": "7154bcad4ba88cec7840ec61cf3c9abea773abbc9af3bd0f3a0c02f8fdf55ed8",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/fcc.d.ts": {
-        "version": "75fa7c2ec03db8ef7519dc20780aa5481f128b5873a578a6c501c7034d17c8f0",
-        "signature": "75fa7c2ec03db8ef7519dc20780aa5481f128b5873a578a6c501c7034d17c8f0",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/html.d.ts": {
-        "version": "71aafdbd71a712d29fdc0f68c294f829452f4ccf25f832c9252b9f3adbf325b2",
-        "signature": "71aafdbd71a712d29fdc0f68c294f829452f4ccf25f832c9252b9f3adbf325b2",
-        "affectsGlobalScope": false
-      },
-      "../src/@types/math.d.ts": {
-        "version": "46b80f1dd268c14d63444c685c28ada6d49925da5e0af04261ed1b5ce6b451b1",
-        "signature": "46b80f1dd268c14d63444c685c28ada6d49925da5e0af04261ed1b5ce6b451b1",
+      "../src/fcc.ts": {
+        "version": "7bf59c0a183cfe4bcef5d7cb9e1ade7341a41f8e4a394522754feba2df0946c7",
+        "signature": "e0e67cae2975a5682fd53c4212032ea2d86526212a1df5d6f8d876a79c29ac67",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -859,7 +899,6 @@
         "lib.es2020.d.ts",
         "lib.dom.d.ts"
       ],
-      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
@@ -1164,21 +1203,49 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "../src/@types/fcc.d.ts": [
-        "../node_modules/@types/react/index.d.ts",
-        "../src/@types/fcc_modules/ajax.d.ts",
-        "../src/@types/fcc_modules/html.d.ts",
-        "../src/@types/fcc_modules/math.d.ts"
+      "../src/fcc.ts": [
+        "../src/fcc_export.tsx"
       ],
-      "../src/fcc.tsx": [
+      "../src/fcc_export.tsx": [
+        "../src/fcc_modules/math/gcd.tsx",
+        "../src/fcc_modules/math/k.tsx",
+        "../src/fcc_modules/math/ncr.tsx",
+        "../src/fcc_modules/math/ncrs.tsx",
+        "../src/fcc_modules/math/npr.tsx",
+        "../src/fcc_modules/math/pow.tsx",
+        "../src/fcc_modules/math/random.tsx",
+        "../src/fcc_modules/modules/ajax.ts",
+        "../src/fcc_modules/modules/calclass.tsx",
+        "../src/fcc_modules/modules/helloworld.tsx",
+        "../src/fcc_modules/modules/html.ts",
+        "../src/fcc_modules/modules/math.ts",
+        "../src/fcc_modules/props/birthday.tsx",
+        "../src/fcc_modules/props/render.tsx",
+        "../src/fcc_modules/props/wait.tsx",
+        "../src/fcc_modules/props/zeller.tsx",
+        "../src/fcc_modules/props/zero.tsx"
+      ],
+      "../src/fcc_modules/math/ncr.tsx": [
+        "../src/fcc_export.tsx"
+      ],
+      "../src/fcc_modules/math/ncrs.tsx": [
+        "../src/fcc_modules/math/ncr.tsx"
+      ],
+      "../src/fcc_modules/modules/helloworld.tsx": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/fcc_modules/props/birthday.tsx": [
+        "../src/fcc_export.tsx"
+      ],
+      "../src/fcc_modules/props/render.tsx": [
         "../node_modules/@types/react-dom/index.d.ts",
-        "../node_modules/@types/react/index.d.ts",
-        "../src/fcc_modules/ajax.ts",
-        "../src/fcc_modules/html.ts",
-        "../src/fcc_modules/math.ts"
+        "../node_modules/@types/react/index.d.ts"
       ],
-      "../src/index.ts": [
-        "../src/fcc.tsx"
+      "../src/fcc_modules/props/zeller.tsx": [
+        "../src/fcc_export.tsx"
+      ],
+      "../src/fcc_modules/props/zero.tsx": [
+        "../src/fcc_export.tsx"
       ],
       "../../../../../node_modules/@types/hast/index.d.ts": [
         "../../../../../node_modules/@types/unist/index.d.ts"
@@ -1693,19 +1760,33 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "../src/@types/fcc.d.ts": [
-        "../node_modules/@types/react/index.d.ts",
-        "../src/@types/fcc_modules/ajax.d.ts",
-        "../src/@types/fcc_modules/html.d.ts",
-        "../src/@types/fcc_modules/math.d.ts"
+      "../src/fcc.ts": [
+        "../src/fcc_export.tsx"
       ],
-      "../src/fcc.tsx": [
-        "../src/fcc_modules/ajax.ts",
-        "../src/fcc_modules/html.ts",
-        "../src/fcc_modules/math.ts"
+      "../src/fcc_export.tsx": [
+        "../src/fcc_modules/math/gcd.tsx",
+        "../src/fcc_modules/math/k.tsx",
+        "../src/fcc_modules/math/ncr.tsx",
+        "../src/fcc_modules/math/ncrs.tsx",
+        "../src/fcc_modules/math/npr.tsx",
+        "../src/fcc_modules/math/pow.tsx",
+        "../src/fcc_modules/math/random.tsx",
+        "../src/fcc_modules/modules/ajax.ts",
+        "../src/fcc_modules/modules/calclass.tsx",
+        "../src/fcc_modules/modules/helloworld.tsx",
+        "../src/fcc_modules/modules/html.ts",
+        "../src/fcc_modules/modules/math.ts",
+        "../src/fcc_modules/props/birthday.tsx",
+        "../src/fcc_modules/props/render.tsx",
+        "../src/fcc_modules/props/wait.tsx",
+        "../src/fcc_modules/props/zeller.tsx",
+        "../src/fcc_modules/props/zero.tsx"
       ],
-      "../src/index.ts": [
-        "../src/fcc.tsx"
+      "../src/fcc_modules/props/birthday.tsx": [
+        "../src/fcc_export.tsx"
+      ],
+      "../src/fcc_modules/props/zero.tsx": [
+        "../src/fcc_export.tsx"
       ],
       "../../../../../node_modules/@types/hast/index.d.ts": [
         "../../../../../node_modules/@types/unist/index.d.ts"
@@ -2007,17 +2088,25 @@
       "../node_modules/@types/yargs/index.d.ts",
       "../node_modules/csstype/index.d.ts",
       "../node_modules/source-map/source-map.d.ts",
-      "../src/@types/fcc.d.ts",
-      "../src/@types/fcc_modules/ajax.d.ts",
-      "../src/@types/fcc_modules/html.d.ts",
-      "../src/@types/fcc_modules/math.d.ts",
-      "../src/@types/html.d.ts",
-      "../src/@types/math.d.ts",
-      "../src/fcc.tsx",
-      "../src/fcc_modules/ajax.ts",
-      "../src/fcc_modules/html.ts",
-      "../src/fcc_modules/math.ts",
-      "../src/index.ts",
+      "../src/fcc.ts",
+      "../src/fcc_export.tsx",
+      "../src/fcc_modules/math/gcd.tsx",
+      "../src/fcc_modules/math/k.tsx",
+      "../src/fcc_modules/math/ncr.tsx",
+      "../src/fcc_modules/math/ncrs.tsx",
+      "../src/fcc_modules/math/npr.tsx",
+      "../src/fcc_modules/math/pow.tsx",
+      "../src/fcc_modules/math/random.tsx",
+      "../src/fcc_modules/modules/ajax.ts",
+      "../src/fcc_modules/modules/calclass.tsx",
+      "../src/fcc_modules/modules/helloworld.tsx",
+      "../src/fcc_modules/modules/html.ts",
+      "../src/fcc_modules/modules/math.ts",
+      "../src/fcc_modules/props/birthday.tsx",
+      "../src/fcc_modules/props/render.tsx",
+      "../src/fcc_modules/props/wait.tsx",
+      "../src/fcc_modules/props/zeller.tsx",
+      "../src/fcc_modules/props/zero.tsx",
       "../../../../../node_modules/@types/common-tags/index.d.ts",
       "../../../../../node_modules/@types/hast/index.d.ts",
       "../../../../../node_modules/@types/jquery/index.d.ts",

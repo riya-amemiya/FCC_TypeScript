@@ -1,4 +1,4 @@
-import { error_language } from '../../FCC_export';
+import error_language from "./error_language";
 export default function Zeller({
   y = 2000,
   m = 1,

@@ -1,9 +1,9 @@
 class maths {
-    constructor(private _num: number){}
-    get num ():number{
+    constructor(private _num: {n: number,p:number,a:number}){}
+    get num (){
         return this._num
     }
-    public nPr(n: number | maths,r: number | maths):this{
+    public nPr({ n, r }: { n: number | maths; r: number | maths; }):this{
         if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
         {
             //nPr
@@ -29,11 +29,11 @@ class maths {
                     y = y * n;
                 }
             }
-            this._num += y
+            this._num.a = y
             return this;
         }else console.error('Number型を引数に指定してください')
     }
-    public Pow(num:any, n:any):this
+    public Pow({ num, n }: { num: number; n: number; }):this
     {
         //xのy乗
         let nums:number = num;
@@ -41,10 +41,10 @@ class maths {
         {
             nums *= num;
         }
-        this._num += nums
+        this._num.a = nums
         return this;
     }
-    public Gcd(f: number | maths = 1, x: number | maths = 1):this
+    public Gcd({ f = 1, x = 1 }: { f?: number | maths; x?: number | maths; } = {}):this
     {
         if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number")
         {
@@ -64,16 +64,16 @@ class maths {
                 x = r;
                 r = f % x;
             }
-            this._num += x;
+            this._num.a = x;
             return this;
         } else console.error('Number型を引数に指定してください')
     }
-    public Random(num?: number):this
+    public Random(num: number):this
     {
-        this._num += Math.floor(Math.random() * num);
+        this._num.a = Math.floor(Math.random() * num);
         return this
     }
-    public nCr(n?: number, r?: number):this
+    public nCr({ n, r }: { n: number; r: number; }):this
     {
         //nCr
         let x: number;
@@ -109,17 +109,28 @@ class maths {
             age *= i;
         }
         y = y / age;
-        this._num += y
+        this._num.a = y
         return this;
     }
-    public nCrs(n: any, r?:number):this
+    public nCrs({ n = this._num.n, r = this._num.p }: { n?: number; r?: number; } = {}):this
     {
         //重複を許して取り出す
         n = n + r - 1;
-        n = this.nCr(n, r);
-        this._num += n
+        this.nCr({ n, r });
+        return this;
+    }
+    public Repetition(x:number):this
+    {
+        //階乗
+        let age = 1;
+        for (let i = 2; i <= x; i++)
+        {
+            age *= i;
+        }
+        this._num.a = age
         return this;
     }
 }
-const Maths = new maths(0)
-export {Maths}
+const Maths_Local = new maths({n:0,p:0,a:0});
+const Maths = Maths_Local
+export default Maths

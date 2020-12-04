@@ -1,10 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom'; //Modules
-
-import { Maths } from './FCC_modules/Modules/Math';
-import { Html } from './FCC_modules/Modules/HTML';
-import * as Ajax from './FCC_modules/Modules/Ajax';
-import HelloWorld from './FCC_modules/Modules/HelloWorld'; //Math
+//Modules
+import Maths from './FCC_modules/Modules/Math/Math';
+import Html from './FCC_modules/Modules/HTML/HTML';
+import * as Ajax from './FCC_modules/Modules/Ajax/Ajax';
+import HelloWorld from './FCC_modules/Modules/HelloWorld';
+import Cal from './FCC_modules/Modules/CalClass/CalClass'; //Math
 
 import Gcd from './FCC_modules/Math/Gcd';
 import k from './FCC_modules/Math/k';
@@ -15,74 +14,14 @@ import Pow from './FCC_modules/Math/Pow';
 import Random from './FCC_modules/Math/Random'; //Props
 
 import Zeller from './FCC_modules/Props/Zeller';
-import zero from './FCC_modules/Props/zero';
+import Zero from './FCC_modules/Props/Zero';
+import Birthday from './FCC_modules/Props/Birthday';
+import Render from './FCC_modules/Props/Render';
+import Wait from './FCC_modules/Props/Wait';
+import error_language from './FCC_modules/Props/error_language';
 const joke = {
   Hello: 'Hello',
   World: 'World'
 };
-
-function render(Dom, id) {
-  ReactDOM.render( /*#__PURE__*/React.createElement(Dom, null), document.getElementById(id));
-}
-
-let error_language = {
-  text: 'ja',
-
-  get() {
-    return this.text;
-  },
-
-  set(error_language) {
-    this.text = error_language;
-  },
-
-  haslanguage(haslanguage) {
-    if (~this.text.indexOf(haslanguage)) return true;else return false;
-  }
-
-};
-
-function birthday(yer, mon, day) {
-  const birthday = new Date(yer, mon - 1, day);
-  const now = new Date();
-  const yb = new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate());
-  const y = now.getFullYear() - birthday.getFullYear();
-  const show = now < yb ? y - 1 : y;
-  return show;
-}
-
-class calClass {
-  constructor(_value) {
-    this._value = _value;
-  }
-
-  get value() {
-    return this._value;
-  }
-
-  sum(...Nums) {
-    for (let nums of Nums) {
-      this._value += nums;
-    }
-
-    return this;
-  }
-
-  sub(...Nums) {
-    for (let nums of Nums) this._value -= nums;
-
-    return this;
-  }
-
-}
-
-const cal = new calClass(0);
-
-function wait(callBack) {
-  window.onload = function () {
-    callBack();
-  };
-}
-
 const version = '1.0';
-export { version, Ajax, joke, zero, HelloWorld, Maths, render, birthday, Html, cal, Zeller, nPr, Gcd, Random, k, nCr, nCrs, Pow, wait, error_language };
+export { version, Ajax, joke, Zero, HelloWorld, Maths, Render, Birthday, Html, Cal, Zeller, nPr, Gcd, Random, k, nCr, nCrs, Pow, Wait, error_language };

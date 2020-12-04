@@ -10,7 +10,8 @@
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && webpack-dev-server --mode development --open",
         "build": "babel src --extensions '.ts,.tsx' --out-dir build",
-        "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w"
+        "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w",
+        "typescript": "tsc --build tsconfig.json"
     },
     "keywords": [],
     "author": "",

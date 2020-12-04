@@ -34,11 +34,16 @@ class HTML
         this._dom.classList.remove(Class)
         return this
     }
-    public html(html = "")
+    public html(html:string = ""): this
     {
-        html ? this._dom.innerHTML = html : this._dom = this._dom.innerHTML
+        if (!html) {
+            this._dom = this._dom.innerHTML
+        }else{
+            this._dom.innerHTML = html
+        }
         return this
     }
 }
-const Html = new HTML(null)
-export {Html}
+const HTML_Local = new HTML(null)
+const Html = HTML_Local
+export default Html
