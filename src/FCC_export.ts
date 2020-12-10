@@ -7,7 +7,7 @@ import Cal from './FCC_modules/Modules/CalClass/CalClass';
 
 //Math
 import Gcd from './FCC_modules/Math/Gcd'
-import k from './FCC_modules/Math/k'
+import K from './FCC_modules/Math/K'
 import nCr from './FCC_modules/Math/nCr';
 import nCrs from './FCC_modules/Math/nCrs';
 import nPr from './FCC_modules/Math/nPr';
@@ -21,6 +21,10 @@ import Birthday from './FCC_modules/Props/Birthday';
 import Render from './FCC_modules/Props/Render';
 import Wait from './FCC_modules/Props/Wait';
 import error_language from './FCC_modules/Props/error_language';
+
+//components
+import * as components from './FCC_modules/components/components'
+
 type int = number;
 interface joketype{
     Hello: 'Hello',
@@ -48,10 +52,11 @@ export
     nPr,
     Gcd,
     Random,
-    k,
+    K,
     nCr,
     nCrs,
     Pow,
     Wait,
-    error_language
+    error_language,
+    components
 }

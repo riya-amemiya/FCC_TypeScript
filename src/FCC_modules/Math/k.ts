@@ -1,4 +1,4 @@
-export default function k(num: number): number
+export default function K(num: number): number
 {
     Number(num);
     num += 273;
