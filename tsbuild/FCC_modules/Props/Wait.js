@@ -1,4 +1,4 @@
-export default function Wait(callBack) {
+export default function wait(callBack) {
     window.onload = function () {
         callBack();
     };

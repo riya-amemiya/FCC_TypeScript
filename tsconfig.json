@@ -6,9 +6,9 @@
     "outDir": "tsbuild",
     "sourceMap": false,
     // TSはECMAScript 5に変換
-    "target": "es6",
+    "target": "es2017",
     // TSのモジュールはES Modulesとして出力
-    "module": "es2015",
+    "module": "esnext",
     // JSXの書式を有効に設定
     "jsx": "react",
     "alwaysStrict": true,

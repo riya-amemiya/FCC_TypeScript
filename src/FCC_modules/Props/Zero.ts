@@ -1,4 +1,4 @@
-import { int } from '../../FCC_export';
+import { int } from "../type/type";
 
 export default function Zero(num: int | string): boolean
 {

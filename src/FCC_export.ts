@@ -1,13 +1,13 @@
+
 //Modules
-import Maths from './FCC_modules/Modules/Math/Math'
-import Html from './FCC_modules/Modules/HTML/HTML'
-import * as Ajax from './FCC_modules/Modules/Ajax/Ajax'
+import { Maths } from './FCC_modules/Modules/Math'
+import { Html } from './FCC_modules/Modules/HTML'
+import * as Ajax from './FCC_modules/Modules/Ajax'
 import HelloWorld from './FCC_modules/Modules/HelloWorld'
-import Cal from './FCC_modules/Modules/CalClass/CalClass';
 
 //Math
 import Gcd from './FCC_modules/Math/Gcd'
-import K from './FCC_modules/Math/K'
+import k from './FCC_modules/Math/k'
 import nCr from './FCC_modules/Math/nCr';
 import nCrs from './FCC_modules/Math/nCrs';
 import nPr from './FCC_modules/Math/nPr';
@@ -17,46 +17,45 @@ import Random from './FCC_modules/Math/Random';
 //Props
 import Zeller from './FCC_modules/Props/Zeller';
 import Zero from './FCC_modules/Props/Zero'
-import Birthday from './FCC_modules/Props/Birthday';
-import Render from './FCC_modules/Props/Render';
-import Wait from './FCC_modules/Props/Wait';
+import cal from './FCC_modules/Props/calClass';
 import error_language from './FCC_modules/Props/error_language';
+import birthday from './FCC_modules/Props/Birthday';
+import wait from './FCC_modules/Props/wait';
+import render from './FCC_modules/Props/render';
+import HeadUpperCase from "./FCC_modules/Props/HeadUpperCase"
+import Hash from "./FCC_modules/Props/Hash"
 
-//components
-import * as components from './FCC_modules/components/components'
+//type
+import * as type from './FCC_modules/type/type'
 
-type int = number;
-interface joketype{
-    Hello: 'Hello',
-    World: 'World'
-}
-const joke:joketype = {
-    Hello:'Hello',
-    World:'World'
-}
-const version:string = '1.0'
+const version: string = '1.0'
+
 export
 {
-    int,
     version,
-    Ajax,
-    joke,
-    Zero,
-    HelloWorld,
+    //Modules
     Maths,
-    Render,
-    Birthday,
     Html,
-    Cal,
-    Zeller,
-    nPr,
+    Ajax,
+    HelloWorld,
+    //Math
     Gcd,
-    Random,
-    K,
+    k,
     nCr,
     nCrs,
+    nPr,
     Pow,
-    Wait,
+    Random,
+    //Props
+    Zeller,
+    Zero,
+    cal,
     error_language,
-    components
+    birthday,
+    wait,
+    render,
+    HeadUpperCase,
+    Hash,
+    //type
+    type
 }

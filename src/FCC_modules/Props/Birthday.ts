@@ -1,6 +1,6 @@
-import { int } from '../../FCC_export';
+import { int } from "../type/type";
 
-export default function Birthday({ yer, mon, day }: { yer: int; mon: int; day: int; }): int
+export default function birthday({ yer, mon, day }: { yer: int; mon: int; day: int; }): int
 {
     const birthday = new Date(yer, mon - 1, day);
     const now = new Date();

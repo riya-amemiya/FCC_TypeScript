@@ -1,4 +1,4 @@
-export default function Birthday({ yer, mon, day }) {
+export default function birthday({ yer, mon, day }) {
     const birthday = new Date(yer, mon - 1, day);
     const now = new Date();
     const yb = new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate());

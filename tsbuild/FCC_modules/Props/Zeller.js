@@ -1,65 +1,66 @@
-import { error_language } from '../../FCC_export';
+import error_language from "./error_language";
 export default function Zeller({ y = 2000, m = 1, d = 1 } = {}) {
     if (m < 3) {
         y--;
         m += 12;
     }
     let w = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
+    let a;
     if (w == 0) {
         if (error_language.haslanguage('en')) {
-            w = "Sunday";
+            a = "Sunday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "日曜日";
+            a = "日曜日";
         }
     }
     else if (w == 1) {
         if (error_language.haslanguage('en')) {
-            w = "Manday";
+            a = "Manday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "月曜日";
+            a = "月曜日";
         }
     }
     else if (w == 2) {
         if (error_language.haslanguage('en')) {
-            w = "Tuesday";
+            a = "Tuesday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "火曜日";
+            a = "火曜日";
         }
     }
     else if (w == 3) {
         if (error_language.haslanguage('en')) {
-            w = "Wedneday";
+            a = "Wedneday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "水曜日";
+            a = "水曜日";
         }
     }
     else if (w == 4) {
         if (error_language.haslanguage('en')) {
-            w = "Thursday";
+            a = "Thursday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "木曜日";
+            a = "木曜日";
         }
     }
     else if (w == 5) {
         if (error_language.haslanguage('en')) {
-            w = "Friday";
+            a = "Friday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "金曜日";
+            a = "金曜日";
         }
     }
     else {
         if (error_language.haslanguage('en')) {
-            w = "Saturday";
+            a = "Saturday";
         }
         else if (error_language.haslanguage('ja')) {
-            w = "土曜日";
+            a = "土曜日";
         }
     }
-    return w;
+    return a;
 }

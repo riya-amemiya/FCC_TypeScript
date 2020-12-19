@@ -1,4 +1,4 @@
-const error_language_Local = {
+const error_language = {
   text: 'ja',
 
   get() {
@@ -6,7 +6,11 @@ const error_language_Local = {
   },
 
   set(error_language) {
-    this.text = error_language;
+    if (/^ja$|^ja_JP$/.test(error_language) || /^en$|^en-US$/.test(error_language)) {
+      this.text = error_language;
+    } else {
+      console.error("サポートされていない文字コードです\nIt is an unsupported character code");
+    }
   },
 
   haslanguage(haslanguage) {
@@ -14,5 +18,4 @@ const error_language_Local = {
   }
 
 };
-const error_language = error_language_Local;
 export default error_language;

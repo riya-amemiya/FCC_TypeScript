@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export default function Render({ Dom, id }: {
+export default function render({ Dom, id }: {
     Dom: () => JSX.Element;
     id: string;
 }): void;

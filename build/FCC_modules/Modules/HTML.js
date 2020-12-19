@@ -4,17 +4,17 @@ class HTML {
     return this._dom;
   }
 
-  getid(id) {
+  getid(id, num = 0) {
     if (id.indexOf('.') != -1) {
       id = id.replace('.', '');
-      this._dom = document.getElementsByClassName(id)[0];
+      this._dom = document.getElementsByClassName(id)[num];
       return this;
     } else if (id.indexOf('#') != -1) {
       id = id.replace('#', '');
       this._dom = document.getElementById(id);
       return this;
     } else {
-      this._dom = document.getElementsByTagName(id)[0];
+      this._dom = document.getElementsByTagName(id)[num];
       return this;
     }
   }
@@ -37,12 +37,21 @@ class HTML {
   }
 
   html(html = "") {
-    html ? this._dom.innerHTML = html : this._dom = this._dom.innerHTML;
+    if (html) {
+      this._dom = this._dom.innerHTML;
+    } else {
+      this._dom.innerHTML = html;
+    }
+
+    return this;
+  }
+
+  title(title) {
+    this._dom.innerHTML = title;
     return this;
   }
 
 }
 
-const HTML_Local = new HTML(null);
-const Html = HTML_Local;
-export default Html;
+const Html = new HTML(null);
+export { Html };

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-export default function Render({
+export default function render({
   Dom,
   id
 }) {

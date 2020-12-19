@@ -1,9 +1,8 @@
 //Modules
-import Maths from './FCC_modules/Modules/Math/Math';
-import Html from './FCC_modules/Modules/HTML/HTML';
-import * as Ajax from './FCC_modules/Modules/Ajax/Ajax';
-import HelloWorld from './FCC_modules/Modules/HelloWorld';
-import Cal from './FCC_modules/Modules/CalClass/CalClass'; //Math
+import { Maths } from './FCC_modules/Modules/Math';
+import { Html } from './FCC_modules/Modules/HTML';
+import * as Ajax from './FCC_modules/Modules/Ajax';
+import HelloWorld from './FCC_modules/Modules/HelloWorld'; //Math
 
 import Gcd from './FCC_modules/Math/Gcd';
 import k from './FCC_modules/Math/k';
@@ -15,13 +14,18 @@ import Random from './FCC_modules/Math/Random'; //Props
 
 import Zeller from './FCC_modules/Props/Zeller';
 import Zero from './FCC_modules/Props/Zero';
-import Birthday from './FCC_modules/Props/Birthday';
-import Render from './FCC_modules/Props/Render';
-import Wait from './FCC_modules/Props/Wait';
+import cal from './FCC_modules/Props/calClass';
 import error_language from './FCC_modules/Props/error_language';
-const joke = {
-  Hello: 'Hello',
-  World: 'World'
-};
+import birthday from './FCC_modules/Props/Birthday';
+import wait from './FCC_modules/Props/wait';
+import render from './FCC_modules/Props/render';
+import HeadUpperCase from "./FCC_modules/Props/HeadUpperCase";
+import Hash from "./FCC_modules/Props/Hash"; //type
+
+import * as type from './FCC_modules/type/type';
 const version = '1.0';
-export { version, Ajax, joke, Zero, HelloWorld, Maths, Render, Birthday, Html, Cal, Zeller, nPr, Gcd, Random, k, nCr, nCrs, Pow, Wait, error_language };
+export { version //Modules
+, Maths, Html, Ajax, HelloWorld //Math
+, Gcd, k, nCr, nCrs, nPr, Pow, Random //Props
+, Zeller, Zero, cal, error_language, birthday, wait, render, HeadUpperCase, Hash //type
+, type };

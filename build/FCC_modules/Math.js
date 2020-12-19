@@ -7,7 +7,10 @@ class maths {
     return this._num;
   }
 
-  nPr(n, r) {
+  npr({
+    n,
+    r
+  }) {
     if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
       //nPr
       let y;
@@ -32,12 +35,15 @@ class maths {
         }
       }
 
-      this._num += y;
+      this._num.a = y;
       return this;
     } else console.error('Number型を引数に指定してください');
   }
 
-  Pow(num, n) {
+  pow({
+    num,
+    n
+  }) {
     //xのy乗
     let nums = num;
 
@@ -45,11 +51,14 @@ class maths {
       nums *= num;
     }
 
-    this._num += nums;
+    this._num.a = nums;
     return this;
   }
 
-  Gcd(f = 1, x = 1) {
+  gcd({
+    f = 1,
+    x = 1
+  } = {}) {
     if (typeof f === typeof x && typeof f === "number" && typeof x === "number") {
       //最大公約数
       let r, tmp;
@@ -70,17 +79,20 @@ class maths {
         r = f % x;
       }
 
-      this._num += x;
+      this._num.a = x;
       return this;
     } else console.error('Number型を引数に指定してください');
   }
 
-  Random(num) {
-    this._num += Math.floor(Math.random() * num);
+  random(num) {
+    this._num.a = Math.floor(Math.random() * num);
     return this;
   }
 
-  nCr(n, r) {
+  ncr({
+    n,
+    r
+  }) {
     //nCr
     let x;
     let z;
@@ -116,20 +128,41 @@ class maths {
     }
 
     y = y / age;
-    this._num += y;
+    this._num.a = y;
     return this;
   }
 
-  nCrs(n, r) {
+  ncrs({
+    n = this._num.n,
+    r = this._num.p
+  } = {}) {
     //重複を許して取り出す
     n = n + r - 1;
-    n = this.nCr(n, r);
-    this._num += n;
+    this.ncr({
+      n,
+      r
+    });
+    return this;
+  }
+
+  repetition(x) {
+    //階乗
+    let age = 1;
+
+    for (let i = 2; i <= x; i++) {
+      age *= i;
+    }
+
+    this._num.a = age;
     return this;
   }
 
 }
 
-const Maths_Local = new maths(0);
+const Maths_Local = new maths({
+  n: 0,
+  p: 0,
+  a: 0
+});
 const Maths = Maths_Local;
 export default Maths;

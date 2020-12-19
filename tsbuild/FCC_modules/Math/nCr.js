@@ -1,4 +1,4 @@
-import { error_language } from '../../FCC_export';
+import error_language from "../Props/error_language";
 export default function nCr({ n, r }) {
     if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
         let x;

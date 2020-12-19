@@ -1,4 +1,4 @@
-export default function Birthday({
+export default function birthday({
   yer,
   mon,
   day

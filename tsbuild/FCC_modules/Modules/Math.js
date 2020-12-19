@@ -5,7 +5,7 @@ class maths {
     get num() {
         return this._num;
     }
-    nPr(n, r) {
+    nPr({ n, r }) {
         if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
             let y;
             let x = 0;
@@ -32,15 +32,13 @@ class maths {
         else
             console.error('Number型を引数に指定してください');
     }
-    Pow(num, n) {
+    Pow({ num, n }) {
         let nums = num;
-        for (let i = 2; i <= n; i++) {
-            nums *= num;
-        }
+        nums = Math.pow(nums, num);
         this._num += nums;
         return this;
     }
-    Gcd(f = 1, x = 1) {
+    Gcd({ f = 1, x = 1 } = {}) {
         if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number") {
             let r, tmp;
             if (f < x) {
@@ -64,7 +62,7 @@ class maths {
         this._num += Math.floor(Math.random() * num);
         return this;
     }
-    nCr(n, r) {
+    nCr({ n, r }) {
         let x;
         let z;
         let y;
@@ -96,9 +94,9 @@ class maths {
         this._num += y;
         return this;
     }
-    nCrs(n, r) {
+    nCrs({ n, r }) {
         n = n + r - 1;
-        n = this.nCr(n, r);
+        n = this.nCr({ n, r });
         this._num += n;
         return this;
     }

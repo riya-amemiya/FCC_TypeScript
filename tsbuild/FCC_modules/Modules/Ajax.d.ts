@@ -1,3 +1,4 @@
-declare const youtube: (req: any) => string;
-declare const ajax: (req: any) => void;
-export { youtube, ajax };
+declare function youtube(req: any): string;
+declare function ajax_youtube(req: any): void;
+declare function ajax(req: any): void;
+export { ajax, youtube, ajax_youtube };

@@ -1,5 +1,5 @@
-import { int } from '../../FCC_export';
-export default function Birthday({ yer, mon, day }: {
+import { int } from "../type/type";
+export default function birthday({ yer, mon, day }: {
     yer: int;
     mon: int;
     day: int;
