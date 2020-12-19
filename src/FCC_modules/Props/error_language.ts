@@ -1,10 +1,4 @@
-interface error_language_type
-{
-    text: 'ja' | 'ja_JP' | 'en' | 'en-US';
-    get(): 'ja' | 'ja_JP' | 'en' | 'en-US';
-    set(error_language: string): void;
-    haslanguage(haslanguage: string): boolean;
-}
+import { error_language_type } from "../type/type";
 const error_language: error_language_type = {
     text: 'ja',
     get(): 'ja' | 'ja_JP' | 'en' | 'en-US'

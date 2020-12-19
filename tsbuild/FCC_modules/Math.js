@@ -5,7 +5,7 @@ class maths {
     get num() {
         return this._num;
     }
-    nPr({ n, r }) {
+    npr({ n, r }) {
         if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
             let y;
             let x = 0;
@@ -26,19 +26,21 @@ class maths {
                     y = y * n;
                 }
             }
-            this._num += y;
+            this._num.a = y;
             return this;
         }
         else
             console.error('Number型を引数に指定してください');
     }
-    Pow({ num, n }) {
+    pow({ num, n }) {
         let nums = num;
-        nums = nums ** num;
-        this._num += nums;
+        for (let i = 2; i <= n; i++) {
+            nums *= num;
+        }
+        this._num.a = nums;
         return this;
     }
-    Gcd({ f = 1, x = 1 } = {}) {
+    gcd({ f = 1, x = 1 } = {}) {
         if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number") {
             let r, tmp;
             if (f < x) {
@@ -52,17 +54,17 @@ class maths {
                 x = r;
                 r = f % x;
             }
-            this._num += x;
+            this._num.a = x;
             return this;
         }
         else
             console.error('Number型を引数に指定してください');
     }
-    Random(num) {
-        this._num += Math.floor(Math.random() * num);
+    random(num) {
+        this._num.a = Math.floor(Math.random() * num);
         return this;
     }
-    nCr({ n, r }) {
+    ncr({ n, r }) {
         let x;
         let z;
         let y;
@@ -91,15 +93,23 @@ class maths {
             age *= i;
         }
         y = y / age;
-        this._num += y;
+        this._num.a = y;
         return this;
     }
-    nCrs({ n, r }) {
+    ncrs({ n = this._num.n, r = this._num.p } = {}) {
         n = n + r - 1;
-        n = this.nCr({ n, r });
-        this._num += n;
+        this.ncr({ n, r });
+        return this;
+    }
+    repetition(x) {
+        let age = 1;
+        for (let i = 2; i <= x; i++) {
+            age *= i;
+        }
+        this._num.a = age;
         return this;
     }
 }
-const Maths = new maths(0);
-export { Maths };
+const Maths_Local = new maths({ n: 0, p: 0, a: 0 });
+const Maths = Maths_Local;
+export default Maths;

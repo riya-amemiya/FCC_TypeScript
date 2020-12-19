@@ -1,7 +1,3 @@
-declare const error_language: {
-    text: string;
-    get(): any;
-    set(error_language: string): void;
-    haslanguage(haslanguage: string): boolean;
-};
+import { error_language_type } from "../type/type";
+declare const error_language: error_language_type;
 export default error_language;

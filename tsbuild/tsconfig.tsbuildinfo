@@ -197,7 +197,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/modules/html.ts": {
-        "version": "23f50097ef65f4c067084f16f4f936a71181bc626331447a803b73567cf33f68",
+        "version": "f74154e0ba9569388d6be75fb97e70e679f3b9fa7add22d183e7c23724cb46e4",
         "signature": "2ace81257550785e9ae3fbb4071199599b8bcac5ae0fcff643487a8ad833aa7f",
         "affectsGlobalScope": false
       },
@@ -241,9 +241,14 @@
         "signature": "f84a529dd36631bbb71badf5d9829605a066dcab3feeda3a3aa419e15efe4506",
         "affectsGlobalScope": false
       },
+      "../src/fcc_modules/type/type.ts": {
+        "version": "8a3e5931619e95b1c47532bc3e9695bc6784f5a226d55ca20b4ab6a4fb0c8d2a",
+        "signature": "6dea26ba44da124c430852f1138717ebe87c96648673afaed612148dae2f95fe",
+        "affectsGlobalScope": false
+      },
       "../src/fcc_modules/props/error_language.ts": {
-        "version": "1d4593fe2c1a2784fe1180fa9bebd4409712b3431b9bd61c2c6d81104ec9688f",
-        "signature": "e3079de1a217800b09bb0f5b4f3f18ef6d54a6c75eb8764cf6f222a0c293bcdc",
+        "version": "985c605ea23ef77db97a9a6dbc85c4d22f5db1361ff403fe0c4a177a3c22ab55",
+        "signature": "45340003d92442631465d5eaa2e481579534300dc0bea0c7bb52e8908b257e5d",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncr.ts": {
@@ -276,14 +281,9 @@
         "signature": "82280d3fea780829ef39d6d1228a1042dd1dd5adb12a4bd934ecf9a64bc057ec",
         "affectsGlobalScope": false
       },
-      "../src/fcc_modules/type/type.ts": {
-        "version": "2f2819152666972474dcc6900d7e1b10ed960c55e9abd9b73992dfcb265b5d4e",
-        "signature": "2ea18b903ad4d0aaf0c0ca6c79e587fc131eba4b7e0861aa32774d3313557d7f",
-        "affectsGlobalScope": false
-      },
       "../src/fcc_modules/props/zero.ts": {
-        "version": "5fff43fdf28e07f31ab3d0d9f47857b1e8f897c49945c651636623f0962b69b0",
-        "signature": "dd1f28653cc13aabd88571dc80beac452b54dff5da7bf2c4610f6196d494944d",
+        "version": "24f4fe2c5ee657f9c0546a969e979f53f2531fb0ca0fce058fc5aafaf68490d4",
+        "signature": "0f6859e6c441f77ad61bacae9f65bd6d71920147f4c5c0d7bb9d9679b727c158",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/calclass.ts": {
@@ -292,7 +292,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/birthday.ts": {
-        "version": "326b4d347852c5b2784ad2696bf3cd547da300d7bfe941568af8079280c81881",
+        "version": "ea0b1734926d7d294888c7cdf831d8a9ecd8f51d0bfaafa3bd4b57776060d66c",
         "signature": "6abefab5211fec7063a943efc11afdb9273d0dafeacf46a6cb675b4cae39857f",
         "affectsGlobalScope": false
       },
@@ -316,14 +316,44 @@
         "signature": "832a3f95dfec9518f4cda7a644463a2c827f216ec54d3707a25280bebba20cc7",
         "affectsGlobalScope": false
       },
+      "../src/fcc_modules/props/hash.ts": {
+        "version": "af0b2cc75c4f95b19a08c2df68bbae24048d5ca6b798acafc5cff6141f091c5a",
+        "signature": "b8536239010146ecaf17d34cd865caa2274783b541b47e31ff1b02ffb38f8374",
+        "affectsGlobalScope": false
+      },
       "../src/fcc_export.ts": {
-        "version": "2238e27f6e185a72d078d49bdfe5daad71a5a4652edc3cea7de5f63b06643ae5",
-        "signature": "a63ac3cac282a07651302288b18b15625281ba8b218a30a09e5544acfa0a83ef",
+        "version": "5a307e643fa173ec974d6210bb0172121fee26a2c84033945fce5f991f30eabb",
+        "signature": "f40977ee5b99ba7de3b6b5033a987feec03192c34098ad99c8cba9e7e34107b2",
         "affectsGlobalScope": false
       },
       "../src/fcc.ts": {
         "version": "7bf59c0a183cfe4bcef5d7cb9e1ade7341a41f8e4a394522754feba2df0946c7",
         "signature": "e0e67cae2975a5682fd53c4212032ea2d86526212a1df5d6f8d876a79c29ac67",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/ajax.ts": {
+        "version": "a5eb80a1b2bab2e2135a193f2268282b1239eca4c5df9bb89860b98eb62081b3",
+        "signature": "cf0fc57b33b4b1650ecadc159a64adedb68ba8292d0e731614ca1b5ebaee94e6",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/html.ts": {
+        "version": "0c70372f29699867bfc9b034c7c250412e0c8b3409096595f1b1b7987ea5ec44",
+        "signature": "b12bc29d68a66c299a0d6d2a279148298291651f32b276f7212b67cc2f417144",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math.ts": {
+        "version": "e397d51b73edb666794f2f3de3256936d1db12c244bd4193b9215591a232a6e7",
+        "signature": "11ff35b1f5b025bb56103bb0e8541a3756450ef977712aa02e62afb3e7623563",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/repetition.ts": {
+        "version": "fe6b3f48f1672fb55b2b1fd23c440d9d7d79fa802b1586a0b6b6319ae8541bb4",
+        "signature": "3bfc46e07f5bcdb9068aae4bf8eabe6004d0d5e936e64d27af145a07bae3ee66",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": {
+        "version": "68542e09d57ac25d94df9c08988618a964e6f16bd3faa545a1cc3de33a533b2b",
+        "signature": "f8ba94a56d812556253f34aadba58be63b5a3bd79c5ecb5facd8103741e5d0a2",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -900,8 +930,8 @@
     "options": {
       "outDir": "./",
       "sourceMap": false,
-      "target": 2,
-      "module": 5,
+      "target": 4,
+      "module": 99,
       "jsx": 2,
       "alwaysStrict": true,
       "removeComments": true,
@@ -1236,12 +1266,16 @@
         "../src/fcc_modules/props/birthday.ts",
         "../src/fcc_modules/props/calclass.ts",
         "../src/fcc_modules/props/error_language.ts",
+        "../src/fcc_modules/props/hash.ts",
         "../src/fcc_modules/props/headuppercase.ts",
         "../src/fcc_modules/props/render.tsx",
         "../src/fcc_modules/props/wait.ts",
         "../src/fcc_modules/props/zeller.ts",
         "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
+      ],
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": [
+        "../node_modules/@types/react/index.d.ts"
       ],
       "../src/fcc_modules/math/ncr.ts": [
         "../src/fcc_modules/props/error_language.ts"
@@ -1253,6 +1287,9 @@
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/fcc_modules/props/birthday.ts": [
+        "../src/fcc_modules/type/type.ts"
+      ],
+      "../src/fcc_modules/props/error_language.ts": [
         "../src/fcc_modules/type/type.ts"
       ],
       "../src/fcc_modules/props/render.tsx": [
@@ -1779,7 +1816,7 @@
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
       "../src/fcc.ts": [
-        "../src/fcc_export.tsx"
+        "../src/fcc_export.ts"
       ],
       "../src/fcc_export.ts": [
         "../src/fcc_modules/math/gcd.ts",
@@ -1796,6 +1833,7 @@
         "../src/fcc_modules/props/birthday.ts",
         "../src/fcc_modules/props/calclass.ts",
         "../src/fcc_modules/props/error_language.ts",
+        "../src/fcc_modules/props/hash.ts",
         "../src/fcc_modules/props/headuppercase.ts",
         "../src/fcc_modules/props/render.tsx",
         "../src/fcc_modules/props/wait.ts",
@@ -1804,6 +1842,9 @@
         "../src/fcc_modules/type/type.ts"
       ],
       "../src/fcc_modules/props/birthday.ts": [
+        "../src/fcc_modules/type/type.ts"
+      ],
+      "../src/fcc_modules/props/error_language.ts": [
         "../src/fcc_modules/type/type.ts"
       ],
       "../src/fcc_modules/props/zero.ts": [
@@ -2149,6 +2190,10 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/fcc.ts",
       "../src/fcc_export.ts",
+      "../src/fcc_modules/ajax.ts",
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx",
+      "../src/fcc_modules/html.ts",
+      "../src/fcc_modules/math.ts",
       "../src/fcc_modules/math/gcd.ts",
       "../src/fcc_modules/math/k.ts",
       "../src/fcc_modules/math/ncr.ts",
@@ -2156,6 +2201,7 @@
       "../src/fcc_modules/math/npr.ts",
       "../src/fcc_modules/math/pow.ts",
       "../src/fcc_modules/math/random.ts",
+      "../src/fcc_modules/math/repetition.ts",
       "../src/fcc_modules/modules/ajax.ts",
       "../src/fcc_modules/modules/helloworld.tsx",
       "../src/fcc_modules/modules/html.ts",
@@ -2163,6 +2209,7 @@
       "../src/fcc_modules/props/birthday.ts",
       "../src/fcc_modules/props/calclass.ts",
       "../src/fcc_modules/props/error_language.ts",
+      "../src/fcc_modules/props/hash.ts",
       "../src/fcc_modules/props/headuppercase.ts",
       "../src/fcc_modules/props/render.tsx",
       "../src/fcc_modules/props/wait.ts",
