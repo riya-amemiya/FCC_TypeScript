@@ -5,6 +5,9 @@ import { Html } from './FCC_modules/Modules/HTML'
 import * as Ajax from './FCC_modules/Modules/Ajax'
 import HelloWorld from './FCC_modules/Modules/HelloWorld'
 
+//components
+import * as component from './FCC_modules/components/components'
+
 //Math
 import Gcd from './FCC_modules/Math/Gcd'
 import k from './FCC_modules/Math/k'
@@ -33,6 +36,8 @@ const version: string = '1.0'
 export
 {
     version,
+    //components
+    component,
     //Modules
     Maths,
     Html,

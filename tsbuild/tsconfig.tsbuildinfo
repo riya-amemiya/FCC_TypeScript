@@ -202,7 +202,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/modules/ajax.ts": {
-        "version": "b889c87a7b237ac743360b009ca88a1c79cdabbad1b0590a8c46ede25817f8fb",
+        "version": "d872299422b02b5957121969d1b38226c1a41532ae10c6198db58361ee563e52",
         "signature": "cf0fc57b33b4b1650ecadc159a64adedb68ba8292d0e731614ca1b5ebaee94e6",
         "affectsGlobalScope": false
       },
@@ -262,7 +262,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/npr.ts": {
-        "version": "3f0cb093d450ce8a64e672b85190f0bba4ef91f7ded19ffe4936eee0484e3686",
+        "version": "9d02c2167277661e289a7c95a30e58e0f7bfab39fd1b47e06111cfa6b382d657",
         "signature": "a2bae56e66963f3c0d9dcb20a3b84da3b6dcf7272a4f5d69ad0132a7cf872b4b",
         "affectsGlobalScope": false
       },

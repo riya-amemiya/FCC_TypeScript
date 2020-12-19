@@ -1,10 +1,4 @@
 function youtube(req) {
-  // req.type = req.type || 'video'
-  // req.part = req.part || 'snippet'
-  // req.q = req.q || 'music'
-  // req.maxResults = req.maxResults || 6
-  // req.videoEmbeddable = req.videoEmbeddable || 'true'
-  // req.videoSyndicated = req.videoSyndicated || 'true'
   return `https://www.googleapis.com/youtube/v3/search?type=${req.type || 'video'}&part=${req.part || 'snippet'}&q=${req.q || 'music'}&maxResults=${req.maxResults || 6}&key=${req.key}&videoEmbeddable=${req.videoEmbeddable || 'true'}&videoSyndicated=${req.videoSyndicated || 'true'}`;
 }
 
