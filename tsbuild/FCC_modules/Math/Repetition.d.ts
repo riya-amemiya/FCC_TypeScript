@@ -1,1 +1,1 @@
-export default function Repetition(x: number): number;
+export default function Repetition(n: number): number;

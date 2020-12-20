@@ -16,6 +16,7 @@ import nCrs from './FCC_modules/Math/nCrs';
 import nPr from './FCC_modules/Math/nPr';
 import Pow from './FCC_modules/Math/Pow';
 import Random from './FCC_modules/Math/Random';
+import Repetition from './FCC_modules/Math/Repetition'
 
 //Props
 import Zeller from './FCC_modules/Props/Zeller';
@@ -51,6 +52,7 @@ export
     nPr,
     Pow,
     Random,
+    Repetition,
     //Props
     Zeller,
     Zero,

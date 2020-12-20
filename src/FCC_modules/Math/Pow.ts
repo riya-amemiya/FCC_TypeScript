@@ -1,10 +1,5 @@
-export default function Pow({ num, n }: { num: number; n: number; }): number
+export default function Pow(num: number = 1, n: number = 1): number
 {
     //xのy乗
-    let nums = num;
-    for (let i = 2; i <= n; i++)
-    {
-        nums *= num;
-    }
-    return nums;
+    return num ** n;
 }

@@ -231,6 +231,16 @@
         "signature": "2a1970cc71bb052110cb3ae05d362c36fee1fc2b128574a7400e53b166162dc3",
         "affectsGlobalScope": false
       },
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": {
+        "version": "68542e09d57ac25d94df9c08988618a964e6f16bd3faa545a1cc3de33a533b2b",
+        "signature": "f8ba94a56d812556253f34aadba58be63b5a3bd79c5ecb5facd8103741e5d0a2",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/components/components.ts": {
+        "version": "b665da16660f776d2d04f4ea3ed2e0f78ce5ddb9a94e5c9ee4a33f938e0df229",
+        "signature": "4bb896fe5411d0f3f954bbb7f49718346b961a18ec3d095bc5f7ae0ddc81b198",
+        "affectsGlobalScope": false
+      },
       "../src/fcc_modules/math/gcd.ts": {
         "version": "600a6fff73c7f5c711fb8e4f14579418d24bd0d064f6e3bc6d9b8dec86099203",
         "signature": "595527d9468c90b23f2644816b2afe8ba8ccae3abbbaceb7af020f985b73d19a",
@@ -257,23 +267,28 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncrs.ts": {
-        "version": "44dd18c7073e899e770ead2b48aba3c653bb7505909ae693e4b6cb0d4bf59352",
+        "version": "94aa45c6a06a36eb089fe772967eab86c1e5b6ae72f7d4a1f7939d348a971a5b",
         "signature": "0f3e43ee6fa1936e0b3327188bdb39dfc6b11447c78ed27788c57a79f52a5b46",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/npr.ts": {
-        "version": "9d02c2167277661e289a7c95a30e58e0f7bfab39fd1b47e06111cfa6b382d657",
+        "version": "b5f0e5eeb56510212d4008f3dc166817c407b39db81691d8d1deeed01657432b",
         "signature": "a2bae56e66963f3c0d9dcb20a3b84da3b6dcf7272a4f5d69ad0132a7cf872b4b",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/pow.ts": {
-        "version": "23d89e6fa11471865b027cea76532f4344ea5aac09202d6afbbce66e057c40e4",
+        "version": "422448a5f5baec32d09bdb8ce04542cd33eb020eb5513d04b1ef881ee691ef9c",
         "signature": "6f7685edbb352fd9047b5e507d10338282ca0df0add681f965e34cbfd9aacb29",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/random.ts": {
         "version": "156ffd36bbe4df64db17b506a2ba5bfca14b3d0ce94aa39929a9e412290e94fb",
         "signature": "8b25ce54842ba555f7d72ce3694e6b698cb428cf9d45efdf348646093b52d528",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/repetition.ts": {
+        "version": "857db38c315cccecb108f70132dbc75cc4b9148838539eac1cbc887a277782c4",
+        "signature": "b2f39910325939f284b4862195bce5b8b5f1d47024600f616904717b34222ec4",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/zeller.ts": {
@@ -322,38 +337,13 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_export.ts": {
-        "version": "5a307e643fa173ec974d6210bb0172121fee26a2c84033945fce5f991f30eabb",
-        "signature": "f40977ee5b99ba7de3b6b5033a987feec03192c34098ad99c8cba9e7e34107b2",
+        "version": "d0392cf3a321e58b0f2e891c743072ab76082142fcc26b7198dff17d057f72a8",
+        "signature": "f61c647233c2c284638996aff48c59718389fa901a805c031a7d813f506327a0",
         "affectsGlobalScope": false
       },
       "../src/fcc.ts": {
         "version": "7bf59c0a183cfe4bcef5d7cb9e1ade7341a41f8e4a394522754feba2df0946c7",
         "signature": "e0e67cae2975a5682fd53c4212032ea2d86526212a1df5d6f8d876a79c29ac67",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/ajax.ts": {
-        "version": "a5eb80a1b2bab2e2135a193f2268282b1239eca4c5df9bb89860b98eb62081b3",
-        "signature": "cf0fc57b33b4b1650ecadc159a64adedb68ba8292d0e731614ca1b5ebaee94e6",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/html.ts": {
-        "version": "0c70372f29699867bfc9b034c7c250412e0c8b3409096595f1b1b7987ea5ec44",
-        "signature": "b12bc29d68a66c299a0d6d2a279148298291651f32b276f7212b67cc2f417144",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/math.ts": {
-        "version": "e397d51b73edb666794f2f3de3256936d1db12c244bd4193b9215591a232a6e7",
-        "signature": "11ff35b1f5b025bb56103bb0e8541a3756450ef977712aa02e62afb3e7623563",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/math/repetition.ts": {
-        "version": "fe6b3f48f1672fb55b2b1fd23c440d9d7d79fa802b1586a0b6b6319ae8541bb4",
-        "signature": "3bfc46e07f5bcdb9068aae4bf8eabe6004d0d5e936e64d27af145a07bae3ee66",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": {
-        "version": "68542e09d57ac25d94df9c08988618a964e6f16bd3faa545a1cc3de33a533b2b",
-        "signature": "f8ba94a56d812556253f34aadba58be63b5a3bd79c5ecb5facd8103741e5d0a2",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -1252,6 +1242,7 @@
         "../src/fcc_export.ts"
       ],
       "../src/fcc_export.ts": [
+        "../src/fcc_modules/components/components.ts",
         "../src/fcc_modules/math/gcd.ts",
         "../src/fcc_modules/math/k.ts",
         "../src/fcc_modules/math/ncr.ts",
@@ -1259,6 +1250,7 @@
         "../src/fcc_modules/math/npr.ts",
         "../src/fcc_modules/math/pow.ts",
         "../src/fcc_modules/math/random.ts",
+        "../src/fcc_modules/math/repetition.ts",
         "../src/fcc_modules/modules/ajax.ts",
         "../src/fcc_modules/modules/helloworld.tsx",
         "../src/fcc_modules/modules/html.ts",
@@ -1274,6 +1266,9 @@
         "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
       ],
+      "../src/fcc_modules/components/components.ts": [
+        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
+      ],
       "../src/fcc_modules/components/modal/simple/modal_simple.tsx": [
         "../node_modules/@types/react/index.d.ts"
       ],
@@ -1281,7 +1276,11 @@
         "../src/fcc_modules/props/error_language.ts"
       ],
       "../src/fcc_modules/math/ncrs.ts": [
-        "../src/fcc_modules/math/ncr.ts"
+        "../src/fcc_modules/math/ncr.ts",
+        "../src/fcc_modules/props/error_language.ts"
+      ],
+      "../src/fcc_modules/math/npr.ts": [
+        "../src/fcc_modules/props/error_language.ts"
       ],
       "../src/fcc_modules/modules/helloworld.tsx": [
         "../node_modules/@types/react/index.d.ts"
@@ -1819,6 +1818,7 @@
         "../src/fcc_export.ts"
       ],
       "../src/fcc_export.ts": [
+        "../src/fcc_modules/components/components.ts",
         "../src/fcc_modules/math/gcd.ts",
         "../src/fcc_modules/math/k.ts",
         "../src/fcc_modules/math/ncr.ts",
@@ -1826,6 +1826,7 @@
         "../src/fcc_modules/math/npr.ts",
         "../src/fcc_modules/math/pow.ts",
         "../src/fcc_modules/math/random.ts",
+        "../src/fcc_modules/math/repetition.ts",
         "../src/fcc_modules/modules/ajax.ts",
         "../src/fcc_modules/modules/helloworld.tsx",
         "../src/fcc_modules/modules/html.ts",
@@ -1840,6 +1841,9 @@
         "../src/fcc_modules/props/zeller.ts",
         "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
+      ],
+      "../src/fcc_modules/components/components.ts": [
+        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
       ],
       "../src/fcc_modules/props/birthday.ts": [
         "../src/fcc_modules/type/type.ts"
@@ -2190,10 +2194,8 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/fcc.ts",
       "../src/fcc_export.ts",
-      "../src/fcc_modules/ajax.ts",
+      "../src/fcc_modules/components/components.ts",
       "../src/fcc_modules/components/modal/simple/modal_simple.tsx",
-      "../src/fcc_modules/html.ts",
-      "../src/fcc_modules/math.ts",
       "../src/fcc_modules/math/gcd.ts",
       "../src/fcc_modules/math/k.ts",
       "../src/fcc_modules/math/ncr.ts",

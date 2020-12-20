@@ -40,13 +40,9 @@ class maths {
     } else console.error('Number型を引数に指定してください');
   }
 
-  Pow({
-    num,
-    n
-  }) {
+  Pow(num = 1, n = 1) {
     //xのy乗
-    let nums = num;
-    nums = nums ** num;
+    let nums = num ** n;
     this._num += nums;
     return this;
   }

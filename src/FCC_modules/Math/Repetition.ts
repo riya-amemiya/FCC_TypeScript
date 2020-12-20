@@ -1,10 +1,4 @@
-export default function Repetition(x:number): number
+export default function Repetition(n: number): number
 {
-    //階乗
-    let age = 1;
-    for (let i = 2; i <= x; i++)
-    {
-        age *= i;
-    }
-    return age;
+    return (n === 0) ? 1 : (n * Repetition(n - 1));
 }

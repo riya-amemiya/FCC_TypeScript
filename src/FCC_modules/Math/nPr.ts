@@ -1,3 +1,4 @@
+import error_language from '../Props/error_language';
 export default function nPr({ n = 1, r = 1 }: { n?: number; r?: number; } = {}): number
 {
     if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
@@ -28,8 +29,10 @@ export default function nPr({ n = 1, r = 1 }: { n?: number; r?: number; } = {}):
         }
         return y;
     }
-
-
-    else
+    else if (/ja|ja_JP/.test(error_language.get()))
         console.error('Number型を引数に指定してください');
+    else if (/en|en-US/.test(error_language.get()))
+        console.error('Please specify Number type as an argument');
+    else
+        console.log('言語コードが不正な値です'); console.log('ja_JPでerrorステータスを出力します'); console.error('Number型を引数に指定してください');
 }

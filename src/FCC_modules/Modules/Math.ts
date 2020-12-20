@@ -36,11 +36,10 @@ class maths
             return this;
         } else console.error('Number型を引数に指定してください')
     }
-    public Pow({ num, n }: { num: any; n: any; }): this
+    public Pow(num: number = 1, n: number = 1): this
     {
         //xのy乗
-        let nums: number = num;
-        nums = nums ** num
+        let nums: number = num ** n;
         this._num += nums
         return this;
     }
