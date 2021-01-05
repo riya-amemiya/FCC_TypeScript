@@ -3,3 +3,4 @@ const joke = {
     World: 'World'
 };
 export { joke };
+//# sourceMappingURL=type.js.map

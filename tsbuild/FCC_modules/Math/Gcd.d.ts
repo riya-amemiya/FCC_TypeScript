@@ -1,4 +1,4 @@
-export default function Gcd({ f, x }?: {
-    f?: number;
+export default function Gcd({ x, y }?: {
     x?: number;
+    y?: number;
 }): number;

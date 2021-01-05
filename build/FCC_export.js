@@ -1,35 +1,364 @@
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 //Modules
 import { Maths } from './FCC_modules/Modules/Math';
 import { Html } from './FCC_modules/Modules/HTML';
 import * as Ajax from './FCC_modules/Modules/Ajax';
-import HelloWorld from './FCC_modules/Modules/HelloWorld'; //components
+import HelloWorld from './FCC_modules/Modules/HelloWorld'; //Math
 
-import * as component from './FCC_modules/components/components'; //Math
+function Gcd(_x) {
+  return _Gcd2.apply(this, arguments);
+}
 
-import Gcd from './FCC_modules/Math/Gcd';
-import k from './FCC_modules/Math/k';
+function _Gcd2() {
+  _Gcd2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref) {
+    var x, y, _Gcd;
+
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            x = _ref.x, y = _ref.y;
+            _context.next = 3;
+            return import(
+            /* webpackChunkName: "_FCC_Gcd" */
+            './FCC_modules/Math/Gcd');
+
+          case 3:
+            _Gcd = _context.sent;
+            return _context.abrupt("return", _Gcd["default"]({
+              x: x,
+              y: y
+            }));
+
+          case 5:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _Gcd2.apply(this, arguments);
+}
+
+function k(_x2) {
+  return _k2.apply(this, arguments);
+}
+
+function _k2() {
+  _k2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(num) {
+    var _k;
+
+    return regeneratorRuntime.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.next = 2;
+            return import(
+            /* webpackChunkName: "_FCC_k" */
+            './FCC_modules/Math/k');
+
+          case 2:
+            _k = _context2.sent;
+            return _context2.abrupt("return", _k["default"](num));
+
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  }));
+  return _k2.apply(this, arguments);
+}
+
 import nCr from './FCC_modules/Math/nCr';
 import nCrs from './FCC_modules/Math/nCrs';
 import nPr from './FCC_modules/Math/nPr';
 import Pow from './FCC_modules/Math/Pow';
-import Random from './FCC_modules/Math/Random';
-import Repetition from './FCC_modules/Math/Repetition'; //Props
+import Random from './FCC_modules/Math/Random'; //Props
 
-import Zeller from './FCC_modules/Props/Zeller';
-import Zero from './FCC_modules/Props/Zero';
-import cal from './FCC_modules/Props/calClass';
 import error_language from './FCC_modules/Props/error_language';
-import birthday from './FCC_modules/Props/Birthday';
-import wait from './FCC_modules/Props/wait';
-import render from './FCC_modules/Props/render';
-import HeadUpperCase from "./FCC_modules/Props/HeadUpperCase";
-import Hash from "./FCC_modules/Props/Hash"; //type
+import cal from './FCC_modules/Props/calClass';
+
+function _sleep(_x3) {
+  return _sleep2.apply(this, arguments);
+}
+
+function _sleep2() {
+  _sleep2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(ms) {
+    var _sleep;
+
+    return regeneratorRuntime.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            _context3.next = 2;
+            return import(
+            /* webpackChunkName: "_FCC_sleep" */
+            './FCC_modules/Props/sleep');
+
+          case 2:
+            _sleep = _context3.sent;
+            return _context3.abrupt("return", _sleep["default"](ms));
+
+          case 4:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3);
+  }));
+  return _sleep2.apply(this, arguments);
+}
+
+function sleep(_x4) {
+  return _sleep3.apply(this, arguments);
+}
+
+function _sleep3() {
+  _sleep3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(_ref2) {
+    var ms, callback;
+    return regeneratorRuntime.wrap(function _callee4$(_context4) {
+      while (1) {
+        switch (_context4.prev = _context4.next) {
+          case 0:
+            ms = _ref2.ms, callback = _ref2.callback;
+            _context4.next = 3;
+            return _sleep(ms);
+
+          case 3:
+            callback();
+
+          case 4:
+          case "end":
+            return _context4.stop();
+        }
+      }
+    }, _callee4);
+  }));
+  return _sleep3.apply(this, arguments);
+}
+
+function _Zeller() {
+  return _Zeller2.apply(this, arguments);
+}
+
+function _Zeller2() {
+  _Zeller2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
+    var _ref5,
+        _ref5$y,
+        y,
+        _ref5$m,
+        m,
+        _ref5$d,
+        d,
+        _Zeller,
+        _args5 = arguments;
+
+    return regeneratorRuntime.wrap(function _callee5$(_context5) {
+      while (1) {
+        switch (_context5.prev = _context5.next) {
+          case 0:
+            _ref5 = _args5.length > 0 && _args5[0] !== undefined ? _args5[0] : {}, _ref5$y = _ref5.y, y = _ref5$y === void 0 ? 2000 : _ref5$y, _ref5$m = _ref5.m, m = _ref5$m === void 0 ? 1 : _ref5$m, _ref5$d = _ref5.d, d = _ref5$d === void 0 ? 1 : _ref5$d;
+            _context5.next = 3;
+            return import(
+            /* webpackChunkName: "_FCC_Zeller" */
+            './FCC_modules/Props/Zeller');
+
+          case 3:
+            _Zeller = _context5.sent;
+            return _context5.abrupt("return", _Zeller["default"]({
+              y: y,
+              m: m,
+              d: d
+            }));
+
+          case 5:
+          case "end":
+            return _context5.stop();
+        }
+      }
+    }, _callee5);
+  }));
+  return _Zeller2.apply(this, arguments);
+}
+
+function Zeller(_x5) {
+  return _Zeller3.apply(this, arguments);
+}
+
+function _Zeller3() {
+  _Zeller3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6(_ref3) {
+    var _ref3$y, y, _ref3$m, m, _ref3$d, d, callback, text;
+
+    return regeneratorRuntime.wrap(function _callee6$(_context6) {
+      while (1) {
+        switch (_context6.prev = _context6.next) {
+          case 0:
+            _ref3$y = _ref3.y, y = _ref3$y === void 0 ? 2000 : _ref3$y, _ref3$m = _ref3.m, m = _ref3$m === void 0 ? 1 : _ref3$m, _ref3$d = _ref3.d, d = _ref3$d === void 0 ? 1 : _ref3$d, callback = _ref3.callback;
+            _context6.next = 3;
+            return _Zeller({
+              y: y,
+              m: m,
+              d: d
+            });
+
+          case 3:
+            text = _context6.sent;
+            return _context6.abrupt("return", callback(text));
+
+          case 5:
+          case "end":
+            return _context6.stop();
+        }
+      }
+    }, _callee6);
+  }));
+  return _Zeller3.apply(this, arguments);
+}
+
+function zero(_x6) {
+  return _zero2.apply(this, arguments);
+}
+
+function _zero2() {
+  _zero2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee7(num) {
+    var _zero;
+
+    return regeneratorRuntime.wrap(function _callee7$(_context7) {
+      while (1) {
+        switch (_context7.prev = _context7.next) {
+          case 0:
+            _context7.next = 2;
+            return import(
+            /* webpackChunkName: "_FCC_zero" */
+            './FCC_modules/Props/zero');
+
+          case 2:
+            _zero = _context7.sent;
+            return _context7.abrupt("return", _zero["default"](num));
+
+          case 4:
+          case "end":
+            return _context7.stop();
+        }
+      }
+    }, _callee7);
+  }));
+  return _zero2.apply(this, arguments);
+}
+
+function birthday(_x7, _x8, _x9) {
+  return _birthday2.apply(this, arguments);
+}
+
+function _birthday2() {
+  _birthday2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee8(yer, mon, day) {
+    var _birthday;
+
+    return regeneratorRuntime.wrap(function _callee8$(_context8) {
+      while (1) {
+        switch (_context8.prev = _context8.next) {
+          case 0:
+            _context8.next = 2;
+            return import(
+            /* webpackChunkName: "_FCC_birthday" */
+            './FCC_modules/Props/birthday');
+
+          case 2:
+            _birthday = _context8.sent;
+            return _context8.abrupt("return", _birthday["default"]({
+              yer: yer,
+              mon: mon,
+              day: day
+            }));
+
+          case 4:
+          case "end":
+            return _context8.stop();
+        }
+      }
+    }, _callee8);
+  }));
+  return _birthday2.apply(this, arguments);
+}
+
+function wait(_x10) {
+  return _wait2.apply(this, arguments);
+}
+
+function _wait2() {
+  _wait2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee9(callBack) {
+    var _wait;
+
+    return regeneratorRuntime.wrap(function _callee9$(_context9) {
+      while (1) {
+        switch (_context9.prev = _context9.next) {
+          case 0:
+            _context9.next = 2;
+            return import(
+            /* webpackChunkName: "_FCC_wait" */
+            './FCC_modules/Props/wait');
+
+          case 2:
+            _wait = _context9.sent;
+
+            _wait["default"](callBack);
+
+          case 4:
+          case "end":
+            return _context9.stop();
+        }
+      }
+    }, _callee9);
+  }));
+  return _wait2.apply(this, arguments);
+}
+
+function render(_x11) {
+  return _render2.apply(this, arguments);
+} //type
+
+
+function _render2() {
+  _render2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(_ref4) {
+    var Dom, id, _render;
+
+    return regeneratorRuntime.wrap(function _callee10$(_context10) {
+      while (1) {
+        switch (_context10.prev = _context10.next) {
+          case 0:
+            Dom = _ref4.Dom, id = _ref4.id;
+            _context10.next = 3;
+            return import(
+            /* webpackChunkName: "_FCC_render" */
+            './FCC_modules/Props/render');
+
+          case 3:
+            _render = _context10.sent;
+
+            _render["default"]({
+              Dom: Dom,
+              id: id
+            });
+
+          case 5:
+          case "end":
+            return _context10.stop();
+        }
+      }
+    }, _callee10);
+  }));
+  return _render2.apply(this, arguments);
+}
 
 import * as type from './FCC_modules/type/type';
-const version = '1.0';
-export { version //components
-, component //Modules
+var version = '1.0';
+export { version //Modules
 , Maths, Html, Ajax, HelloWorld //Math
-, Gcd, k, nCr, nCrs, nPr, Pow, Random, Repetition //Props
-, Zeller, Zero, cal, error_language, birthday, wait, render, HeadUpperCase, Hash //type
+, Gcd, k, nCr, nCrs, nPr, Pow, Random //Props
+, Zeller, zero, cal, error_language, birthday, wait, render, sleep //type
 , type };

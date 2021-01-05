@@ -40,3 +40,4 @@ export default function nCr({ n, r }) {
     console.log('ja_JPでerrorステータスを出力します');
     console.error('Number型を引数に指定してください');
 }
+//# sourceMappingURL=nCr.js.map

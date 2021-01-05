@@ -3,10 +3,10 @@ class HTML {
         this._dom = _dom;
         return this._dom;
     }
-    getid(id, num = 0) {
+    getid(id) {
         if (id.indexOf('.') != -1) {
             id = id.replace('.', '');
-            this._dom = document.getElementsByClassName(id)[num];
+            this._dom = document.getElementsByClassName(id)[0];
             return this;
         }
         else if (id.indexOf('#') != -1) {
@@ -15,7 +15,7 @@ class HTML {
             return this;
         }
         else {
-            this._dom = document.getElementsByTagName(id)[num];
+            this._dom = document.getElementsByTagName(id)[0];
             return this;
         }
     }
@@ -32,18 +32,10 @@ class HTML {
         return this;
     }
     html(html = "") {
-        if (html) {
-            this._dom = this._dom.innerHTML;
-        }
-        else {
-            this._dom.innerHTML = html;
-        }
-        return this;
-    }
-    title(title) {
-        this._dom.innerHTML = title;
+        html ? this._dom.innerHTML = html : this._dom = this._dom.innerHTML;
         return this;
     }
 }
 const Html = new HTML(null);
 export { Html };
+//# sourceMappingURL=HTML.js.map

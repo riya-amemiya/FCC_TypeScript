@@ -20,3 +20,4 @@ class calClass {
 const calLocal = new calClass(0);
 const cal = calLocal;
 export default cal;
+//# sourceMappingURL=calClass.js.map

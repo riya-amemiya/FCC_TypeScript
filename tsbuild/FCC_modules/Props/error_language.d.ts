@@ -1,3 +1,7 @@
-import { error_language_type } from "../type/type";
-declare const error_language: error_language_type;
+declare const error_language: {
+    text: string;
+    get(): any;
+    set(error_language: string): void;
+    haslanguage(haslanguage: string): boolean;
+};
 export default error_language;

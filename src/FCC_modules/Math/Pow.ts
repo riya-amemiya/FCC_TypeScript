@@ -1,4 +1,4 @@
-export default function Pow(num: number = 1, n: number = 1): number
+export default function Pow({ num, n }: { num: number; n: number; }): number
 {
     //xのy乗
     return num ** n;

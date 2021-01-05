@@ -2,24 +2,54 @@ import { Maths } from './FCC_modules/Modules/Math';
 import { Html } from './FCC_modules/Modules/HTML';
 import * as Ajax from './FCC_modules/Modules/Ajax';
 import HelloWorld from './FCC_modules/Modules/HelloWorld';
-import * as component from './FCC_modules/components/components';
-import Gcd from './FCC_modules/Math/Gcd';
-import k from './FCC_modules/Math/k';
+async function Gcd({ x, y }) {
+    const _Gcd = await import('./FCC_modules/Math/Gcd');
+    return _Gcd.default({ x, y });
+}
+async function k(num) {
+    const _k = await import('./FCC_modules/Math/k');
+    return _k.default(num);
+}
 import nCr from './FCC_modules/Math/nCr';
 import nCrs from './FCC_modules/Math/nCrs';
 import nPr from './FCC_modules/Math/nPr';
 import Pow from './FCC_modules/Math/Pow';
 import Random from './FCC_modules/Math/Random';
-import Repetition from './FCC_modules/Math/Repetition';
-import Zeller from './FCC_modules/Props/Zeller';
-import Zero from './FCC_modules/Props/Zero';
-import cal from './FCC_modules/Props/calClass';
 import error_language from './FCC_modules/Props/error_language';
-import birthday from './FCC_modules/Props/Birthday';
-import wait from './FCC_modules/Props/wait';
-import render from './FCC_modules/Props/render';
-import HeadUpperCase from "./FCC_modules/Props/HeadUpperCase";
-import Hash from "./FCC_modules/Props/Hash";
+import cal from './FCC_modules/Props/calClass';
+async function _sleep(ms) {
+    const _sleep = await import('./FCC_modules/Props/sleep');
+    return _sleep.default(ms);
+}
+async function sleep({ ms, callback }) {
+    await _sleep(ms);
+    callback();
+}
+async function _Zeller({ y = 2000, m = 1, d = 1 } = {}) {
+    const _Zeller = await import('./FCC_modules/Props/Zeller');
+    return _Zeller.default({ y, m, d });
+}
+async function Zeller({ y = 2000, m = 1, d = 1, callback }) {
+    const text = await _Zeller({ y, m, d });
+    return callback(text);
+}
+async function zero(num) {
+    const _zero = await import('./FCC_modules/Props/zero');
+    return _zero.default(num);
+}
+async function birthday(yer, mon, day) {
+    const _birthday = await import('./FCC_modules/Props/birthday');
+    return _birthday.default({ yer, mon, day });
+}
+async function wait(callBack) {
+    const _wait = await import('./FCC_modules/Props/wait');
+    _wait.default(callBack);
+}
+async function render({ Dom, id }) {
+    const _render = await import('./FCC_modules/Props/render');
+    _render.default({ Dom, id });
+}
 import * as type from './FCC_modules/type/type';
 const version = '1.0';
-export { version, component, Maths, Html, Ajax, HelloWorld, Gcd, k, nCr, nCrs, nPr, Pow, Random, Repetition, Zeller, Zero, cal, error_language, birthday, wait, render, HeadUpperCase, Hash, type };
+export { version, Maths, Html, Ajax, HelloWorld, Gcd, k, nCr, nCrs, nPr, Pow, Random, Zeller, zero, cal, error_language, birthday, wait, render, sleep, type };
+//# sourceMappingURL=FCC_export.js.map

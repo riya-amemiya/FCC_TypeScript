@@ -103,3 +103,4 @@ class maths {
 }
 const Maths = new maths(0);
 export { Maths };
+//# sourceMappingURL=Math.js.map

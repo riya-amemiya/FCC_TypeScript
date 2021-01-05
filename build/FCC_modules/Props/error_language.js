@@ -1,21 +1,13 @@
-const error_language = {
+var error_language = {
   text: 'ja',
-
-  get() {
+  get: function get() {
     return this.text;
   },
-
-  set(error_language) {
-    if (/^ja$|^ja_JP$/.test(error_language) || /^en$|^en-US$/.test(error_language)) {
-      this.text = error_language;
-    } else {
-      console.error("サポートされていない文字コードです\nIt is an unsupported character code");
-    }
+  set: function set(error_language) {
+    this.text = error_language;
   },
-
-  haslanguage(haslanguage) {
-    if (~this.text.indexOf(haslanguage)) return true;else return false;
+  haslanguage: function haslanguage(_haslanguage) {
+    if (~this.text.indexOf(_haslanguage)) return true;else return false;
   }
-
 };
 export default error_language;

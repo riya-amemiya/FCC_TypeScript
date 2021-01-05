@@ -1,14 +1,16 @@
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 import error_language from "../Props/error_language";
-export default function nCr({
-  n,
-  r
-}) {
-  if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
+export default function nCr(_ref) {
+  var n = _ref.n,
+      r = _ref.r;
+
+  if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
     //nCr
-    let x;
-    let z;
-    let y;
-    let age = 1;
+    var x;
+    var z;
+    var y;
+    var age = 1;
     y = n;
     z = r;
     x = 0;
@@ -34,7 +36,7 @@ export default function nCr({
       }
     }
 
-    for (let i = 2; i <= z; i++) {
+    for (var i = 2; i <= z; i++) {
       age *= i;
     }
 

@@ -1,3 +1,12 @@
 {
-    "presets": ["@babel/preset-react", "@babel/typescript"]
+    "presets": [
+        "@babel/preset-react",
+        "@babel/typescript",
+        [
+            "@babel/preset-env",
+            {
+                "modules": false
+            }
+        ]
+    ]
 }

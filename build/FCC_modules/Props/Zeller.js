@@ -1,16 +1,20 @@
 import error_language from "./error_language";
-export default function Zeller({
-  y = 2000,
-  m = 1,
-  d = 1
-} = {}) {
+export default function Zeller() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$y = _ref.y,
+      y = _ref$y === void 0 ? 2000 : _ref$y,
+      _ref$m = _ref.m,
+      m = _ref$m === void 0 ? 1 : _ref$m,
+      _ref$d = _ref.d,
+      d = _ref$d === void 0 ? 1 : _ref$d;
+
   if (m < 3) {
     y--;
     m += 12;
   }
 
-  let w = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
-  let a;
+  var w = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
+  var a;
 
   if (w == 0) {
     if (error_language.haslanguage('en')) {

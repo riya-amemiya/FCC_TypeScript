@@ -1,4 +1,6 @@
-export default function Pow(num = 1, n = 1) {
+export default function Pow(_ref) {
+  var num = _ref.num,
+      n = _ref.n;
   //xのy乗
-  return num ** n;
+  return Math.pow(num, n);
 }

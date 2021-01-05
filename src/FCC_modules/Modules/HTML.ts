@@ -1,12 +1,12 @@
 class HTML
 {
-    constructor(private _dom: any) { return this._dom }
-    public getid(id: string, num: number = 0): this
+    constructor(private _dom: any){return this._dom}
+    public getid(id: string): this
     {
         if (id.indexOf('.') != -1)
         {
             id = id.replace('.', '')
-            this._dom = document.getElementsByClassName(id)[num]
+            this._dom = document.getElementsByClassName(id)[0]
             return this
         } else if (id.indexOf('#') != -1)
         {
@@ -15,41 +15,30 @@ class HTML
             return this
         } else
         {
-            this._dom = document.getElementsByTagName(id)[num]
+            this._dom = document.getElementsByTagName(id)[0]
             return this
         }
     }
-    public hasclass(get: string = ""): this
+    public hasclass(get :string=""):this
     {
         this._dom = this._dom.className === get
         return this
     }
-    public addClass(Class: string = ""): this
+    public addClass(Class:string = ""):this
     {
         this._dom.classList.add(Class)
         return this
     }
-    public removeClass(Class: string = ""): this
+    public removeClass(Class:string = ""):this
     {
         this._dom.classList.remove(Class)
         return this
     }
-    public html(html = ""): this
+    public html(html = "")
     {
-        if (html)
-        {
-            this._dom = this._dom.innerHTML
-        } else
-        {
-            this._dom.innerHTML = html
-        }
-        return this
-    }
-    public title(title: string): this
-    {
-        this._dom.innerHTML = title
+        html ? this._dom.innerHTML = html : this._dom = this._dom.innerHTML
         return this
     }
 }
 const Html = new HTML(null)
-export { Html }
+export {Html}

@@ -1,19 +1,20 @@
-export default function Gcd({ f = 1, x = 1 } = {}) {
-    if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number") {
+export default function Gcd({ x = 1, y = 1 } = {}) {
+    if (typeof (y) === typeof (x) && typeof (y) === "number" && typeof (x) === "number") {
         let r, tmp;
-        if (f < x) {
-            tmp = f;
-            f = x;
+        if (y < x) {
+            tmp = y;
+            y = x;
             x = tmp;
         }
-        r = f % x;
+        r = y % x;
         while (r !== 0) {
-            f = x;
+            y = x;
             x = r;
-            r = f % x;
+            r = y % x;
         }
         return x;
     }
     else
         console.error('Number型を引数に指定してください');
 }
+//# sourceMappingURL=Gcd.js.map

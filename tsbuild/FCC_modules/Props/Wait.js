@@ -3,3 +3,4 @@ export default function wait(callBack) {
         callBack();
     };
 }
+//# sourceMappingURL=wait.js.map

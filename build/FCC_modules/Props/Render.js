@@ -1,8 +1,44 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-export default function render({
-  Dom,
-  id
-}) {
-  ReactDOM.render( /*#__PURE__*/React.createElement(Dom, null), document.getElementById(id));
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function react(_x) {
+  return _react.apply(this, arguments);
+}
+
+function _react() {
+  _react = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref) {
+    var Dom, id, DOM, ReactDOM;
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            Dom = _ref.Dom, id = _ref.id;
+            DOM = Dom;
+            _context.next = 4;
+            return import(
+            /* webpackChunkName: "_FCC_react-dom" */
+            'react-dom');
+
+          case 4:
+            ReactDOM = _context.sent;
+            ReactDOM.render(DOM, document.getElementById(id));
+
+          case 6:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _react.apply(this, arguments);
+}
+
+export default function _render(_ref2) {
+  var Dom = _ref2.Dom,
+      id = _ref2.id;
+  react({
+    Dom: Dom,
+    id: id
+  });
 }

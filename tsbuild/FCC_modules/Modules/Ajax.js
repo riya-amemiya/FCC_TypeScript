@@ -1,26 +1,16 @@
-function youtube(req) {
-    return `https://www.googleapis.com/youtube/v3/search?type=${req.type || 'video'}&part=${req.part || 'snippet'}&q=${req.q || 'music'}&maxResults=${req.maxResults || 6}&key=${req.key}&videoEmbeddable=${req.videoEmbeddable || 'true'}&videoSyndicated=${req.videoSyndicated || 'true'}`;
+function youtube({ type, part, q, maxResults, key, videoEmbeddable, videoSyndicated } = {}) {
+    return `https://www.googleapis.com/youtube/v3/search?type=${type || 'video'}&part=${part || 'snippet'}&q=${q || 'music'}&maxResults=${maxResults || 6}&key=${key}&videoEmbeddable=${videoEmbeddable || 'true'}&videoSyndicated=${videoSyndicated || 'true'}`;
 }
-function ajax_youtube(req) {
+function ajax({ url, callback }) {
     let xml = new XMLHttpRequest();
-    xml.open('GET', youtube(req.url));
+    xml.open('GET', url);
     xml.send();
     xml.onreadystatechange = () => {
         if (xml.readyState === 4 && xml.status === 200) {
             let data = JSON.parse(xml.response);
-            req.callback(data);
+            callback(data);
         }
     };
 }
-function ajax(req) {
-    let xml = new XMLHttpRequest();
-    xml.open('GET', req.url);
-    xml.send();
-    xml.onreadystatechange = () => {
-        if (xml.readyState === 4 && xml.status === 200) {
-            let data = JSON.parse(xml.response);
-            req.callback(data);
-        }
-    };
-}
-export { ajax, youtube, ajax_youtube };
+export { ajax, youtube };
+//# sourceMappingURL=Ajax.js.map

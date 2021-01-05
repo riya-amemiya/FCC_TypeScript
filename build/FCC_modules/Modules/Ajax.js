@@ -1,31 +1,30 @@
-function youtube(req) {
-  return `https://www.googleapis.com/youtube/v3/search?type=${req.type || 'video'}&part=${req.part || 'snippet'}&q=${req.q || 'music'}&maxResults=${req.maxResults || 6}&key=${req.key}&videoEmbeddable=${req.videoEmbeddable || 'true'}&videoSyndicated=${req.videoSyndicated || 'true'}`;
+function youtube() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      type = _ref.type,
+      part = _ref.part,
+      q = _ref.q,
+      maxResults = _ref.maxResults,
+      key = _ref.key,
+      videoEmbeddable = _ref.videoEmbeddable,
+      videoSyndicated = _ref.videoSyndicated;
+
+  return "https://www.googleapis.com/youtube/v3/search?type=".concat(type || 'video', "&part=").concat(part || 'snippet', "&q=").concat(q || 'music', "&maxResults=").concat(maxResults || 6, "&key=").concat(key, "&videoEmbeddable=").concat(videoEmbeddable || 'true', "&videoSyndicated=").concat(videoSyndicated || 'true');
 }
 
-function ajax_youtube(req) {
-  let xml = new XMLHttpRequest();
-  xml.open('GET', youtube(req.url));
+function ajax(_ref2) {
+  var url = _ref2.url,
+      callback = _ref2.callback;
+  var xml = new XMLHttpRequest();
+  xml.open('GET', url);
   xml.send();
 
-  xml.onreadystatechange = () => {
+  xml.onreadystatechange = function () {
     if (xml.readyState === 4 && xml.status === 200) {
-      let data = JSON.parse(xml.response);
-      req.callback(data);
+      var _data = JSON.parse(xml.response);
+
+      callback(_data);
     }
   };
 }
 
-function ajax(req) {
-  let xml = new XMLHttpRequest();
-  xml.open('GET', req.url);
-  xml.send();
-
-  xml.onreadystatechange = () => {
-    if (xml.readyState === 4 && xml.status === 200) {
-      let data = JSON.parse(xml.response);
-      req.callback(data);
-    }
-  };
-}
-
-export { ajax, youtube, ajax_youtube };
+export { ajax, youtube };

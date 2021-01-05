@@ -1,1 +1,1 @@
-export default function wait(callBack: () => void): void;
+export default function wait(callBack: () => any): void;

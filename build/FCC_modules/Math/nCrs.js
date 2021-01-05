@@ -1,19 +1,17 @@
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 import nCr from './nCr';
-import error_language from '../Props/error_language';
-export default function nCrs({
-  n,
-  r
-}) {
-  if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
+export default function nCrs(_ref) {
+  var n = _ref.n,
+      r = _ref.r;
+
+  if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
     //重複を許して取り出す
     n = n + r - 1;
     n = nCr({
-      n,
-      r
+      n: n,
+      r: r
     });
     return n;
-  } else if (/ja|ja_JP/.test(error_language.get())) console.error('Number型を引数に指定してください');else if (/en|en-US/.test(error_language.get())) console.error('Please specify Number type as an argument');else console.log('言語コードが不正な値です');
-
-  console.log('ja_JPでerrorステータスを出力します');
-  console.error('Number型を引数に指定してください');
+  } else console.error('Number型を引数に指定してください');
 }

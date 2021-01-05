@@ -1,7 +1,11 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 
-export default function render({ Dom, id }: { Dom: () => JSX.Element; id: string; }): void
+async function react({ Dom, id }: { Dom: JSX.Element; id: string; }): Promise<void>
 {
-    ReactDOM.render(<Dom />, document.getElementById(id));
+    const DOM = Dom
+    const ReactDOM = await import(/* webpackChunkName: "_FCC_react-dom" */'react-dom');
+    ReactDOM.render(DOM, document.getElementById(id));
+}
+export default function _render({ Dom, id }: { Dom: JSX.Element; id: string; }): void
+{
+    react({ Dom, id })
 }

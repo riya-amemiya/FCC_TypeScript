@@ -7,8 +7,8 @@ export default function Zeller({ y = 2000, m = 1, d = 1 }: { y?: number; m?: num
         y--;
         m += 12;
     }
-    let w: number= (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
-    let a:string;
+    let w: number = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
+    let a: string;
     if (w == 0)
     {
         if (error_language.haslanguage('en'))

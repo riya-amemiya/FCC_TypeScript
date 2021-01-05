@@ -1,12 +1,16 @@
-import error_language from '../Props/error_language';
-export default function nPr({
-  n = 1,
-  r = 1
-} = {}) {
-  if (typeof n === typeof r && typeof n === "number" && typeof r === "number") {
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+export default function nPr() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$n = _ref.n,
+      n = _ref$n === void 0 ? 1 : _ref$n,
+      _ref$r = _ref.r,
+      r = _ref$r === void 0 ? 1 : _ref$r;
+
+  if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
     //nPr
-    let y;
-    let x = 0;
+    var y;
+    var x = 0;
     y = n;
 
     while (x === 0) {
@@ -28,8 +32,5 @@ export default function nPr({
     }
 
     return y;
-  } else if (/ja|ja_JP/.test(error_language.get())) console.error('Number型を引数に指定してください');else if (/en|en-US/.test(error_language.get())) console.error('Please specify Number type as an argument');else console.log('言語コードが不正な値です');
-
-  console.log('ja_JPでerrorステータスを出力します');
-  console.error('Number型を引数に指定してください');
+  } else console.error('Number型を引数に指定してください');
 }

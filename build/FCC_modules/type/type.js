@@ -1,4 +1,4 @@
-const joke = {
+var joke = {
   Hello: 'Hello',
   World: 'World'
 };

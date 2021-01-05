@@ -1,21 +1,14 @@
-import { error_language_type } from "../type/type";
-const error_language: error_language_type = {
+const error_language = {
     text: 'ja',
-    get(): 'ja' | 'ja_JP' | 'en' | 'en-US'
+    get()
     {
         return this.text;
     },
-    set(error_language: string): void
+    set(error_language: string)
     {
-        if (/^ja$|^ja_JP$/.test(error_language) || /^en$|^en-US$/.test(error_language))
-        {
-            this.text = error_language;
-        } else
-        {
-            console.error("サポートされていない文字コードです\nIt is an unsupported character code")
-        }
+        this.text = error_language;
     },
-    haslanguage(haslanguage: string): boolean
+    haslanguage(haslanguage: string)
     {
         if (~this.text.indexOf(haslanguage))
             return true;

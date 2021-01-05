@@ -1,25 +1,30 @@
-export default function Gcd({
-  f = 1,
-  x = 1
-} = {}) {
-  if (typeof f === typeof x && typeof f === "number" && typeof x === "number") {
-    //最大公約数
-    let r, tmp;
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-    if (f < x) {
-      tmp = f;
-      f = x;
+export default function Gcd() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$x = _ref.x,
+      x = _ref$x === void 0 ? 1 : _ref$x,
+      _ref$y = _ref.y,
+      y = _ref$y === void 0 ? 1 : _ref$y;
+
+  if (_typeof(y) === _typeof(x) && typeof y === "number" && typeof x === "number") {
+    //最大公約数
+    var r, tmp;
+
+    if (y < x) {
+      tmp = y;
+      y = x;
       x = tmp;
     }
     /* ユークリッドの互除法 */
 
 
-    r = f % x;
+    r = y % x;
 
     while (r !== 0) {
-      f = x;
+      y = x;
       x = r;
-      r = f % x;
+      r = y % x;
     }
 
     return x;

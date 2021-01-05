@@ -197,13 +197,13 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/modules/html.ts": {
-        "version": "f74154e0ba9569388d6be75fb97e70e679f3b9fa7add22d183e7c23724cb46e4",
-        "signature": "2ace81257550785e9ae3fbb4071199599b8bcac5ae0fcff643487a8ad833aa7f",
+        "version": "757872a0539d5601d6db4abcbd9f518ce22f8fd9ca7e384df896665e8d60d8c9",
+        "signature": "86d1d448df2ac43c8586fdf36701215224b4e026cfc48c5c167655fb62aa5b51",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/modules/ajax.ts": {
-        "version": "d872299422b02b5957121969d1b38226c1a41532ae10c6198db58361ee563e52",
-        "signature": "cf0fc57b33b4b1650ecadc159a64adedb68ba8292d0e731614ca1b5ebaee94e6",
+        "version": "eb550823f9605922501c425afe333a70dc01a353e4deeec8233f63243a856ede",
+        "signature": "1a75844022d210456fff1ff1256d616cdb8e7b3a063e0244b57f942401a11913",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/react/global.d.ts": {
@@ -227,38 +227,13 @@
         "affectsGlobalScope": true
       },
       "../src/fcc_modules/modules/helloworld.tsx": {
-        "version": "8c79134426779d7b732b04f1f6d38bdde8141436011bca379265d9e64a5dfb40",
-        "signature": "2a1970cc71bb052110cb3ae05d362c36fee1fc2b128574a7400e53b166162dc3",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": {
-        "version": "68542e09d57ac25d94df9c08988618a964e6f16bd3faa545a1cc3de33a533b2b",
-        "signature": "f8ba94a56d812556253f34aadba58be63b5a3bd79c5ecb5facd8103741e5d0a2",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/components/components.ts": {
-        "version": "b665da16660f776d2d04f4ea3ed2e0f78ce5ddb9a94e5c9ee4a33f938e0df229",
-        "signature": "4bb896fe5411d0f3f954bbb7f49718346b961a18ec3d095bc5f7ae0ddc81b198",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/math/gcd.ts": {
-        "version": "600a6fff73c7f5c711fb8e4f14579418d24bd0d064f6e3bc6d9b8dec86099203",
-        "signature": "595527d9468c90b23f2644816b2afe8ba8ccae3abbbaceb7af020f985b73d19a",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/math/k.ts": {
-        "version": "d519026b5fc12020b1b5993de2f10567e3539c203e698323377dd4aad4a5e10e",
-        "signature": "f84a529dd36631bbb71badf5d9829605a066dcab3feeda3a3aa419e15efe4506",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/type/type.ts": {
-        "version": "8a3e5931619e95b1c47532bc3e9695bc6784f5a226d55ca20b4ab6a4fb0c8d2a",
-        "signature": "6dea26ba44da124c430852f1138717ebe87c96648673afaed612148dae2f95fe",
+        "version": "0a3a73bc1343cd2fbcb1c62735de2a19889af5194f97e8e6de90efdac36098b4",
+        "signature": "d8fae6210cd32c20bab3971e675a5ce446fa76adf544bb30f798e72040ff5579",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/error_language.ts": {
-        "version": "985c605ea23ef77db97a9a6dbc85c4d22f5db1361ff403fe0c4a177a3c22ab55",
-        "signature": "45340003d92442631465d5eaa2e481579534300dc0bea0c7bb52e8908b257e5d",
+        "version": "1d4593fe2c1a2784fe1180fa9bebd4409712b3431b9bd61c2c6d81104ec9688f",
+        "signature": "e3079de1a217800b09bb0f5b4f3f18ef6d54a6c75eb8764cf6f222a0c293bcdc",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncr.ts": {
@@ -267,12 +242,12 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncrs.ts": {
-        "version": "94aa45c6a06a36eb089fe772967eab86c1e5b6ae72f7d4a1f7939d348a971a5b",
+        "version": "44dd18c7073e899e770ead2b48aba3c653bb7505909ae693e4b6cb0d4bf59352",
         "signature": "0f3e43ee6fa1936e0b3327188bdb39dfc6b11447c78ed27788c57a79f52a5b46",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/npr.ts": {
-        "version": "b5f0e5eeb56510212d4008f3dc166817c407b39db81691d8d1deeed01657432b",
+        "version": "3f0cb093d450ce8a64e672b85190f0bba4ef91f7ded19ffe4936eee0484e3686",
         "signature": "a2bae56e66963f3c0d9dcb20a3b84da3b6dcf7272a4f5d69ad0132a7cf872b4b",
         "affectsGlobalScope": false
       },
@@ -286,24 +261,39 @@
         "signature": "8b25ce54842ba555f7d72ce3694e6b698cb428cf9d45efdf348646093b52d528",
         "affectsGlobalScope": false
       },
-      "../src/fcc_modules/math/repetition.ts": {
-        "version": "857db38c315cccecb108f70132dbc75cc4b9148838539eac1cbc887a277782c4",
-        "signature": "b2f39910325939f284b4862195bce5b8b5f1d47024600f616904717b34222ec4",
+      "../src/fcc_modules/props/calclass.ts": {
+        "version": "231cf05a85875457bd2115e158525288a41fb4df82e4116d32bb880880defeb6",
+        "signature": "5b5dd0760a085101bc43245488053bed759b956334aab455518af20353da7f86",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/type/type.ts": {
+        "version": "5a1641d073db75cc83a6ea31a6373ef9ec8632a7a66112319c5d439b423d27d2",
+        "signature": "2ea18b903ad4d0aaf0c0ca6c79e587fc131eba4b7e0861aa32774d3313557d7f",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/gcd.ts": {
+        "version": "a421e59d6bbf340c648ecb8d5872a2f3084646b852453c61b9a8551ff086e59b",
+        "signature": "25e68900c02ccb4748c951ec44e938b43ae0593088c03e18ade1bb5c7bb5e516",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/k.ts": {
+        "version": "d519026b5fc12020b1b5993de2f10567e3539c203e698323377dd4aad4a5e10e",
+        "signature": "f84a529dd36631bbb71badf5d9829605a066dcab3feeda3a3aa419e15efe4506",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/props/sleep.ts": {
+        "version": "d8ec42af57f108f1b8c8b883916276603ebae8dc2a22cefefbe0c09e073073c3",
+        "signature": "05619ab53450cb4005fec5fad65f034f17c5373ef00d50cfd4b8d42f3eaebd44",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/zeller.ts": {
-        "version": "ed2f8cfeda905ad5e5873ed371825bb352c15647b3953b250f9c51cde22ea7df",
+        "version": "4cf00c35ac7c79566fba7aade499e5d2964a71d67ff63c066e7afe0b32296474",
         "signature": "82280d3fea780829ef39d6d1228a1042dd1dd5adb12a4bd934ecf9a64bc057ec",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/zero.ts": {
-        "version": "24f4fe2c5ee657f9c0546a969e979f53f2531fb0ca0fce058fc5aafaf68490d4",
-        "signature": "0f6859e6c441f77ad61bacae9f65bd6d71920147f4c5c0d7bb9d9679b727c158",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/props/calclass.ts": {
-        "version": "231cf05a85875457bd2115e158525288a41fb4df82e4116d32bb880880defeb6",
-        "signature": "5b5dd0760a085101bc43245488053bed759b956334aab455518af20353da7f86",
+        "version": "e8d299a9bda5b5b5e2e3ba6b6c92450f3351e484eb91da2e54bc87d026bffcbe",
+        "signature": "dd1f28653cc13aabd88571dc80beac452b54dff5da7bf2c4610f6196d494944d",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/birthday.ts": {
@@ -312,8 +302,8 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/wait.ts": {
-        "version": "3790150a4bfa9a12ec367eb3cba08e2d616e83378348f544c8e310e7cd0e1967",
-        "signature": "4c87c64ee3334ccf6f4a6a9e41f11225688214171b8bfdea968beedfef52557b",
+        "version": "e23f413336a4de881eb86a68870434232bfce6faa077dc9d7e785ae0004a4a96",
+        "signature": "f18ce1e9e917a3c494959708786ae115ba13631d651015e7ebd0e02e37c6f525",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/react-dom/index.d.ts": {
@@ -322,23 +312,13 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/render.tsx": {
-        "version": "4451598601d2972b88b65c1ad8e8e7e7536faba0263dae4d1d627e36267df0ea",
-        "signature": "f8505e456372456eaf5f9a122d113833dddddc38af29eabcc0641cb18e6d66de",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/props/headuppercase.ts": {
-        "version": "f65b48c2d485b160b0b1bc8ba63d503c5d3560d928fd2514cecb5d6d3890e35c",
-        "signature": "832a3f95dfec9518f4cda7a644463a2c827f216ec54d3707a25280bebba20cc7",
-        "affectsGlobalScope": false
-      },
-      "../src/fcc_modules/props/hash.ts": {
-        "version": "af0b2cc75c4f95b19a08c2df68bbae24048d5ca6b798acafc5cff6141f091c5a",
-        "signature": "b8536239010146ecaf17d34cd865caa2274783b541b47e31ff1b02ffb38f8374",
+        "version": "ea4d5922a6a46400905eedc32f8576e02b1278cbae2a6a67b8b1f82a2a05c97e",
+        "signature": "fe32df19e8fe9232bcae0dc409292b68dfa179b65b43f48d891fb14b71994879",
         "affectsGlobalScope": false
       },
       "../src/fcc_export.ts": {
-        "version": "d0392cf3a321e58b0f2e891c743072ab76082142fcc26b7198dff17d057f72a8",
-        "signature": "f61c647233c2c284638996aff48c59718389fa901a805c031a7d813f506327a0",
+        "version": "54aa526de50793301db08a6f05d94890db157925f1c83423e50dd4c81a9fb62c",
+        "signature": "acf43167626ea57d96c2ff5153f01d342f165d7c63070cf85236ff1daaf699bf",
         "affectsGlobalScope": false
       },
       "../src/fcc.ts": {
@@ -919,7 +899,7 @@
     },
     "options": {
       "outDir": "./",
-      "sourceMap": false,
+      "sourceMap": true,
       "target": 4,
       "module": 99,
       "jsx": 2,
@@ -1242,7 +1222,6 @@
         "../src/fcc_export.ts"
       ],
       "../src/fcc_export.ts": [
-        "../src/fcc_modules/components/components.ts",
         "../src/fcc_modules/math/gcd.ts",
         "../src/fcc_modules/math/k.ts",
         "../src/fcc_modules/math/ncr.ts",
@@ -1250,7 +1229,6 @@
         "../src/fcc_modules/math/npr.ts",
         "../src/fcc_modules/math/pow.ts",
         "../src/fcc_modules/math/random.ts",
-        "../src/fcc_modules/math/repetition.ts",
         "../src/fcc_modules/modules/ajax.ts",
         "../src/fcc_modules/modules/helloworld.tsx",
         "../src/fcc_modules/modules/html.ts",
@@ -1258,29 +1236,18 @@
         "../src/fcc_modules/props/birthday.ts",
         "../src/fcc_modules/props/calclass.ts",
         "../src/fcc_modules/props/error_language.ts",
-        "../src/fcc_modules/props/hash.ts",
-        "../src/fcc_modules/props/headuppercase.ts",
         "../src/fcc_modules/props/render.tsx",
+        "../src/fcc_modules/props/sleep.ts",
         "../src/fcc_modules/props/wait.ts",
         "../src/fcc_modules/props/zeller.ts",
         "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
       ],
-      "../src/fcc_modules/components/components.ts": [
-        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
-      ],
-      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": [
-        "../node_modules/@types/react/index.d.ts"
-      ],
       "../src/fcc_modules/math/ncr.ts": [
         "../src/fcc_modules/props/error_language.ts"
       ],
       "../src/fcc_modules/math/ncrs.ts": [
-        "../src/fcc_modules/math/ncr.ts",
-        "../src/fcc_modules/props/error_language.ts"
-      ],
-      "../src/fcc_modules/math/npr.ts": [
-        "../src/fcc_modules/props/error_language.ts"
+        "../src/fcc_modules/math/ncr.ts"
       ],
       "../src/fcc_modules/modules/helloworld.tsx": [
         "../node_modules/@types/react/index.d.ts"
@@ -1288,12 +1255,8 @@
       "../src/fcc_modules/props/birthday.ts": [
         "../src/fcc_modules/type/type.ts"
       ],
-      "../src/fcc_modules/props/error_language.ts": [
-        "../src/fcc_modules/type/type.ts"
-      ],
       "../src/fcc_modules/props/render.tsx": [
-        "../node_modules/@types/react-dom/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
+        "../node_modules/@types/react-dom/index.d.ts"
       ],
       "../src/fcc_modules/props/zeller.ts": [
         "../src/fcc_modules/props/error_language.ts"
@@ -1818,37 +1781,20 @@
         "../src/fcc_export.ts"
       ],
       "../src/fcc_export.ts": [
-        "../src/fcc_modules/components/components.ts",
-        "../src/fcc_modules/math/gcd.ts",
-        "../src/fcc_modules/math/k.ts",
         "../src/fcc_modules/math/ncr.ts",
         "../src/fcc_modules/math/ncrs.ts",
         "../src/fcc_modules/math/npr.ts",
         "../src/fcc_modules/math/pow.ts",
         "../src/fcc_modules/math/random.ts",
-        "../src/fcc_modules/math/repetition.ts",
         "../src/fcc_modules/modules/ajax.ts",
         "../src/fcc_modules/modules/helloworld.tsx",
         "../src/fcc_modules/modules/html.ts",
         "../src/fcc_modules/modules/math.ts",
-        "../src/fcc_modules/props/birthday.ts",
         "../src/fcc_modules/props/calclass.ts",
         "../src/fcc_modules/props/error_language.ts",
-        "../src/fcc_modules/props/hash.ts",
-        "../src/fcc_modules/props/headuppercase.ts",
-        "../src/fcc_modules/props/render.tsx",
-        "../src/fcc_modules/props/wait.ts",
-        "../src/fcc_modules/props/zeller.ts",
-        "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
-      ],
-      "../src/fcc_modules/components/components.ts": [
-        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
       ],
       "../src/fcc_modules/props/birthday.ts": [
-        "../src/fcc_modules/type/type.ts"
-      ],
-      "../src/fcc_modules/props/error_language.ts": [
         "../src/fcc_modules/type/type.ts"
       ],
       "../src/fcc_modules/props/zero.ts": [
@@ -2194,8 +2140,6 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/fcc.ts",
       "../src/fcc_export.ts",
-      "../src/fcc_modules/components/components.ts",
-      "../src/fcc_modules/components/modal/simple/modal_simple.tsx",
       "../src/fcc_modules/math/gcd.ts",
       "../src/fcc_modules/math/k.ts",
       "../src/fcc_modules/math/ncr.ts",
@@ -2203,7 +2147,6 @@
       "../src/fcc_modules/math/npr.ts",
       "../src/fcc_modules/math/pow.ts",
       "../src/fcc_modules/math/random.ts",
-      "../src/fcc_modules/math/repetition.ts",
       "../src/fcc_modules/modules/ajax.ts",
       "../src/fcc_modules/modules/helloworld.tsx",
       "../src/fcc_modules/modules/html.ts",
@@ -2211,9 +2154,8 @@
       "../src/fcc_modules/props/birthday.ts",
       "../src/fcc_modules/props/calclass.ts",
       "../src/fcc_modules/props/error_language.ts",
-      "../src/fcc_modules/props/hash.ts",
-      "../src/fcc_modules/props/headuppercase.ts",
       "../src/fcc_modules/props/render.tsx",
+      "../src/fcc_modules/props/sleep.ts",
       "../src/fcc_modules/props/wait.ts",
       "../src/fcc_modules/props/zeller.ts",
       "../src/fcc_modules/props/zero.ts",

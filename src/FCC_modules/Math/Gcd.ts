@@ -1,23 +1,23 @@
 
-export default function Gcd({ f = 1, x = 1 }: { f?: number; x?: number; } = {}): number
+export default function Gcd({ x = 1, y = 1 }: { x?: number; y?: number; } = {}): number
 {
-    if (typeof (f) === typeof (x) && typeof (f) === "number" && typeof (x) === "number")
+    if (typeof (y) === typeof (x) && typeof (y) === "number" && typeof (x) === "number")
     {
         //最大公約数
         let r: number, tmp: number;
-        if (f < x)
+        if (y < x)
         {
-            tmp = f;
-            f = x;
+            tmp = y;
+            y = x;
             x = tmp;
         }
         /* ユークリッドの互除法 */
-        r = f % x;
+        r = y % x;
         while (r !== 0)
         {
-            f = x;
+            y = x;
             x = r;
-            r = f % x;
+            r = y % x;
         }
         return x;
     }

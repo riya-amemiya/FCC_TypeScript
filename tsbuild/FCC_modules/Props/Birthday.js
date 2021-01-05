@@ -6,3 +6,4 @@ export default function birthday({ yer, mon, day }) {
     const show = (now < yb) ? y - 1 : y;
     return show;
 }
+//# sourceMappingURL=birthday.js.map
