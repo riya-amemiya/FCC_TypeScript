@@ -11,7 +11,7 @@
     "alwaysStrict": true,
     "removeComments": true,
     "declaration": true,
-    "declarationMap": false,
+    "declarationMap": true,
     "incremental": true,
     "strictBindCallApply": true,
     "moduleResolution": "node",
