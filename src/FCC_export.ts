@@ -67,7 +67,7 @@ async function Zeller({ y = 2000, m = 1, d = 1, callback }: { y: number; m: numb
 }
 async function zero(num: type.int | string): Promise<boolean>
 {
-    const _zero = await import(/* webpackChunkName: "_FCC_zero" */'./FCC_modules/Props/Zero')
+    const _zero = await import(/* webpackChunkName: "_FCC_Zero" */'./FCC_modules/Props/Zero')
     return _zero.default(num)
 }
 async function birthday(yer: number, mon: number, day: number): Promise<number>

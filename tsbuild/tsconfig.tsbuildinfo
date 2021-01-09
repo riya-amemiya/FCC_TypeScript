@@ -317,7 +317,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_export.ts": {
-        "version": "d912cfdb571c08cbe142cb0e8fdf939c3e16ab30f66c4dd7ba517fd7662b9410",
+        "version": "db1ea32c4b3bbe98e34f16c217fc42288e38cee9a3b29d1c8c66c8f87d958816",
         "signature": "7746afaa05cf0fe7ff16f73ef627d0ac31eb8d35dd0b5b0e7078d23a39c03737",
         "affectsGlobalScope": false
       },

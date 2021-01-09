@@ -9,10 +9,13 @@
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && webpack-dev-server --mode development --open",
-        "build": "babel src --extensions '.ts,.tsx' --out-dir build",
+        "build": "babel src --extensions '.ts,.tsx' --out-dir build && npm run typescript && find ./tsbuild -name '*.d.ts' -print0 | cpio -pd0 /Users/yuta/Desktop/programming/Typescript/@type/FCC_Typescript/src",
         "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w",
         "typescript": "tsc --build tsconfig.json",
         "push": "npm version patch && npm publish ./"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "exclude": "/node_modules/",
     "keywords": [],
