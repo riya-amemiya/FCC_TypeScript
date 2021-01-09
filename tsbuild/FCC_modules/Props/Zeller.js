@@ -1,67 +1,64 @@
 import error_language from "./error_language";
 export default function Zeller({ y = 2000, m = 1, d = 1 } = {}) {
-    if (m < 3) {
-        y--;
-        m += 12;
+    switch ('日月火水木金土'[new Date(y, m - 1, d).getDay()]) {
+        case "日":
+            if (error_language.haslanguage("en")) {
+                return "Sunday";
+            }
+            else if (error_language.haslanguage("ja")) {
+                return "日曜日";
+            }
+            break;
+        case "月":
+            if (error_language.haslanguage('en')) {
+                return "Manday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "月曜日";
+            }
+            break;
+        case "火":
+            if (error_language.haslanguage('en')) {
+                return "Tuesday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "火曜日";
+            }
+            break;
+        case "水":
+            if (error_language.haslanguage('en')) {
+                return "Wedneday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "水曜日";
+            }
+            break;
+        case "木":
+            if (error_language.haslanguage('en')) {
+                return "Thursday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "木曜日";
+            }
+            break;
+        case "金":
+            if (error_language.haslanguage('en')) {
+                return "Friday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "金曜日";
+            }
+            break;
+        case "土":
+            if (error_language.haslanguage('en')) {
+                return "Saturday";
+            }
+            else if (error_language.haslanguage('ja')) {
+                return "土曜日";
+            }
+            break;
+        default:
+            break;
     }
-    let w = (y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) + Math.floor((13 * m + 8) / 5) + d) % 7;
-    let a;
-    if (w == 0) {
-        if (error_language.haslanguage('en')) {
-            a = "Sunday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "日曜日";
-        }
-    }
-    else if (w == 1) {
-        if (error_language.haslanguage('en')) {
-            a = "Manday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "月曜日";
-        }
-    }
-    else if (w == 2) {
-        if (error_language.haslanguage('en')) {
-            a = "Tuesday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "火曜日";
-        }
-    }
-    else if (w == 3) {
-        if (error_language.haslanguage('en')) {
-            a = "Wedneday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "水曜日";
-        }
-    }
-    else if (w == 4) {
-        if (error_language.haslanguage('en')) {
-            a = "Thursday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "木曜日";
-        }
-    }
-    else if (w == 5) {
-        if (error_language.haslanguage('en')) {
-            a = "Friday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "金曜日";
-        }
-    }
-    else {
-        if (error_language.haslanguage('en')) {
-            a = "Saturday";
-        }
-        else if (error_language.haslanguage('ja')) {
-            a = "土曜日";
-        }
-    }
-    return a;
 }
 //# sourceMappingURL=Zeller.js.map

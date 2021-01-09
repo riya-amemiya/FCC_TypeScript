@@ -287,7 +287,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/zeller.ts": {
-        "version": "4cf00c35ac7c79566fba7aade499e5d2964a71d67ff63c066e7afe0b32296474",
+        "version": "53cac1c4559754c4866be8dc932659fb14844fe993fad46bf8b4fa5628cbe96d",
         "signature": "82280d3fea780829ef39d6d1228a1042dd1dd5adb12a4bd934ecf9a64bc057ec",
         "affectsGlobalScope": false
       },
@@ -324,6 +324,31 @@
       "../src/fcc.ts": {
         "version": "7bf59c0a183cfe4bcef5d7cb9e1ade7341a41f8e4a394522754feba2df0946c7",
         "signature": "e0e67cae2975a5682fd53c4212032ea2d86526212a1df5d6f8d876a79c29ac67",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/pow 2.ts": {
+        "version": "78afa455d80368d6b2da70d208c9bcf769c627fa57885d1ad8aa0b770f0dc210",
+        "signature": "899d6476e2bfbce5ede0992a5252bfb4b1726a93d49b63cd1949ae0ec577069f",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/repetition.ts": {
+        "version": "857db38c315cccecb108f70132dbc75cc4b9148838539eac1cbc887a277782c4",
+        "signature": "b2f39910325939f284b4862195bce5b8b5f1d47024600f616904717b34222ec4",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/props/headuppercase.ts": {
+        "version": "f65b48c2d485b160b0b1bc8ba63d503c5d3560d928fd2514cecb5d6d3890e35c",
+        "signature": "832a3f95dfec9518f4cda7a644463a2c827f216ec54d3707a25280bebba20cc7",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": {
+        "version": "68542e09d57ac25d94df9c08988618a964e6f16bd3faa545a1cc3de33a533b2b",
+        "signature": "f8ba94a56d812556253f34aadba58be63b5a3bd79c5ecb5facd8103741e5d0a2",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/components/components.ts": {
+        "version": "b665da16660f776d2d04f4ea3ed2e0f78ce5ddb9a94e5c9ee4a33f938e0df229",
+        "signature": "4bb896fe5411d0f3f954bbb7f49718346b961a18ec3d095bc5f7ae0ddc81b198",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -1243,6 +1268,12 @@
         "../src/fcc_modules/props/zero.ts",
         "../src/fcc_modules/type/type.ts"
       ],
+      "../src/fcc_modules/components/components.ts": [
+        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
+      ],
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
       "../src/fcc_modules/math/ncr.ts": [
         "../src/fcc_modules/props/error_language.ts"
       ],
@@ -1794,6 +1825,9 @@
         "../src/fcc_modules/props/error_language.ts",
         "../src/fcc_modules/type/type.ts"
       ],
+      "../src/fcc_modules/components/components.ts": [
+        "../src/fcc_modules/components/modal/simple/modal_simple.tsx"
+      ],
       "../src/fcc_modules/props/birthday.ts": [
         "../src/fcc_modules/type/type.ts"
       ],
@@ -2140,13 +2174,17 @@
       "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "../src/fcc.ts",
       "../src/fcc_export.ts",
+      "../src/fcc_modules/components/components.ts",
+      "../src/fcc_modules/components/modal/simple/modal_simple.tsx",
       "../src/fcc_modules/math/gcd.ts",
       "../src/fcc_modules/math/k.ts",
       "../src/fcc_modules/math/ncr.ts",
       "../src/fcc_modules/math/ncrs.ts",
       "../src/fcc_modules/math/npr.ts",
+      "../src/fcc_modules/math/pow 2.ts",
       "../src/fcc_modules/math/pow.ts",
       "../src/fcc_modules/math/random.ts",
+      "../src/fcc_modules/math/repetition.ts",
       "../src/fcc_modules/modules/ajax.ts",
       "../src/fcc_modules/modules/helloworld.tsx",
       "../src/fcc_modules/modules/html.ts",
@@ -2154,6 +2192,7 @@
       "../src/fcc_modules/props/birthday.ts",
       "../src/fcc_modules/props/calclass.ts",
       "../src/fcc_modules/props/error_language.ts",
+      "../src/fcc_modules/props/headuppercase.ts",
       "../src/fcc_modules/props/render.tsx",
       "../src/fcc_modules/props/sleep.ts",
       "../src/fcc_modules/props/wait.ts",

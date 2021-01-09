@@ -16,11 +16,31 @@ async function k(num: number): Promise<number>
     const _k = await import(/* webpackChunkName: "_FCC_k" */'./FCC_modules/Math/k')
     return _k.default(num)
 }
-import nCr from './FCC_modules/Math/nCr';
-import nCrs from './FCC_modules/Math/nCrs';
-import nPr from './FCC_modules/Math/nPr';
-import Pow from './FCC_modules/Math/Pow';
-import Random from './FCC_modules/Math/Random';
+async function nCr({ n = 1, r = 1 }: { n?: number; r?: number } = {}): Promise<number>
+{
+    const _nCr = await import(/* webpackChunkName: "_FCC_nCr" */'./FCC_modules/Math/nCr')
+    return _nCr.default({ n, r })
+}
+async function nCrs({ n = 1, r = 1 }: { n?: number; r?: number } = {}): Promise<number>
+{
+    const _nCrs = await import(/* webpackChunkName: "_FCC_nCrs" */ './FCC_modules/Math/nCrs')
+    return _nCrs.default({ n, r })
+}
+async function nPr({ n = 1, r = 1 }: { n?: number; r?: number } = {}): Promise<number>
+{
+    const _nPr = await import(/* webpackChunkName: "_FCC_nPr" */'./FCC_modules/Math/nPr')
+    return _nPr.default({ n, r })
+}
+async function Pow({ num = 1, n = 1 }: { num?: number; n?: number } = {}): Promise<number>
+{
+    const _Pow = await import(/* webpackChunkName: "_FCC_Pow" */'./FCC_modules/Math/Pow')
+    return _Pow.default({ num, n })
+}
+async function Random(num: number = 1): Promise<number>
+{
+    const _Random = await import(/* webpackChunkName: "_FCC_Random" */'./FCC_modules/Math/Random')
+    return _Random.default(num)
+}
 
 //Props
 import error_language from './FCC_modules/Props/error_language';
@@ -47,7 +67,7 @@ async function Zeller({ y = 2000, m = 1, d = 1, callback }: { y: number; m: numb
 }
 async function zero(num: type.int | string): Promise<boolean>
 {
-    const _zero = await import(/* webpackChunkName: "_FCC_zero" */'./FCC_modules/Props/zero')
+    const _zero = await import(/* webpackChunkName: "_FCC_zero" */'./FCC_modules/Props/Zero')
     return _zero.default(num)
 }
 async function birthday(yer: number, mon: number, day: number): Promise<number>
