@@ -4,3 +4,4 @@ export default function birthday({ yer, mon, day }: {
     mon: int;
     day: int;
 }): int;
+//# sourceMappingURL=birthday.d.ts.map

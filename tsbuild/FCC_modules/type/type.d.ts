@@ -5,3 +5,4 @@ interface joketype {
 }
 declare const joke: joketype;
 export { int, joke, joketype };
+//# sourceMappingURL=type.d.ts.map

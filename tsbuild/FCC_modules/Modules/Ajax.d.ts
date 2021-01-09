@@ -12,3 +12,4 @@ declare function ajax({ url, callback }: {
     callback: (data: any) => void;
 }): void;
 export { ajax, youtube };
+//# sourceMappingURL=Ajax.d.ts.map

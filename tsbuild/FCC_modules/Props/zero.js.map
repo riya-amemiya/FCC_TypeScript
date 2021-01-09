@@ -1,1 +1,1 @@
-{"version":3,"file":"zero.js","sourceRoot":"","sources":["../../../src/FCC_modules/Props/zero.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,OAAO,UAAU,IAAI,CAAC,GAAiB;IAE1C,IAAI,GAAG,KAAK,CAAC;QACT,OAAO,IAAI,CAAC;;QAGZ,OAAO,KAAK,CAAC;AACrB,CAAC"}
+{"version":3,"file":"Zero.js","sourceRoot":"","sources":["../../../src/FCC_modules/Props/Zero.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,OAAO,UAAU,OAAO,CAAC,GAAiB;IAE7C,IAAI,GAAG,KAAK,CAAC;QACT,OAAO,IAAI,CAAC;;QAGZ,OAAO,KAAK,CAAC;AACrB,CAAC"}

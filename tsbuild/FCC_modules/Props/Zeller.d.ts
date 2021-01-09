@@ -3,3 +3,4 @@ export default function Zeller({ y, m, d }?: {
     m?: number;
     d?: number;
 }): string;
+//# sourceMappingURL=Zeller.d.ts.map

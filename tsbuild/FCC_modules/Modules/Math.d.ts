@@ -26,3 +26,4 @@ declare class maths {
 }
 declare const Maths: maths;
 export { Maths };
+//# sourceMappingURL=Math.d.ts.map

@@ -10,11 +10,26 @@ async function k(num) {
     const _k = await import('./FCC_modules/Math/k');
     return _k.default(num);
 }
-import nCr from './FCC_modules/Math/nCr';
-import nCrs from './FCC_modules/Math/nCrs';
-import nPr from './FCC_modules/Math/nPr';
-import Pow from './FCC_modules/Math/Pow';
-import Random from './FCC_modules/Math/Random';
+async function nCr({ n = 1, r = 1 } = {}) {
+    const _nCr = await import('./FCC_modules/Math/nCr');
+    return _nCr.default({ n, r });
+}
+async function nCrs({ n = 1, r = 1 } = {}) {
+    const _nCrs = await import('./FCC_modules/Math/nCrs');
+    return _nCrs.default({ n, r });
+}
+async function nPr({ n = 1, r = 1 } = {}) {
+    const _nPr = await import('./FCC_modules/Math/nPr');
+    return _nPr.default({ n, r });
+}
+async function Pow({ num = 1, n = 1 } = {}) {
+    const _Pow = await import('./FCC_modules/Math/Pow');
+    return _Pow.default({ num, n });
+}
+async function Random(num = 1) {
+    const _Random = await import('./FCC_modules/Math/Random');
+    return _Random.default(num);
+}
 import error_language from './FCC_modules/Props/error_language';
 import cal from './FCC_modules/Props/calClass';
 async function _sleep(ms) {
@@ -34,7 +49,7 @@ async function Zeller({ y = 2000, m = 1, d = 1, callback }) {
     return callback(text);
 }
 async function zero(num) {
-    const _zero = await import('./FCC_modules/Props/zero');
+    const _zero = await import('./FCC_modules/Props/Zero');
     return _zero.default(num);
 }
 async function birthday(yer, mon, day) {

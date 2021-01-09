@@ -9,3 +9,4 @@ declare class HTML {
 }
 declare const Html: HTML;
 export { Html };
+//# sourceMappingURL=HTML.d.ts.map

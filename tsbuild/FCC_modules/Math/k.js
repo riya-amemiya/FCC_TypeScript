@@ -1,4 +1,4 @@
-export default function k(num) {
+export default function K(num) {
     Number(num);
     num += 273;
     return num;

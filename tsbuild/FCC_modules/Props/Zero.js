@@ -1,7 +1,7 @@
-export default function zero(num) {
+export default function HasZero(num) {
     if (num === 0)
         return true;
     else
         return false;
 }
-//# sourceMappingURL=zero.js.map
+//# sourceMappingURL=Zero.js.map

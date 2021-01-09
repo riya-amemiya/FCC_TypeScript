@@ -7,3 +7,4 @@ declare class calClass {
 }
 declare const cal: calClass;
 export default cal;
+//# sourceMappingURL=calClass.d.ts.map
