@@ -9,7 +9,7 @@
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && webpack-dev-server --mode development --open",
-        "build": "babel src --extensions '.ts,.tsx' --out-dir build && npm run typescript && find ./tsbuild -name '*.d.ts' -print0 | cpio -pd0 /Users/yuta/Desktop/programming/Typescript/@type/FCC_Typescript/src",
+        "build": "babel src --extensions '.ts,.tsx' --out-dir build && npm run typescript && find ./tsbuild -name '*.d.ts' -print0 | cpio -pd0 ./build/@type",
         "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w",
         "typescript": "tsc --build tsconfig.json",
         "push": "npm version patch && npm publish ./"
@@ -61,5 +61,6 @@
         "@babel/runtime": "^7.12.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
-    }
+    },
+    "typings": "./build/@type/tsbuild"
 }
