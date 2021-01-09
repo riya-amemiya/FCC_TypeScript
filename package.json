@@ -12,7 +12,7 @@
         "build": "babel src --extensions '.ts,.tsx' --out-dir build",
         "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w",
         "typescript": "tsc --build tsconfig.json",
-        "push": "git add . && git commit -m {1} && git push origin main"
+        "push": "git add . && git commit -m {1} && git push origin main  && npm version patch && npm publish ./"
     },
     "exclude": "/node_modules/",
     "keywords": [],
