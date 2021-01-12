@@ -13,7 +13,7 @@ module.exports = {
     // 環境によってはsrc/index.ts
     entry: {
         FCC: './build/FCC.js',
-        demo: './demo/js/index.js'
+        demo: './demo/js/index.tsx'
     },
 
     module: {
@@ -52,6 +52,9 @@ module.exports = {
                     plugins: ['@babel/plugin-transform-runtime'],
                 }
             }
+        }, {
+            test: [/\.ts$/, /\.tsx$/],
+            loader: ['babel-loader', 'ts-loader'],
         }]
     },
     plugins: [

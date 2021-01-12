@@ -1,22 +1,19 @@
-const error_language_Local = {
+const error_language = {
     text: 'ja',
-    get(): any
+    get()
     {
         return this.text;
     },
-    set(error_language: string): void
+    set(error_language: string)
     {
         this.text = error_language;
     },
-    haslanguage(haslanguage: string): boolean
+    haslanguage(haslanguage: string)
     {
         if (~this.text.indexOf(haslanguage))
             return true;
-
-
         else
             return false;
     }
 };
-const error_language = error_language_Local;
 export default error_language

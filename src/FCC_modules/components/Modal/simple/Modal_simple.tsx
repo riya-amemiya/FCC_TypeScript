@@ -1,6 +1,12 @@
 import * as React from 'react'
-
-export default (props): JSX.Element=>(
+interface Modal
+{
+    h2: string | JSX.Element;
+    text: string | JSX.Element;
+    text2: string | JSX.Element;
+    blake: () => any;
+}
+export default (props: Modal): JSX.Element => (
     <div className={`modal-simple`}>
         <div className="modal-inner">
             <div className="modal-header">
@@ -10,7 +16,7 @@ export default (props): JSX.Element=>(
                 <p>{props.text}</p>
                 <p>{props.text2}</p>
             </div>
-            <button className="modal-close-btn blake" onClick={(): void=> { props.blake() } }>とじる</button>
+            <button className="modal-close-btn blake" onClick={(): void => { props.blake() }}>とじる</button>
         </div>
     </div>
 )

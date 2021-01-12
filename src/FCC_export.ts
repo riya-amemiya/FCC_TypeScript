@@ -1,8 +1,7 @@
-
 //Modules
 import { Maths } from './FCC_modules/Modules/Math'
 import { Html } from './FCC_modules/Modules/HTML'
-import * as Ajax from './FCC_modules/Modules/Ajax'
+import * as Ajax from "./FCC_modules/Modules/Ajax";
 import HelloWorld from './FCC_modules/Modules/HelloWorld'
 
 //Math
