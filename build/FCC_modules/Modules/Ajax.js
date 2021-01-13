@@ -8,7 +8,7 @@ function youtube() {
       videoEmbeddable = _ref.videoEmbeddable,
       videoSyndicated = _ref.videoSyndicated;
 
-  return "https://www.googleapis.com/youtube/v3/search?type=".concat(type || 'video', "&part=").concat(part || 'snippet', "&q=").concat(q || 'music', "&maxResults=").concat(maxResults || 6, "&key=").concat(key, "&videoEmbeddable=").concat(videoEmbeddable || 'true', "&videoSyndicated=").concat(videoSyndicated || 'true');
+  return "https://www.googleapis.com/youtube/v3/search?type=".concat(type || "video", "&part=").concat(part || "snippet", "&q=").concat(q || "music", "&maxResults=").concat(maxResults || 6, "&key=").concat(key, "&videoEmbeddable=").concat(videoEmbeddable || "true", "&videoSyndicated=").concat(videoSyndicated || "true");
 }
 
 function ajax(_ref2) {

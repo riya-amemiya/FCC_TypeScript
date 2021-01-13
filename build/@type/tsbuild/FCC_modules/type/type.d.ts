@@ -1,8 +1,13 @@
+/// <reference types="react" />
 declare type int = number;
-interface joketype {
-    Hello: 'Hello';
-    World: 'World';
-}
-declare const joke: joketype;
-export { int, joke, joketype };
+declare type Props = {
+    onClick: (event: React.MouseEvent<HTMLInputElement>) => void;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onkeypress: (event: React.KeyboardEvent<HTMLInputElement>) => void;
+    onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
+    onFocus: (event: React.FocusEvent<HTMLInputElement>) => void;
+    onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+    onClickDiv: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+};
+export { int, Props };
 //# sourceMappingURL=type.d.ts.map

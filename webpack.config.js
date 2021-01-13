@@ -2,18 +2,19 @@ const path = require('path');
 const outputPath = path.resolve(__dirname, 'dist');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-module.exports = {
+const webpackConfig = {
     // 本番にデプロイするときはモード値を production に設定
     // development に設定すると元のファイルとの関連性がわかるソースマップと一緒に出力される
     mode: 'development',
     output: {
-        filename: '[name].js',
+        filename: 'js/[name].js',
         path: outputPath
     },
     // 環境によってはsrc/index.ts
     entry: {
-        FCC: './build/FCC.js',
-        demo: './demo/js/index.tsx'
+        index: './demo/ts/index.tsx',
+        props: './demo/ts/component/Props.tsx',
+        scss: "./demo/ts/scss.ts"
     },
 
     module: {
@@ -28,7 +29,8 @@ module.exports = {
         }, {
             test: /\.scss$/i,
             use: [{
-                    loader: 'style-loader',
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {}
                 },
                 {
                     loader: 'css-loader',
@@ -37,19 +39,19 @@ module.exports = {
                     loader: 'sass-loader',
                     options: {
                         sassOptions: {
-                            outputStyle: 'expanded',
-                        },
+                            outputStyle: 'compressed',
+                        }
                     },
                 },
             ]
         }, {
-            test: /\.js$/,
+            test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: {
                 loader: 'babel-loader', //loader名
                 options: { //Babelの設定
                     presets: ['@babel/preset-env'],
-                    plugins: ['@babel/plugin-transform-runtime'],
+                    plugins: ['@babel/plugin-transform-runtime', "babel-plugin-transform-react-jsx"],
                 }
             }
         }, {
@@ -60,22 +62,6 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: './[name].css'
-        }),
-        new HtmlWebpackPlugin({
-            title: 'My app',
-            chunks: [`index`, 'demo'],
-            originalHeader: 'original header title',
-            meta: [{
-                    viewport: 'width=device-width, initial-scale=1'
-                },
-                {
-                    'http-equiv': 'X-UA-Compatible',
-                    content: 'IE=edge'
-                }
-            ],
-            template: `./demo/html/index.html`,
-            filename: `index.html`,
-            hash: true
         })
     ],
     resolve: {
@@ -85,3 +71,25 @@ module.exports = {
         ],
     },
 };
+Object.keys(webpackConfig.entry).forEach((key) => {
+    if (key !== "scss") {
+        webpackConfig.plugins.push(
+            new HtmlWebpackPlugin({
+                meta: [{
+                        viewport: 'width=device-width, initial-scale=1'
+                    },
+                    {
+                        'http-equiv': 'X-UA-Compatible',
+                        content: 'IE=edge'
+                    }
+                ],
+                template: (key === 'index') ? './demo/html/index.html' : './demo/html/' + key + '.html', // Source
+                filename: (key === 'index') ? './index.html' : key + '.html', // Dist
+                inject: true,
+                hash: true,
+                chunks: [key, "scss"], // insert to the root of output folder
+            })
+        );
+    }
+})
+module.exports = webpackConfig

@@ -1,4 +1,4 @@
-var error_language = {
+var error_language_Local = {
   text: 'ja',
   get: function get() {
     return this.text;
@@ -10,4 +10,5 @@ var error_language = {
     if (~this.text.indexOf(_haslanguage)) return true;else return false;
   }
 };
+var error_language = error_language_Local;
 export default error_language;

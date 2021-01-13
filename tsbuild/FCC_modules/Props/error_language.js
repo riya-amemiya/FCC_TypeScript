@@ -1,4 +1,4 @@
-const error_language = {
+const error_language_Local = {
     text: 'ja',
     get() {
         return this.text;
@@ -13,5 +13,6 @@ const error_language = {
             return false;
     }
 };
+const error_language = error_language_Local;
 export default error_language;
 //# sourceMappingURL=error_language.js.map

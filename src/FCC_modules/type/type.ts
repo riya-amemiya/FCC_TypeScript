@@ -1,14 +1,12 @@
 
 type int = number;
-interface joketype
-{
-    Hello: 'Hello';
-    World: 'World';
+type Props = {
+    onClick: (event: React.MouseEvent<HTMLInputElement>) => void
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+    onkeypress: (event: React.KeyboardEvent<HTMLInputElement>) => void
+    onBlur: (event: React.FocusEvent<HTMLInputElement>) => void
+    onFocus: (event: React.FocusEvent<HTMLInputElement>) => void
+    onSubmit: (event: React.FormEvent<HTMLFormElement>) => void
+    onClickDiv: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }
-
-const joke: joketype = {
-    Hello: 'Hello',
-    World: 'World'
-};
-
-export { int, joke, joketype }
+export { int, Props }

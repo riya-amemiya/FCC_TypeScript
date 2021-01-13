@@ -1,6 +1,2 @@
-const joke = {
-    Hello: 'Hello',
-    World: 'World'
-};
-export { joke };
+export {};
 //# sourceMappingURL=type.js.map

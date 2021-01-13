@@ -14,7 +14,9 @@ function _HelloWorld2() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return import('react');
+            return import(
+            /* webpackChunkName: "_FCC_react" */
+            'react');
 
           case 2:
             React = _context.sent;
