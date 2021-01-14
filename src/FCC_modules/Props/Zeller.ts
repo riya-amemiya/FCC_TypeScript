@@ -73,7 +73,6 @@ export default function Zeller({ y = 2000, m = 1, d = 1 }: { y?: number; m?: num
                 return "土曜日";
             }
             break;
-        default:
-            break;
     }
+    return "";
 }

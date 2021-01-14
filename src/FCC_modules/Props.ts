@@ -1,6 +1,26 @@
 
 import error_language from './Props/error_language';
 import cal from './Props/calClass';
+async function _min(num: number[]): Promise<number>
+{
+    const _min = await import(/* webpackChunkName: "_FCC_Min" */'./Math/Min')
+    return _min.default(num)
+}
+async function min({ num, callback }: { num: number[]; callback: (arg0: number) => void; }): Promise<void>
+{
+    const num_2 = await _min(num);
+    callback(num_2);
+}
+async function _max(num: number[]): Promise<number>
+{
+    const _min = await import(/* webpackChunkName: "_FCC_Max" */'./Math/Max')
+    return _min.default(num)
+}
+async function max({ num, callback }: { num: number[]; callback: (arg0: number) => void; }): Promise<void>
+{
+    const num_2 = await _max(num);
+    callback(num_2);
+}
 async function _sleep(ms: number): Promise<void>
 {
     const _sleep = await import(/* webpackChunkName: "_FCC_sleep" */ './Props/sleep');
@@ -41,4 +61,4 @@ async function render({ Dom, id }: { Dom: JSX.Element; id: string; }): Promise<v
     const _render = await import(/* webpackChunkName: "_FCC_render" */ './Props/render');
     _render.default({ Dom, id });
 }
-export { error_language, cal, sleep, Zeller, zero, birthday, wait, render }
+export { error_language, cal, sleep, Zeller, zero, birthday, wait, render, min, max }

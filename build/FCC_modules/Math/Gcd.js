@@ -28,5 +28,8 @@ export default function Gcd() {
     }
 
     return x;
-  } else console.error('Number型を引数に指定してください');
+  } else {
+    console.error('Number型を引数に指定してください');
+    return 0;
+  }
 }

@@ -12,5 +12,8 @@ export default function nCrs({ n, r }: { n: number; r: number; }): number
 
 
     else
+    {
         console.error('Number型を引数に指定してください');
+        return 0;
+    }
 }

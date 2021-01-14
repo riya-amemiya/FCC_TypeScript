@@ -34,5 +34,8 @@ export default function nPr({ n = 1, r = 1 }: { n?: number; r?: number; } = {}):
 
 
     else
+    {
         console.error('Number型を引数に指定してください');
+        return 0;
+    }
 }

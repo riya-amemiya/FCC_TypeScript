@@ -56,7 +56,20 @@ const webpackConfig = {
             }
         }, {
             test: [/\.ts$/, /\.tsx$/],
-            loader: ['babel-loader', 'ts-loader'],
+            use: [{
+                    loader: 'babel-loader'
+                },
+                {
+                    loader: 'ts-loader',
+                    options: {
+                        compilerOptions: {
+                            "sourceMap": false,
+                            "declaration": false,
+                            "declarationMap": false,
+                        }
+                    }
+                }
+            ]
         }]
     },
     plugins: [

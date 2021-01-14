@@ -10,6 +10,11 @@ var calClass = /*#__PURE__*/function () {
   }
 
   _createClass(calClass, [{
+    key: "_get",
+    value: function _get() {
+      return this._value;
+    }
+  }, {
     key: "sum",
     value: function sum() {
       for (var _len = arguments.length, Nums = new Array(_len), _key = 0; _key < _len; _key++) {
@@ -36,11 +41,6 @@ var calClass = /*#__PURE__*/function () {
       }
 
       return this;
-    }
-  }, {
-    key: "value",
-    get: function get() {
-      return this._value;
     }
   }]);
 

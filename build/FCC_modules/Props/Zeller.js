@@ -71,8 +71,7 @@ export default function Zeller() {
       }
 
       break;
-
-    default:
-      break;
   }
+
+  return "";
 }

@@ -191,6 +191,11 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "../node_modules/tslib/tslib.d.ts": {
+        "version": "55d7868222288a4054166fecbfbaeee46dd3b1b58e4a118e40e9c8c13a9fbe84",
+        "signature": "55d7868222288a4054166fecbfbaeee46dd3b1b58e4a118e40e9c8c13a9fbe84",
+        "affectsGlobalScope": false
+      },
       "../src/fcc_modules/modules/html.ts": {
         "version": "757872a0539d5601d6db4abcbd9f518ce22f8fd9ca7e384df896665e8d60d8c9",
         "signature": "61779450eab6850b97bf25627df5ebf105bcdc11166bed83d04d4ccb00b5db0e",
@@ -227,7 +232,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/gcd.ts": {
-        "version": "a421e59d6bbf340c648ecb8d5872a2f3084646b852453c61b9a8551ff086e59b",
+        "version": "1d23983b0cea17c592c244b2cc761ca070b5d1e0320790bf0e9dc49fb46d9eee",
         "signature": "449c84494dc23c52f1516ab3ddf930c02af2fd90cfca87935b483f4acd267385",
         "affectsGlobalScope": false
       },
@@ -242,17 +247,17 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncr.ts": {
-        "version": "267b6b2767d8a4ad54234542ccb6c51cfafaf901261df811bd320abad99aec2d",
+        "version": "a96eb8cedf6871f51238121247c06222bb5366cf5d235ffc5653e49fffbd07ac",
         "signature": "390d57431f65d944e7cd940547071c9ff9c1a362530306abcc666c0d58164b2d",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/ncrs.ts": {
-        "version": "44dd18c7073e899e770ead2b48aba3c653bb7505909ae693e4b6cb0d4bf59352",
+        "version": "dd1d63e70fb92684a822c9d283b98b27db512fdf49a10e98872442c79e57a966",
         "signature": "ce4496e47b1d4900cadf473aacb52c27f7a3ca1e7d6a9e397b0af46d0a655c81",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/math/npr.ts": {
-        "version": "3f0cb093d450ce8a64e672b85190f0bba4ef91f7ded19ffe4936eee0484e3686",
+        "version": "98eaa1560cdc1ede8433d1748a55b4b577babfefdf3277866153055549452809",
         "signature": "b9238875a7be1807e3ecd2d9bec2b104c2bf7b9a553f8e1069cdffe1939d7302",
         "affectsGlobalScope": false
       },
@@ -272,8 +277,18 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/calclass.ts": {
-        "version": "231cf05a85875457bd2115e158525288a41fb4df82e4116d32bb880880defeb6",
-        "signature": "9de3f5f90d5a897f42f53e0dae05a139f4798ba8b8694aa8619fdbce674ce2e4",
+        "version": "6a839b02e790c77fa1519a7fbe0a9a23481486b5cd9ac732b72f647f6dc1362f",
+        "signature": "27e301bb659aa7ec91c5a027648946bc529d3a7ce7f2645d0c7a2ac73046f187",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/min.ts": {
+        "version": "1475e2daaad6d124b4ff3b278c605a0cbdebf12251a2b606f3f81a063bb715a6",
+        "signature": "4482f893222655c9757a3c188ded072a30a27978c5b2d17acd66498b1437c1b4",
+        "affectsGlobalScope": false
+      },
+      "../src/fcc_modules/math/max.ts": {
+        "version": "f0fb5c0be0bcd5bfdc2cac42bda402fa3cbedc116679d9f4340d18d6c6396cdc",
+        "signature": "4285937ff0df53ea71eda36ad9bf45046402b1acb6a601721df2aebd7e084efd",
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/sleep.ts": {
@@ -282,7 +297,7 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props/zeller.ts": {
-        "version": "53cac1c4559754c4866be8dc932659fb14844fe993fad46bf8b4fa5628cbe96d",
+        "version": "d2c6e5671a3b5b3a2c9823b7fac390850e8ba8e4c674fbcf6b7b33d2cd43b0e0",
         "signature": "1b67ba692950c762c6911ae05c4d49a67c3361147ba691a9e03f5022b73503e8",
         "affectsGlobalScope": false
       },
@@ -317,12 +332,12 @@
         "affectsGlobalScope": false
       },
       "../src/fcc_modules/props.ts": {
-        "version": "6974d9bfe38b60cfe64efa8552be1d483da750339e5e8dbf061e54fe503f3e62",
-        "signature": "c95399fb1b01c46088ff27628a6495bef1b18eefa6d28f4e72bd727d130d0b88",
+        "version": "f584ba59e0d80292e7ef02560dea11b1f7c041bb1f8863fd5b1c66861b180fab",
+        "signature": "50aeaed610475faa012aec56957984bd83df2a5effa5b60225c1ae25ee279bc9",
         "affectsGlobalScope": false
       },
       "../src/fcc_export.ts": {
-        "version": "b5dcd1ceec027f79eda70f78b35b98258d92295bfef0adb10249458b09102c7c",
+        "version": "e886cda5f2c3a4241634038d5f83c523e6c9b9e7958deb182ae0c222accc8ae4",
         "signature": "57c54c88dd630124a241c5a037c8aa22f9bbf64c58e3ec489f055cb84a2fe0f2",
         "affectsGlobalScope": false
       },
@@ -925,16 +940,24 @@
     "options": {
       "outDir": "./",
       "sourceMap": true,
-      "target": 4,
+      "target": 0,
       "module": 99,
       "jsx": 2,
       "alwaysStrict": true,
-      "removeComments": true,
+      "removeComments": false,
       "declaration": true,
       "declarationMap": true,
+      "importHelpers": true,
       "incremental": true,
       "strictBindCallApply": true,
       "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "strictNullChecks": true,
+      "noFallthroughCasesInSwitch": true,
+      "forceConsistentCasingInFileNames": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
       "moduleResolution": 2,
       "lib": [
         "lib.es2020.d.ts",
@@ -1280,6 +1303,8 @@
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/fcc_modules/props.ts": [
+        "../src/fcc_modules/math/max.ts",
+        "../src/fcc_modules/math/min.ts",
         "../src/fcc_modules/props/birthday.ts",
         "../src/fcc_modules/props/calclass.ts",
         "../src/fcc_modules/props/error_language.ts",
@@ -1814,6 +1839,9 @@
       "../node_modules/@types/yargs/index.d.ts": [
         "../node_modules/@types/yargs-parser/index.d.ts"
       ],
+      "../src/fcc.ts": [
+        "../src/fcc_export.ts"
+      ],
       "../src/fcc_export.ts": [
         "../src/fcc_modules/math.ts",
         "../src/fcc_modules/modules/ajax.ts",
@@ -2135,6 +2163,7 @@
       "../node_modules/@types/yargs/index.d.ts",
       "../node_modules/csstype/index.d.ts",
       "../node_modules/source-map/source-map.d.ts",
+      "../node_modules/tslib/tslib.d.ts",
       "../node_modules/typescript/lib/lib.dom.d.ts",
       "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "../node_modules/typescript/lib/lib.es2015.core.d.ts",
@@ -2180,6 +2209,8 @@
       "../src/fcc_modules/math.ts",
       "../src/fcc_modules/math/gcd.ts",
       "../src/fcc_modules/math/k.ts",
+      "../src/fcc_modules/math/max.ts",
+      "../src/fcc_modules/math/min.ts",
       "../src/fcc_modules/math/ncr.ts",
       "../src/fcc_modules/math/ncrs.ts",
       "../src/fcc_modules/math/npr.ts",

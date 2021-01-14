@@ -13,5 +13,8 @@ export default function nCrs(_ref) {
       r: r
     });
     return n;
-  } else console.error('Number型を引数に指定してください');
+  } else {
+    console.error('Number型を引数に指定してください');
+    return 0;
+  }
 }

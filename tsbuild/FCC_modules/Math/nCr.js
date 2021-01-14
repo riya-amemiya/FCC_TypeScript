@@ -1,10 +1,12 @@
 import error_language from "../Props/error_language";
-export default function nCr({ n, r }) {
+export default function nCr(_a) {
+    var n = _a.n, r = _a.r;
     if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
-        let x;
-        let z;
-        let y;
-        let age = 1;
+        //nCr
+        var x = void 0;
+        var z = void 0;
+        var y = void 0;
+        var age = 1;
         y = n;
         z = r;
         x = 0;
@@ -25,19 +27,25 @@ export default function nCr({ n, r }) {
                 y = y * n;
             }
         }
-        for (let i = 2; i <= z; i++) {
+        for (var i = 2; i <= z; i++) {
             age *= i;
         }
         y = y / age;
         return y;
     }
-    else if (/ja|ja_JP/.test(error_language.get()))
+    else if (/ja|ja_JP/.test(error_language.get())) {
         console.error('Number型を引数に指定してください');
-    else if (/en|en-US/.test(error_language.get()))
+        return 0;
+    }
+    else if (/en|en-US/.test(error_language.get())) {
         console.error('Please specify Number type as an argument');
-    else
+        return 0;
+    }
+    else {
         console.log('言語コードが不正な値です');
-    console.log('ja_JPでerrorステータスを出力します');
-    console.error('Number型を引数に指定してください');
+        console.log('ja_JPでerrorステータスを出力します');
+        console.error('Number型を引数に指定してください');
+        return 0;
+    }
 }
 //# sourceMappingURL=nCr.js.map

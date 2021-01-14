@@ -1,7 +1,7 @@
 declare class calClass {
     private _value;
     constructor(_value: number);
-    get value(): number;
+    _get(): number;
     sum(...Nums: number[]): this;
     sub(...Nums: number[]): this;
 }

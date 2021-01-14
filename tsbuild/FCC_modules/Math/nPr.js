@@ -1,7 +1,9 @@
-export default function nPr({ n = 1, r = 1 } = {}) {
+export default function nPr(_a) {
+    var _b = _a === void 0 ? {} : _a, _c = _b.n, n = _c === void 0 ? 1 : _c, _d = _b.r, r = _d === void 0 ? 1 : _d;
     if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
-        let y;
-        let x = 0;
+        //nPr
+        var y = void 0;
+        var x = 0;
         y = n;
         while (x === 0) {
             if (r === 1) {
@@ -21,7 +23,9 @@ export default function nPr({ n = 1, r = 1 } = {}) {
         }
         return y;
     }
-    else
+    else {
         console.error('Number型を引数に指定してください');
+        return 0;
+    }
 }
 //# sourceMappingURL=nPr.js.map

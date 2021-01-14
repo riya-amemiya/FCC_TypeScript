@@ -23,6 +23,9 @@ export default function Gcd({ x = 1, y = 1 }: { x?: number; y?: number; } = {}):
     }
 
     else
+    {
         console.error('Number型を引数に指定してください');
+        return 0;
+    }
 }
 

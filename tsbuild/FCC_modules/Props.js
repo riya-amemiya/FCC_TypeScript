@@ -1,36 +1,171 @@
+import { __awaiter, __generator } from "tslib";
 import error_language from './Props/error_language';
 import cal from './Props/calClass';
-async function _sleep(ms) {
-    const _sleep = await import('./Props/sleep');
-    return _sleep.default(ms);
+function _min(num) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _min;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_Min" */ './Math/Min')];
+                case 1:
+                    _min = _a.sent();
+                    return [2 /*return*/, _min["default"](num)];
+            }
+        });
+    });
 }
-async function sleep({ ms, callback }) {
-    await _sleep(ms);
-    callback();
+function min(_a) {
+    var num = _a.num, callback = _a.callback;
+    return __awaiter(this, void 0, void 0, function () {
+        var num_2;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, _min(num)];
+                case 1:
+                    num_2 = _b.sent();
+                    callback(num_2);
+                    return [2 /*return*/];
+            }
+        });
+    });
 }
-async function _Zeller({ y = 2000, m = 1, d = 1 } = {}) {
-    const _Zeller = await import('./Props/Zeller');
-    return _Zeller.default({ y, m, d });
+function _max(num) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _min;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_Max" */ './Math/Max')];
+                case 1:
+                    _min = _a.sent();
+                    return [2 /*return*/, _min["default"](num)];
+            }
+        });
+    });
 }
-async function Zeller({ y = 2000, m = 1, d = 1, callback }) {
-    const text = await _Zeller({ y, m, d });
-    return callback(text);
+function max(_a) {
+    var num = _a.num, callback = _a.callback;
+    return __awaiter(this, void 0, void 0, function () {
+        var num_2;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, _max(num)];
+                case 1:
+                    num_2 = _b.sent();
+                    callback(num_2);
+                    return [2 /*return*/];
+            }
+        });
+    });
 }
-async function zero(num) {
-    const _zero = await import('./Props/Zero');
-    return _zero.default(num);
+function _sleep(ms) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _sleep;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_sleep" */ './Props/sleep')];
+                case 1:
+                    _sleep = _a.sent();
+                    return [2 /*return*/, _sleep["default"](ms)];
+            }
+        });
+    });
 }
-async function birthday(yer, mon, day) {
-    const _birthday = await import('./Props/birthday');
-    return _birthday.default({ yer, mon, day });
+function sleep(_a) {
+    var ms = _a.ms, callback = _a.callback;
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, _sleep(ms)];
+                case 1:
+                    _b.sent();
+                    callback();
+                    return [2 /*return*/];
+            }
+        });
+    });
 }
-async function wait(callBack) {
-    const _wait = await import('./Props/wait');
-    _wait.default(callBack);
+function _Zeller(_a) {
+    var _b = _a === void 0 ? {} : _a, _c = _b.y, y = _c === void 0 ? 2000 : _c, _d = _b.m, m = _d === void 0 ? 1 : _d, _e = _b.d, d = _e === void 0 ? 1 : _e;
+    return __awaiter(this, void 0, void 0, function () {
+        var _Zeller;
+        return __generator(this, function (_f) {
+            switch (_f.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_Zeller" */ './Props/Zeller')];
+                case 1:
+                    _Zeller = _f.sent();
+                    return [2 /*return*/, _Zeller["default"]({ y: y, m: m, d: d })];
+            }
+        });
+    });
 }
-async function render({ Dom, id }) {
-    const _render = await import('./Props/render');
-    _render.default({ Dom, id });
+function Zeller(_a) {
+    var _b = _a.y, y = _b === void 0 ? 2000 : _b, _c = _a.m, m = _c === void 0 ? 1 : _c, _d = _a.d, d = _d === void 0 ? 1 : _d, callback = _a.callback;
+    return __awaiter(this, void 0, void 0, function () {
+        var text;
+        return __generator(this, function (_e) {
+            switch (_e.label) {
+                case 0: return [4 /*yield*/, _Zeller({ y: y, m: m, d: d })];
+                case 1:
+                    text = _e.sent();
+                    return [2 /*return*/, callback(text)];
+            }
+        });
+    });
 }
-export { error_language, cal, sleep, Zeller, zero, birthday, wait, render };
+function zero(num) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _zero;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_Zero" */ './Props/Zero')];
+                case 1:
+                    _zero = _a.sent();
+                    return [2 /*return*/, _zero["default"](num)];
+            }
+        });
+    });
+}
+function birthday(yer, mon, day) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _birthday;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_birthday" */ './Props/birthday')];
+                case 1:
+                    _birthday = _a.sent();
+                    return [2 /*return*/, _birthday["default"]({ yer: yer, mon: mon, day: day })];
+            }
+        });
+    });
+}
+function wait(callBack) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _wait;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_wait" */ './Props/wait')];
+                case 1:
+                    _wait = _a.sent();
+                    _wait["default"](callBack);
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+function render(_a) {
+    var Dom = _a.Dom, id = _a.id;
+    return __awaiter(this, void 0, void 0, function () {
+        var _render;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, import(/* webpackChunkName: "_FCC_render" */ './Props/render')];
+                case 1:
+                    _render = _b.sent();
+                    _render["default"]({ Dom: Dom, id: id });
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+export { error_language, cal, sleep, Zeller, zero, birthday, wait, render, min, max };
 //# sourceMappingURL=Props.js.map

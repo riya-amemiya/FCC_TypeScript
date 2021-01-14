@@ -1,18 +1,18 @@
-const error_language_Local = {
+var error_language_Local = {
     text: 'ja',
-    get() {
+    get: function () {
         return this.text;
     },
-    set(error_language) {
+    set: function (error_language) {
         this.text = error_language;
     },
-    haslanguage(haslanguage) {
+    haslanguage: function (haslanguage) {
         if (~this.text.indexOf(haslanguage))
             return true;
         else
             return false;
     }
 };
-const error_language = error_language_Local;
+var error_language = error_language_Local;
 export default error_language;
 //# sourceMappingURL=error_language.js.map

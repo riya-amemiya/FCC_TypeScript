@@ -32,5 +32,8 @@ export default function nPr() {
     }
 
     return y;
-  } else console.error('Number型を引数に指定してください');
+  } else {
+    console.error('Number型を引数に指定してください');
+    return 0;
+  }
 }

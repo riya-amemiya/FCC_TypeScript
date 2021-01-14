@@ -1,7 +1,7 @@
 class calClass
 {
     constructor(private _value: number) { }
-    get value(): number
+    _get(): number
     {
         return this._value;
     }

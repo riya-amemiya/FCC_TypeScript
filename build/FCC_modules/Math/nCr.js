@@ -42,8 +42,16 @@ export default function nCr(_ref) {
 
     y = y / age;
     return y;
-  } else if (/ja|ja_JP/.test(error_language.get())) console.error('Number型を引数に指定してください');else if (/en|en-US/.test(error_language.get())) console.error('Please specify Number type as an argument');else console.log('言語コードが不正な値です');
-
-  console.log('ja_JPでerrorステータスを出力します');
-  console.error('Number型を引数に指定してください');
+  } else if (/ja|ja_JP/.test(error_language.get())) {
+    console.error('Number型を引数に指定してください');
+    return 0;
+  } else if (/en|en-US/.test(error_language.get())) {
+    console.error('Please specify Number type as an argument');
+    return 0;
+  } else {
+    console.log('言語コードが不正な値です');
+    console.log('ja_JPでerrorステータスを出力します');
+    console.error('Number型を引数に指定してください');
+    return 0;
+  }
 }
