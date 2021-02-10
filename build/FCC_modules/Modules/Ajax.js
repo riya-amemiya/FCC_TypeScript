@@ -20,9 +20,8 @@ function ajax(_ref2) {
 
   xml.onreadystatechange = function () {
     if (xml.readyState === 4 && xml.status === 200) {
-      var _data = JSON.parse(xml.response);
-
-      callback(_data);
+      var data = JSON.parse(xml.response);
+      callback(data);
     }
   };
 }

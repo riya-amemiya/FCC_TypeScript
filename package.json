@@ -9,8 +9,8 @@
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && npm run webpack && webpack-dev-server --mode development --open",
-        "build": "babel src --extensions '.ts,.tsx' --out-dir build && npm run typescript && find ./tsbuild -name '*.d.ts' -print0 | cpio -pd0 ./build/@type && npm run webpack",
-        "buildwatch": "babel src --extensions '.ts,.tsx' --out-dir build -w",
+        "babel": "babel tsbuild --extensions '.js' --out-dir build --no-comments --copy-files",
+        "build": "npm run typescript && npm run babel && npm run webpack",
         "typescript": "tsc --build tsconfig.json",
         "deploy": "gh-pages -d dist",
         "push": "npm version patch && npm publish ./"
@@ -25,6 +25,8 @@
     "devDependencies": {
         "@babel/cli": "^7.11.6",
         "@babel/core": "^7.12.3",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
         "@babel/plugin-transform-runtime": "^7.12.1",
         "@babel/preset-env": "^7.12.1",
         "@babel/preset-react": "^7.12.1",

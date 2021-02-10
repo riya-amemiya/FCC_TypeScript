@@ -1,6 +1,5 @@
 import error_language from "./error_language";
-export default function Zeller(_a) {
-    var _b = _a === void 0 ? {} : _a, _c = _b.y, y = _c === void 0 ? 2000 : _c, _d = _b.m, m = _d === void 0 ? 1 : _d, _e = _b.d, d = _e === void 0 ? 1 : _e;
+export default function Zeller({ y = 2000, m = 1, d = 1 } = {}) {
     switch ('日月火水木金土'[new Date(y, m - 1, d).getDay()]) {
         case "日":
             if (error_language.haslanguage("en")) {

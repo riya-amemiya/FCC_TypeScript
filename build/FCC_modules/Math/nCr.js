@@ -6,7 +6,6 @@ export default function nCr(_ref) {
       r = _ref.r;
 
   if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
-    //nCr
     var x;
     var z;
     var y;

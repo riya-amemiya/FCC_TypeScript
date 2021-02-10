@@ -6,7 +6,6 @@ export default function nCrs(_ref) {
       r = _ref.r;
 
   if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
-    //重複を許して取り出す
     n = n + r - 1;
     n = nCr({
       n: n,

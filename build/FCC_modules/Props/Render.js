@@ -1,37 +1,59 @@
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function (resolve) {
+      resolve(value);
+    });
+  }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
 
-function react(_x) {
-  return _react.apply(this, arguments);
-}
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
 
-function _react() {
-  _react = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref) {
-    var Dom, id, DOM, ReactDOM;
+    function step(result) {
+      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+
+function react(_ref) {
+  var Dom = _ref.Dom,
+      id = _ref.id;
+  return __awaiter(this, void 0, void 0, regeneratorRuntime.mark(function _callee() {
+    var DOM, ReactDOM;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            Dom = _ref.Dom, id = _ref.id;
             DOM = Dom;
-            _context.next = 4;
-            return import(
-            /* webpackChunkName: "_FCC_react-dom" */
-            'react-dom');
+            _context.next = 3;
+            return import('react-dom');
 
-          case 4:
+          case 3:
             ReactDOM = _context.sent;
             ReactDOM.render(DOM, document.getElementById(id));
 
-          case 6:
+          case 5:
           case "end":
             return _context.stop();
         }
       }
     }, _callee);
   }));
-  return _react.apply(this, arguments);
 }
 
 export default function _render(_ref2) {

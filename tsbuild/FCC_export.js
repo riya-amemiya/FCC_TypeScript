@@ -7,7 +7,7 @@ import * as Maths from "./FCC_modules/Math";
 import * as Props from "./FCC_modules/Props";
 //type
 import * as type from './FCC_modules/type/type';
-var version = '1.0';
+const version = '1.0';
 export { version, Html, Ajax, HelloWorld, 
 //Math
 Maths, 

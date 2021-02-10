@@ -8,7 +8,6 @@ export default function nPr() {
       r = _ref$r === void 0 ? 1 : _ref$r;
 
   if (_typeof(n) === _typeof(r) && typeof n === "number" && typeof r === "number") {
-    //nPr
     var y;
     var x = 0;
     y = n;

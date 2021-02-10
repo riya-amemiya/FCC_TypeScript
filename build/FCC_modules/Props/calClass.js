@@ -4,9 +4,11 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var calClass = /*#__PURE__*/function () {
+var calClass = function () {
   function calClass(_value) {
     _classCallCheck(this, calClass);
+
+    this._value = _value;
   }
 
   _createClass(calClass, [{

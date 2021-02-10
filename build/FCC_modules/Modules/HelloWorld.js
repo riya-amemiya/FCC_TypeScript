@@ -1,26 +1,48 @@
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function (resolve) {
+      resolve(value);
+    });
+  }
 
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
 
 function _HelloWorld() {
-  return _HelloWorld2.apply(this, arguments);
-}
-
-function _HelloWorld2() {
-  _HelloWorld2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+  return __awaiter(this, void 0, void 0, regeneratorRuntime.mark(function _callee() {
     var React;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return import(
-            /* webpackChunkName: "_FCC_react" */
-            'react');
+            return import('react');
 
           case 2:
             React = _context.sent;
-            return _context.abrupt("return", /*#__PURE__*/React.createElement("h1", null, "Hello World"));
+            return _context.abrupt("return", React.createElement("h1", null, "Hello World"));
 
           case 4:
           case "end":
@@ -29,15 +51,10 @@ function _HelloWorld2() {
       }
     }, _callee);
   }));
-  return _HelloWorld2.apply(this, arguments);
 }
 
-export default function HelloWorld(_x) {
-  return _HelloWorld3.apply(this, arguments);
-}
-
-function _HelloWorld3() {
-  _HelloWorld3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(callback) {
+export default function HelloWorld(callback) {
+  return __awaiter(this, void 0, void 0, regeneratorRuntime.mark(function _callee2() {
     var text;
     return regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
@@ -57,5 +74,4 @@ function _HelloWorld3() {
       }
     }, _callee2);
   }));
-  return _HelloWorld3.apply(this, arguments);
 }

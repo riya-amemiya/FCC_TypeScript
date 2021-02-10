@@ -1,8 +1,7 @@
-export default function Gcd(_a) {
-    var _b = _a === void 0 ? {} : _a, _c = _b.x, x = _c === void 0 ? 1 : _c, _d = _b.y, y = _d === void 0 ? 1 : _d;
+export default function Gcd({ x = 1, y = 1 } = {}) {
     if (typeof (y) === typeof (x) && typeof (y) === "number" && typeof (x) === "number") {
         //最大公約数
-        var r = void 0, tmp = void 0;
+        let r, tmp;
         if (y < x) {
             tmp = y;
             y = x;

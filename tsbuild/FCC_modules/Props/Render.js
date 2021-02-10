@@ -1,23 +1,20 @@
-import { __awaiter, __generator } from "tslib";
-function react(_a) {
-    var Dom = _a.Dom, id = _a.id;
-    return __awaiter(this, void 0, void 0, function () {
-        var DOM, ReactDOM;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
-                case 0:
-                    DOM = Dom;
-                    return [4 /*yield*/, import(/* webpackChunkName: "_FCC_react-dom" */ 'react-dom')];
-                case 1:
-                    ReactDOM = _b.sent();
-                    ReactDOM.render(DOM, document.getElementById(id));
-                    return [2 /*return*/];
-            }
-        });
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+function react({ Dom, id }) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const DOM = Dom;
+        const ReactDOM = yield import(/* webpackChunkName: "_FCC_react-dom" */ 'react-dom');
+        ReactDOM.render(DOM, document.getElementById(id));
     });
 }
-export default function _render(_a) {
-    var Dom = _a.Dom, id = _a.id;
-    react({ Dom: Dom, id: id });
+export default function _render({ Dom, id }) {
+    react({ Dom, id });
 }
 //# sourceMappingURL=render.js.map

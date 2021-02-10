@@ -8,7 +8,6 @@ export default function Gcd() {
       y = _ref$y === void 0 ? 1 : _ref$y;
 
   if (_typeof(y) === _typeof(x) && typeof y === "number" && typeof x === "number") {
-    //最大公約数
     var r, tmp;
 
     if (y < x) {
@@ -16,8 +15,6 @@ export default function Gcd() {
       y = x;
       x = tmp;
     }
-    /* ユークリッドの互除法 */
-
 
     r = y % x;
 

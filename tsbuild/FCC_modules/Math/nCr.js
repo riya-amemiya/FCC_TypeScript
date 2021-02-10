@@ -1,12 +1,11 @@
 import error_language from "../Props/error_language";
-export default function nCr(_a) {
-    var n = _a.n, r = _a.r;
+export default function nCr({ n, r }) {
     if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number") {
         //nCr
-        var x = void 0;
-        var z = void 0;
-        var y = void 0;
-        var age = 1;
+        let x;
+        let z;
+        let y;
+        let age = 1;
         y = n;
         z = r;
         x = 0;
@@ -27,7 +26,7 @@ export default function nCr(_a) {
                 y = y * n;
             }
         }
-        for (var i = 2; i <= z; i++) {
+        for (let i = 2; i <= z; i++) {
             age *= i;
         }
         y = y / age;

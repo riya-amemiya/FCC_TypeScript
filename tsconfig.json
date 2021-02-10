@@ -4,7 +4,7 @@
   ],
   "compilerOptions": {
     "outDir": "tsbuild",
-    "target": "ES3",
+    "target": "ES6",
     "module": "esnext",
     "jsx": "react",
     "alwaysStrict": true,
@@ -12,7 +12,7 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "incremental": true,
     "strictBindCallApply": true,
     "noImplicitAny": true,
