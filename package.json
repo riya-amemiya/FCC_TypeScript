@@ -1,6 +1,6 @@
 {
     "name": "fcc_typescript",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "",
     "main": "./build/FCC.js",
     "types": "./build/FCC.d.js",
