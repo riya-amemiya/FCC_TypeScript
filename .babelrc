@@ -1,16 +1,122 @@
 {
     "presets": [
-        "@babel/preset-react",
-        "@babel/typescript",
         [
-            "@babel/preset-env",
+            "@babel/env",
             {
-                "modules": false
+                "spec": true,
+                "modules": "commonjs",
+                "targets": {
+                    /*"node": "current",*/
+                    "esmodules": true
+                },
+                "shippedProposals": true
+            }
+        ],
+        [
+            "@babel/typescript",
+            {
+                "onlyRemoveTypeImports": false,
+                "allowDeclareFields": true
             }
         ]
     ],
     "plugins": [
-        "@babel/proposal-class-properties",
-        "@babel/proposal-object-rest-spread"
+        [
+            "@babel/plugin-proposal-class-properties"
+        ],
+        [
+            "@babel/plugin-transform-destructuring"
+        ],
+        [
+            "@babel/plugin-proposal-object-rest-spread",
+            {
+                "useBuiltIns": true
+            }
+        ],
+        [
+            "minify-builtins"
+        ],
+        [
+            "transform-inline-consecutive-adds"
+        ],
+        [
+            "transform-merge-sibling-variables"
+        ],
+        [
+            "transform-minify-booleans"
+        ],
+        [
+            "minify-constant-folding"
+        ],
+        [
+            "minify-dead-code-elimination"
+        ],
+        [
+            "minify-guarded-expressions"
+        ],
+        [
+            "minify-mangle-names"
+        ],
+        [
+            "minify-simplify"
+        ],
+        [
+            "@babel/plugin-transform-async-to-generator",
+            {
+                "module": "bluebird",
+                "method": "coroutine"
+            }
+        ],
+        [
+            "@babel/plugin-transform-template-literals"
+        ],
+        [
+            "@babel/plugin-proposal-optional-chaining"
+        ],
+        [
+            "@babel/plugin-transform-object-super"
+        ],
+        [
+            "@babel/plugin-transform-for-of",
+            {
+                "spec": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-spread",
+            {
+                "useBuiltIns": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-arrow-functions",
+            {
+                "spec": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-classes",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-logical-assignment-operators"
+        ],
+        [
+            "transform-inline-environment-variables"
+        ],
+        [
+            "@babel/plugin-proposal-nullish-coalescing-operator"
+        ],
+        [
+            "@babel/plugin-transform-computed-properties"
+        ],
+        [
+            "@babel/plugin-transform-member-expression-literals"
+        ],
+        [
+            "@babel/plugin-transform-property-literals"
+        ]
     ]
 }

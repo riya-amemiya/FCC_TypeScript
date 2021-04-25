@@ -3,7 +3,7 @@
     "src/**/*"
   ],
   "compilerOptions": {
-    "outDir": "tsbuild",
+    "outDir": "build/ts",
     "target": "ES6",
     "module": "esnext",
     "jsx": "react",
