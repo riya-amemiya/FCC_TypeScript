@@ -4361,6 +4361,16 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
+fcc_typescript@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/fcc_typescript/-/fcc_typescript-1.0.14.tgz#52080068fac2016176b0540384a0c69d35f642fd"
+  integrity sha512-ZOYI+NzQ0Mz8nX+6EHWljnpXsucp2th1UN5xzSkCUW3H6SB4zhvQHLGXjZ0nsQEJ3j2XlmFUJ/LQyWCSCV248g==
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    react "^17.0.1"
+    react-dom "^17.0.1"
+    tslib "^2.1.0"
+
 figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"

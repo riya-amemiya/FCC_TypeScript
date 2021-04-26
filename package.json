@@ -2,7 +2,8 @@
     "name": "fcc_typescript",
     "version": "1.0.14",
     "description": "",
-    "main": "src/index.ts",
+    "main": "build/ts/index.js",
+    "types": "build/ts/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "webpack": "webpack --mode production",
@@ -42,8 +43,8 @@
         "@babel/plugin-transform-spread": "^7.12.13",
         "@babel/plugin-transform-template-literals": "^7.12.13",
         "@babel/preset-env": "^7.12.13",
-        "@babel/preset-typescript": "^7.12.13",
         "@babel/preset-react": "^7.12.1",
+        "@babel/preset-typescript": "^7.12.13",
         "@types/mini-css-extract-plugin": "^1.2.1",
         "@types/react": "^16.9.55",
         "@types/react-dom": "^16.9.9",
@@ -52,7 +53,6 @@
         "babel-eslint": "^10.1.0",
         "babel-jest": "^26.3.0",
         "babel-loader": "^8.1.0",
-        "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-plugin-minify-builtins": "^0.5.0",
         "babel-plugin-minify-constant-folding": "^0.5.0",
         "babel-plugin-minify-dead-code-elimination": "^0.5.1",
@@ -64,6 +64,7 @@
         "babel-plugin-transform-inline-environment-variables": "^0.4.3",
         "babel-plugin-transform-merge-sibling-variables": "^6.9.4",
         "babel-plugin-transform-minify-booleans": "^6.9.4",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-runtime": "^6.26.0",
         "css-loader": "^4.3.0",
         "es6-promise": "^4.2.8",
@@ -89,6 +90,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.12.1",
+        "fcc_typescript": "^1.0.14",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "tslib": "^2.1.0"
