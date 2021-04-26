@@ -1,6 +1,6 @@
 {
     "name": "fcc_typescript",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "description": "",
     "main": "build/ts/index.js",
     "types": "build/ts/index.d.ts",
