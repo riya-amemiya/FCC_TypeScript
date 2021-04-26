@@ -2,7 +2,7 @@ demo
 dist
 node_modules
 src
-build/babel
+babel
 .gitignore
 .babelrc
 .prettierrc
