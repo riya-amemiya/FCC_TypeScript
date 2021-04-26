@@ -2,15 +2,15 @@
     "name": "fcc_typescript",
     "version": "1.0.15",
     "description": "",
-    "main": "build/ts/index.js",
-    "types": "build/ts/index.d.ts",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "webpack": "webpack --mode production",
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && npm run webpack && webpack-dev-server --mode development --open",
-        "babel": "babel build/ts --extensions '.js' --out-dir build/babel --no-comments --copy-files",
+        "babel": "babel build --extensions '.js' --out-dir babel --no-comments --copy-files",
         "build": "npm run typescript && npm run babel",
         "typescript": "tsc --build tsconfig.json",
         "deploy": "gh-pages -d dist",
@@ -90,7 +90,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.12.1",
-        "fcc_typescript": "^1.0.14",
+        "fcc_typescript": "^1.0.15",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "tslib": "^2.1.0"

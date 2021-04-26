@@ -4361,12 +4361,13 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "2.1.1"
 
-fcc_typescript@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/fcc_typescript/-/fcc_typescript-1.0.14.tgz#52080068fac2016176b0540384a0c69d35f642fd"
-  integrity sha512-ZOYI+NzQ0Mz8nX+6EHWljnpXsucp2th1UN5xzSkCUW3H6SB4zhvQHLGXjZ0nsQEJ3j2XlmFUJ/LQyWCSCV248g==
+fcc_typescript@^1.0.14, fcc_typescript@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/fcc_typescript/-/fcc_typescript-1.0.15.tgz#424ba36dcff5ef34474bed1cea4ce149e1e5a3c5"
+  integrity sha512-HTZoNQ376d6GfWbaMFqkhWZLv/+B0ZNUIkevu21fCxsPLDX7givHgXgtJleE37xUTLNQe80Qhfg8rPJUHMaLrg==
   dependencies:
     "@babel/runtime" "^7.12.1"
+    fcc_typescript "^1.0.14"
     react "^17.0.1"
     react-dom "^17.0.1"
     tslib "^2.1.0"
