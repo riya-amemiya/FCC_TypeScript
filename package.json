@@ -2,8 +2,8 @@
     "name": "fcc_typescript",
     "version": "1.0.17",
     "description": "",
-    "main": "build/index.js",
-    "types": "build/index.d.ts",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "webpack": "webpack --mode production",
@@ -90,7 +90,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.12.1",
-        "fcc_typescript": "^1.0.15",
+        "fcc_typescript": "^1.0.17",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "tslib": "^2.1.0"
