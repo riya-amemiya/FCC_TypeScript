@@ -88,12 +88,6 @@
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0"
     },
-    "dependencies": {
-        "@babel/runtime": "^7.12.1",
-        "fcc_typescript": "^1.0.17",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "tslib": "^2.1.0"
-    },
+    "dependencies": {},
     "typings": "./build/@type/tsbuild"
 }
