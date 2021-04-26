@@ -10,7 +10,7 @@
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
         "start": "npm run build && npm run webpack && webpack-dev-server --mode development --open",
-        "babel": "babel build --extensions '.js' --out-dir babel --no-comments --copy-files",
+        "babel": "babel build --extensions '.js' --out-dir build --no-comments --copy-files",
         "build": "npm run typescript && npm run babel",
         "typescript": "tsc --build tsconfig.json",
         "deploy": "gh-pages -d dist",
