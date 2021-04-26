@@ -5,7 +5,7 @@
   "compilerOptions": {
     "outDir": "build",
     "target": "ES6",
-    "module": "esnext",
+    "module": "ES6",
     "jsx": "react",
     "alwaysStrict": true,
     "removeComments": false,
