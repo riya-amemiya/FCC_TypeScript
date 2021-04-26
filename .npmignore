@@ -8,3 +8,4 @@ babel
 .prettierrc
 tsconfig.json
 webpack.config.js
+.vscode
