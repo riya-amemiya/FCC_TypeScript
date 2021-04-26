@@ -1,0 +1,10 @@
+import Gcd from './Gcd';
+import nCr from './nCr';
+import nCrs from './nCrs';
+import nPr from './nPr';
+import Pow from './Pow';
+import Random from './Random';
+import k from './k';
+import Min from './Min';
+import Max from './Max';
+export { Gcd, nCr, nCrs, nPr, Pow, Random, k, Min, Max };

@@ -1,4 +1,2 @@
-export default function Max(num: number[]): number
-{
-    return Math.max.apply(null, num)
-};
+const Max = (num: number[]): number => Math.max.apply(null, num);
+export default Max;

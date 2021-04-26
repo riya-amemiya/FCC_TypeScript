@@ -2,8 +2,7 @@
     "name": "fcc_typescript",
     "version": "1.0.12",
     "description": "",
-    "main": "build/FCC.js",
-    "types": "build/FCC.d.js",
+    "main": "src/index.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "webpack": "webpack --mode production",

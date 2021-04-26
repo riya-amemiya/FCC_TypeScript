@@ -1,11 +1,17 @@
-import { int } from "../type/type";
-
-export default function birthday({ yer, mon, day }: { yer: int; mon: int; day: int; }): int
-{
+export default function birthday({
+    yer,
+    mon,
+    day,
+}: {
+    yer: number;
+    mon: number;
+    day: number;
+}): number {
     const birthday = new Date(yer, mon - 1, day);
     const now = new Date();
-    const yb = new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate());
     const y = now.getFullYear() - birthday.getFullYear();
-    const show: int = (now < yb) ? y - 1 : y;
-    return show;
+    return now <
+        new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate())
+        ? y - 1
+        : y;
 }

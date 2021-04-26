@@ -1,8 +1,10 @@
-tsbuild
 demo
 dist
 node_modules
 src
-build/ts
+build/**
+.gitignore
+.babelrc
+.prettierrc
 tsconfig.json
 webpack.config.js

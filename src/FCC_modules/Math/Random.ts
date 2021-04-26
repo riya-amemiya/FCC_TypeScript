@@ -1,4 +1,2 @@
-export default function Random(num: number): number
-{
-    return Math.floor(Math.random() * num);
-}
+const Random = (num: number): number => Math.floor(Math.random() * num);
+export default Random;

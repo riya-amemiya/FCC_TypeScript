@@ -1,41 +1,23 @@
-export default function nPr({ n = 1, r = 1 }: { n?: number; r?: number; } = {}): number
-{
-    if (typeof (n) === typeof (r) && typeof (n) === "number" && typeof (r) === "number")
-    {
-        //nPr
-        let y: number;
-        let x = 0;
-        y = n;
-        while (x === 0)
-        {
-            if (r === 1)
-            {
-                y = y * r;
-            }
-            r--;
-            if (r === 0)
-                x++;
-
-
-
-            else
-            {
-                n--;
-                if (n === 0)
-                {
-                    x++;
-                    break;
-                }
-                y = y * n;
-            }
+const nPr = ({ n = 1, r = 1 }: { n?: number; r?: number } = {}): number => {
+    //nPr
+    let y: number;
+    let x = 0;
+    y = n;
+    while (x === 0) {
+        if (r === 1) {
+            y = y * r;
         }
-        return y;
+        r--;
+        if (r === 0) x++;
+        else {
+            n--;
+            if (n === 0) {
+                x++;
+                break;
+            }
+            y = y * n;
+        }
     }
-
-
-    else
-    {
-        console.error('Number型を引数に指定してください');
-        return 0;
-    }
-}
+    return y;
+};
+export default nPr;

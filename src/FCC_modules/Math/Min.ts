@@ -1,4 +1,2 @@
-export default function Min(num: number[]): number
-{
-    return Math.min.apply(null, num)
-};
+const Min = (num: number[]): number => Math.min.apply(null, num);
+export default Min;
