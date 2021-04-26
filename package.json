@@ -14,7 +14,8 @@
         "build": "npm run typescript && npm run babel",
         "typescript": "tsc --build tsconfig.json",
         "deploy": "gh-pages -d dist",
-        "push": "npm version patch && npm publish ./"
+        "push": "npm version patch && npm publish ./",
+        "prepublishOnly": "npm run build"
     },
     "publishConfig": {
         "access": "public"
@@ -88,6 +89,5 @@
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0"
     },
-    "dependencies": {},
-    "typings": "./build/@type/tsbuild"
+    "dependencies": {}
 }
