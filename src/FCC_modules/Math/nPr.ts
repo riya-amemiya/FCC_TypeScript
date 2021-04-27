@@ -1,4 +1,4 @@
-const nPr = ({ n = 1, r = 1 }: { n?: number; r?: number } = {}): number => {
+const nPr = (n = 1, r = 1): number => {
     //nPr
     let y: number;
     let x = 0;

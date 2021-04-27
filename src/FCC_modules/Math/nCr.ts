@@ -1,4 +1,4 @@
-const nCr = ({ n, r }: { n: number; r: number }): number => {
+const nCr = (n: number, r: number): number => {
     //nCr
     let x: number;
     let z: number;

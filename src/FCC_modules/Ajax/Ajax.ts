@@ -1,4 +1,4 @@
-const youtube = ({
+const youtube = <T extends string | number>({
     type,
     part,
     q,
@@ -10,7 +10,7 @@ const youtube = ({
     type?: string;
     part?: string;
     q?: string;
-    maxResults?: string | number;
+    maxResults?: T;
     key?: string;
     videoEmbeddable?: string;
     videoSyndicated?: string;
@@ -22,16 +22,14 @@ const youtube = ({
     }&key=${key}&videoEmbeddable=${videoEmbeddable || 'true'}&videoSyndicated=${
         videoSyndicated || 'true'
     }`;
-const ajax = <J, T>({
+const ajax = <J extends object, T>({
     url,
     callback,
-    JsonType,
 }: {
     url: string;
-    callback: (data: typeof JsonType) => T;
-    JsonType: J;
+    callback: (data: J) => T;
 }) =>
     fetch(url)
         .then((data) => data.json())
-        .then((data: typeof JsonType) => callback(data));
+        .then((data: J) => callback(data));
 export { ajax, youtube };
