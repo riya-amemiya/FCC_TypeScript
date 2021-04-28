@@ -1,6 +1,6 @@
-const wait = <T, D>(data: D, callBack: (data: D) => T): void => {
-    window.onload = () => {
-        callBack(data);
-    };
+const wait = async (ms: number): Promise<void> => {
+    await (() => {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+    })();
 };
 export default wait;

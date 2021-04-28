@@ -6,7 +6,7 @@
                 "spec": true,
                 "modules": "commonjs",
                 "targets": {
-                    /*"node": "current",*/
+                    "node": "current",
                     "esmodules": true
                 },
                 "shippedProposals": true
@@ -117,6 +117,9 @@
         ],
         [
             "@babel/plugin-transform-property-literals"
+        ],
+        [
+            "@babel/plugin-proposal-partial-application"
         ]
     ]
 }

@@ -1,2 +1,2 @@
-import { FCC } from '../build/index';
-console.log(FCC.Props.HasKey({ age: { name: 1 } }));
+import { FCC } from '../src';
+FCC.Props.OptPipe(Math.random() < 0.5 ? 1 : undefined)((x) => console.log(x));
