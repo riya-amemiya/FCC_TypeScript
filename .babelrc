@@ -120,6 +120,9 @@
         ],
         [
             "@babel/plugin-proposal-partial-application"
+        ],
+        [
+            "@babel/plugin-transform-runtime"
         ]
     ]
 }

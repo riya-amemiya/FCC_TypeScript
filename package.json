@@ -17,7 +17,7 @@
         "push": "npm version patch && npm publish ./",
         "prepublishOnly": "npm run build",
         "typedoc": "typedoc ./src/",
-        "ts-node": "ts-node test/index.ts"
+        "ts-node": "ts-node --project test/tsconfig.json test/src/index.ts"
     },
     "publishConfig": {
         "access": "public"
@@ -96,5 +96,7 @@
         "webpack-cli": "^3.3.12",
         "webpack-dev-server": "^3.11.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@babel/runtime": "^7.14.0"
+    }
 }

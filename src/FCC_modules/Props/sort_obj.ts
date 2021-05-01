@@ -1,7 +1,7 @@
 const sort_obj = <T extends any, K extends keyof T>(
     array: T[],
     key: K,
-    mode: 'up' | 'down',
+    mode: 'up' | 'down' = 'up',
 ) => {
     if (mode === 'up') {
         return array.sort(function (a, b) {

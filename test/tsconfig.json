@@ -4,8 +4,8 @@
   ],
   "compilerOptions": {
     "outDir": "build",
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es6",
+    "module": "CommonJS",
     "jsx": "react",
     "noEmit": false,
     "removeComments": true,

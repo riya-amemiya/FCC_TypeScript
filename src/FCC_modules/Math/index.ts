@@ -7,4 +7,6 @@ import Random from './Random';
 import k from './k';
 import Min from './Min';
 import Max from './Max';
-export { Gcd, nCr, nCrs, nPr, Pow, Random, k, Min, Max };
+import Repetition from './Repetition';
+import Lcm from './Lcm';
+export { Gcd, nCr, nCrs, nPr, Pow, Random, k, Min, Max, Repetition, Lcm };

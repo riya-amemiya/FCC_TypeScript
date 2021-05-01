@@ -1,8 +1,7 @@
 const nPr = (n = 1, r = 1): number => {
     //nPr
-    let y: number;
-    let x = 0;
-    y = n;
+    let y = n,
+        x = 0;
     while (x === 0) {
         if (r === 1) {
             y = y * r;

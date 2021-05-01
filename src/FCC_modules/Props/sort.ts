@@ -1,4 +1,4 @@
-const sort = <T extends any>(array: T[], mode: 'up' | 'down') => {
+const sort = <T extends any>(array: T[], mode: 'up' | 'down' = 'up') => {
     if (mode === 'up') {
         return array.sort(function (a, b) {
             if (a > b) return -1;

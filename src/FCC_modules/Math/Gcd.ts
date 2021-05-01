@@ -1,4 +1,4 @@
-const Gcd = ({ x = 1, y = 1 }: { x?: number; y?: number } = {}): number => {
+const Gcd = (x = 1, y = 1): number => {
     //最大公約数
     let r: number, tmp: number;
     if (y < x) {
