@@ -1,7 +1,7 @@
 {
     "excludePrivate": true,
     "excludeProtected": true,
-    "out": "./dist",
+    "out": "./out",
     "gaID": "G-J156R287FT",
     "gaSite": "FCC",
     "hideGenerator": true

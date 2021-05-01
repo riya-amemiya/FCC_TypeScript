@@ -1,2 +1,2 @@
 import { FCC } from '../../build';
-FCC.Ajax.ajax('a', (data) => console.log(data));
+console.log(FCC.Maths.Lcm(8, 9));

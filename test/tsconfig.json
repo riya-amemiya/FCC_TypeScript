@@ -20,7 +20,7 @@
     "declaration": true,
     "declarationMap": true,
     "importHelpers": false,
-    "incremental": true,
+    "incremental": false,
     "strictBindCallApply": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
@@ -30,10 +30,12 @@
     "forceConsistentCasingInFileNames": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
     "moduleResolution": "node",
     "lib": [
-      "es2020",
-      "dom"
+      "ESNext",
+      "Dom"
     ]
   }
 }
