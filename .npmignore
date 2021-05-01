@@ -10,3 +10,4 @@ tsconfig.json
 webpack.config.js
 .vscode
 test
+out
