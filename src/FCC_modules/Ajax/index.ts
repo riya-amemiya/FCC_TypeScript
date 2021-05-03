@@ -1,2 +1,2 @@
-import Get from './Get';
-export { Get };
+import { build } from './build';
+export { build };

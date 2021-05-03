@@ -11,3 +11,4 @@ webpack.config.js
 .vscode
 test
 out
+typedoc.json

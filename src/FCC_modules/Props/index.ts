@@ -13,6 +13,8 @@ import DuplicateDeletion from './DuplicatDeletion';
 import HowNumber from './HowNumber';
 import pipe from './pipe';
 import OptPipe from './OptPipe';
+import Immutable from './Immutable';
+import counter from './counter';
 export {
     error_language,
     wait_callback,
@@ -29,4 +31,6 @@ export {
     HowNumber,
     pipe,
     OptPipe,
+    Immutable,
+    counter,
 };

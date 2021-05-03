@@ -1,2 +1,3 @@
 import { FCC } from '../../build';
-console.log(FCC.Maths.Lcm(8, 9));
+const c = FCC.Props.counter(4);
+console.log(c);
