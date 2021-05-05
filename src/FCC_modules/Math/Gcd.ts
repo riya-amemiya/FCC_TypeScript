@@ -1,4 +1,4 @@
-const Gcd = (x = 1, y = 1): number => {
+export const Gcd = (x = 1, y = 1): number => {
     //最大公約数
     let r: number, tmp: number;
     if (y < x) {
@@ -15,4 +15,3 @@ const Gcd = (x = 1, y = 1): number => {
     }
     return x;
 };
-export default Gcd;

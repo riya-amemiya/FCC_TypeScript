@@ -1,4 +1,4 @@
-const nCr = (n: number, r: number): number => {
+export const nCr = (n: number, r: number): number => {
     //nCr
     let x: number;
     let z: number;
@@ -29,4 +29,3 @@ const nCr = (n: number, r: number): number => {
     y = y / age;
     return y;
 };
-export default nCr;

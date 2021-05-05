@@ -1,4 +1,4 @@
-const nPr = (n = 1, r = 1): number => {
+export const nPr = (n = 1, r = 1): number => {
     //nPr
     let y = n,
         x = 0;
@@ -19,4 +19,3 @@ const nPr = (n = 1, r = 1): number => {
     }
     return y;
 };
-export default nPr;
