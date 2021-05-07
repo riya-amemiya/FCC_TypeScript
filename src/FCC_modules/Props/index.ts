@@ -8,7 +8,7 @@ import sort from './sort';
 import HasType from './HasType';
 import HasKey from './HasKey';
 import ObjectToArray from './ObjectToArray';
-import NullCheck from './NullCheck';
+import { NullCheck } from './NullCheck';
 import DuplicateDeletion from './DuplicatDeletion';
 import HowNumber from './HowNumber';
 import { Pipe } from './Pipe';

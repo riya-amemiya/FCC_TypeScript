@@ -1,2 +1,5 @@
 import { nCr } from './nCr';
-export const nCrs = (n: number, r: number) => nCr(n + r - 1, r);
+import { curry2 } from '../Curry';
+export const nCrs = curry2(function (n: number, r: number) {
+    return nCr(n + r - 1, r);
+});
