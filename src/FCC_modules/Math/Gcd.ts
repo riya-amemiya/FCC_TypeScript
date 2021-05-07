@@ -1,4 +1,5 @@
-export const Gcd = (x = 1, y = 1): number => {
+import { curry2 } from '../Curry';
+export const Gcd = curry2(function (x: number, y: number) {
     //最大公約数
     let r: number, tmp: number;
     if (y < x) {
@@ -14,4 +15,4 @@ export const Gcd = (x = 1, y = 1): number => {
         r = y % x;
     }
     return x;
-};
+});

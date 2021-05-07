@@ -1,2 +1,2 @@
-const NullCheck = <T, N>(value: T, value_to_null: N) => value ?? value_to_null;
+const NullCheck = <T>(a: T) => a ?? true;
 export default NullCheck;

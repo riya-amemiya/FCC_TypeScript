@@ -11,7 +11,7 @@ import ObjectToArray from './ObjectToArray';
 import NullCheck from './NullCheck';
 import DuplicateDeletion from './DuplicatDeletion';
 import HowNumber from './HowNumber';
-import pipe from './pipe';
+import { Pipe } from './Pipe';
 import OptPipe from './OptPipe';
 import Immutable from './Immutable';
 import counter from './counter';
@@ -29,7 +29,7 @@ export {
     NullCheck,
     DuplicateDeletion,
     HowNumber,
-    pipe,
+    Pipe,
     OptPipe,
     Immutable,
     counter,

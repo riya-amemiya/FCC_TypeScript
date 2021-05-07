@@ -11,10 +11,10 @@ export class num {
     public set set(value: number) {
         this.num = value;
     }
-    public add(num: number) {
-        this.num += num;
+    public add(num?: number) {
+        num ? (this.num += num) : ++this.num;
     }
-    public remove(num: number) {
-        this.num -= num;
+    public remove(num?: number) {
+        num ? (this.num -= num) : --this.num;
     }
 }

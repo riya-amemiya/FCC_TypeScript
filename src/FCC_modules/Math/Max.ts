@@ -1,2 +1,4 @@
-export const Max = (num: number[]): number =>
-    Math.max.apply(null, [...new Set(num)]);
+import { curry1 } from '../Curry/';
+export const Max = curry1(function (num: number[]) {
+    return Math.max.apply(null, [...new Set(num)]);
+});

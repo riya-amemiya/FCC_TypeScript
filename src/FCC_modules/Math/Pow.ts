@@ -1,1 +1,5 @@
-export const Pow = (num = 1, n = 1): number => num ** n;
+import { curry2 } from '../Curry';
+const Pow = curry2(function Pow(num: number, n: number) {
+    return num ** n;
+});
+export { Pow };
