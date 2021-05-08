@@ -1,8 +1,5 @@
-const Zeller = ({
-    y = 2000,
-    m = 1,
-    d = 1,
-}: { y?: number; m?: number; d?: number } = {}) => {
+import { curry3 } from '../Curry';
+const Zeller = curry3(function (y: number, m: number, d: number) {
     switch ('日月火水木金土'[new Date(y, m - 1, d).getDay()]) {
         case '日':
             return { ja: '日曜日', en: 'Sunday' };
@@ -20,5 +17,5 @@ const Zeller = ({
             return { ja: '土曜日', en: 'Saturday' };
     }
     return '';
-};
+});
 export default Zeller;

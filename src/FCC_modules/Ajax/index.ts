@@ -1,2 +1,2 @@
-import { build } from './build';
-export { build };
+import { get } from './get';
+export { get };
