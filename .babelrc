@@ -1,6 +1,13 @@
 {
     "presets": [
         [
+            "minify",
+            {
+                "simplify": false,
+                "removeConsole": false
+            }
+        ],
+        [
             "@babel/env",
             {
                 "spec": true,
@@ -32,30 +39,6 @@
             {
                 "useBuiltIns": true
             }
-        ],
-        [
-            "transform-merge-sibling-variables"
-        ],
-        [
-            "minify-builtins"
-        ],
-        [
-            "transform-inline-consecutive-adds"
-        ],
-        [
-            "transform-minify-booleans"
-        ],
-        [
-            "minify-constant-folding"
-        ],
-        [
-            "minify-dead-code-elimination"
-        ],
-        [
-            "minify-guarded-expressions"
-        ],
-        [
-            "minify-mangle-names"
         ],
         [
             "@babel/plugin-transform-async-to-generator",
@@ -90,12 +73,6 @@
         ],
         [
             "@babel/plugin-transform-computed-properties"
-        ],
-        [
-            "@babel/plugin-transform-member-expression-literals"
-        ],
-        [
-            "@babel/plugin-transform-property-literals"
         ],
         [
             "@babel/plugin-proposal-partial-application"
