@@ -1,5 +1,24 @@
 import { curry3 } from '../Curry';
-const Zeller = curry3(function (y: number, m: number, d: number) {
+interface ZELLER {
+    (y: number, m: number, d: number): {
+        ja: string;
+        en: string;
+    };
+    (y: number, m: number): (
+        d: number,
+    ) => {
+        ja: string;
+        en: string;
+    };
+    (y: number): (
+        m: number,
+        d: number,
+    ) => {
+        ja: string;
+        en: string;
+    };
+}
+export const Zeller = curry3(function (y: number, m: number, d: number) {
     switch ('日月火水木金土'[new Date(y, m - 1, d).getDay()]) {
         case '日':
             return { ja: '日曜日', en: 'Sunday' };
@@ -15,7 +34,7 @@ const Zeller = curry3(function (y: number, m: number, d: number) {
             return { ja: '金曜日', en: 'Friday' };
         case '土':
             return { ja: '土曜日', en: 'Saturday' };
+        default:
+            return { ja: '判定不能', en: 'undefined' };
     }
-    return '';
-});
-export default Zeller;
+}) as ZELLER;

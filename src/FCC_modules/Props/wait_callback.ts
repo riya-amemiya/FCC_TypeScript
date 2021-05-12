@@ -1,4 +1,4 @@
-import wait from './wait';
+import { wait } from './wait';
 async function wait_callback<T, R>(ms: number, data: T, callback: (data: T) => R): Promise<R>;
 async function wait_callback<T, R>(ms: number, data: T): Promise<(callback: (data: T) => R) => Promise<R>>;
 async function wait_callback<T, R>(ms: number): Promise<(data: T, callback: (data: T) => R) => Promise<R>>;

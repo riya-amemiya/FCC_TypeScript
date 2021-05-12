@@ -9,13 +9,14 @@
         "webpack": "webpack --mode production",
         "webpackwatch": "webpack --mode production --watch",
         "server": "webpack-dev-server --mode development --open",
-        "start": "npm run build && npm run webpack && webpack-dev-server --mode development --open",
-        "babel": "babel build --extensions '.js' --out-dir build --no-comments --copy-files",
-        "build": "npm run typescript && npm run babel",
+        "start": "yarn build && yarn webpack && webpack-dev-server --mode development --open",
+        "babel": "babel build --extensions '.js' --out-dir build --copy-files",
+        "build": "yarn typescript && yarn babel && yarn uglifyjs",
+        "uglifyjs": "uglifyjs-folder build -o build -e -x .js",
         "typescript": "tsc --build tsconfig.json",
         "deploy": "gh-pages -d dist",
         "push": "npm version patch && npm publish ./",
-        "prepublishOnly": "npm run build",
+        "prepublishOnly": "yarn build",
         "typedoc": "typedoc ./src/",
         "ts-node": "ts-node --project test/tsconfig.json test/src/index.ts"
     },
@@ -34,6 +35,7 @@
         "@babel/plugin-proposal-logical-assignment-operators": "^7.12.13",
         "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
         "@babel/plugin-proposal-object-rest-spread": "^7.12.13",
+        "@babel/plugin-proposal-optional-catch-binding": "^7.13.8",
         "@babel/plugin-proposal-optional-chaining": "^7.12.13",
         "@babel/plugin-proposal-partial-application": "^7.12.13",
         "@babel/plugin-transform-arrow-functions": "^7.12.13",
@@ -70,12 +72,14 @@
         "i": "^0.3.6",
         "npm": "^6.14.8",
         "prettier": "^2.2.1",
+        "ramda": "^0.27.1",
         "ts-loader": "^8.0.14",
         "ts-node": "^9.1.1",
         "typedoc": "^0.20.36",
         "typescript": "^4.0.3"
     },
     "dependencies": {
-        "@babel/runtime": "^7.14.0"
+        "@babel/runtime": "^7.14.0",
+        "uglifyjs-folder": "^2.0.0"
     }
 }

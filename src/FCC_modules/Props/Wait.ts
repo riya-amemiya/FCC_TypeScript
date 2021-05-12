@@ -1,5 +1,8 @@
 import { curry1 } from '../Curry';
-const wait = curry1(async function (ms: number) {
+interface WAIT {
+    (ms: number): Promise<void>;
+    (): (ms: number) => Promise<void>;
+}
+export const wait = curry1(async function (ms: number) {
     await new Promise((resolve) => setTimeout(resolve, ms));
-});
-export default wait;
+}) as WAIT;

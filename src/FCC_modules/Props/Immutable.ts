@@ -1,4 +1,4 @@
-export default class Immutable<T> {
+export class Immutable<T> {
     private value: T;
     constructor(value: T) {
         this.value = value;

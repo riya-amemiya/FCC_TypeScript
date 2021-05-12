@@ -34,13 +34,13 @@
             }
         ],
         [
+            "transform-merge-sibling-variables"
+        ],
+        [
             "minify-builtins"
         ],
         [
             "transform-inline-consecutive-adds"
-        ],
-        [
-            "transform-merge-sibling-variables"
         ],
         [
             "transform-minify-booleans"
@@ -75,24 +75,6 @@
         ],
         [
             "@babel/plugin-transform-object-super"
-        ],
-        [
-            "@babel/plugin-transform-for-of",
-            {
-                "spec": true
-            }
-        ],
-        [
-            "@babel/plugin-transform-spread",
-            {
-                "useBuiltIns": true
-            }
-        ],
-        [
-            "@babel/plugin-transform-arrow-functions",
-            {
-                "spec": true
-            }
         ],
         [
             "@babel/plugin-transform-classes",

@@ -1,3 +1,3 @@
 import { FCC } from '../../build';
-const a = FCC.Maths.Gcd(8)(7);
+const a = FCC.Props.birthday(9);
 console.log(a);

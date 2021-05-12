@@ -1,4 +1,8 @@
 import { curry2 } from '../Curry/';
+interface NCR {
+    (n: number, r: number): number;
+    (n: number): (r: number) => number;
+}
 const nCr = curry2(function (n: number, r: number) {
     //nCr
     let x = 0,
@@ -7,7 +11,7 @@ const nCr = curry2(function (n: number, r: number) {
         age = 1;
     while (x == 0) {
         if (r == 1) {
-            y = y * r;
+            y *= r;
         }
         r--;
         if (r == 0) {
@@ -18,13 +22,13 @@ const nCr = curry2(function (n: number, r: number) {
                 x++;
                 break;
             }
-            y = y * n;
+            y *= n;
         }
     }
     for (let i = 2; i <= z; i++) {
         age *= i;
     }
-    y = y / age;
+    y /= age;
     return y;
-});
+}) as NCR;
 export { nCr };

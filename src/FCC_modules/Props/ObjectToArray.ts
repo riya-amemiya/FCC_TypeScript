@@ -1,2 +1,6 @@
-const ObjectToArray = <T extends object>(obj: T) => Object.entries(obj);
-export default ObjectToArray;
+function ObjectToArray<T extends object>(obj: T): [string, any][];
+function ObjectToArray<T extends object>(): (obj: T) => [string, any][];
+function ObjectToArray<T extends object>(obj?: T) {
+    return obj === undefined ? (obj: T) => ObjectToArray(obj) : Object.entries(obj);
+}
+export { ObjectToArray };

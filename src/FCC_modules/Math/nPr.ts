@@ -1,12 +1,15 @@
 import { curry2 } from '../Curry';
-
-const nPr = curry2(function (n: number, r: number) {
+interface NPR {
+    (n: number, r: number): number;
+    (n: number): (r: number) => number;
+}
+export const nPr = curry2(function (n: number, r: number) {
     //nPr
     let y = n,
         x = 0;
     while (x === 0) {
         if (r === 1) {
-            y = y * r;
+            y *= r;
         }
         r--;
         if (r === 0) x++;
@@ -16,9 +19,8 @@ const nPr = curry2(function (n: number, r: number) {
                 x++;
                 break;
             }
-            y = y * n;
+            y *= n;
         }
     }
     return y;
-});
-export { nPr };
+}) as NPR;

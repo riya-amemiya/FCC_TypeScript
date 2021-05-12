@@ -1,5 +1,4 @@
-import { curry1Generic } from '../Curry';
-const HowNumber = curry1Generic(function <T>(num: T) {
+import { curry1 } from '../Curry';
+export const HowNumber = curry1(function <T>(num: T) {
     return Number.isNaN(Number(num));
 });
-export default HowNumber;

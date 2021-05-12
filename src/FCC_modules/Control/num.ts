@@ -12,9 +12,9 @@ export class num {
         this.num = value;
     }
     public add(num?: number) {
-        num ? (this.num += num) : ++this.num;
+        num !== undefined ? (this.num += num) : ++this.num;
     }
     public remove(num?: number) {
-        num ? (this.num -= num) : --this.num;
+        num !== undefined ? (this.num -= num) : --this.num;
     }
 }

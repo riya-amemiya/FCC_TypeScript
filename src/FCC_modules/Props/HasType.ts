@@ -4,7 +4,7 @@ function HasType<T>(has: T): (type: TYPE) => boolean;
 function HasType<T>(has: T, type?: TYPE) {
     switch (arguments.length) {
         case 1:
-            return (type: TYPE) => typeof has === type;
+            return (type: TYPE) => HasType(has, type);
         case 2:
             return typeof has === type;
     }

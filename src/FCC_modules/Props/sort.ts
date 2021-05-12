@@ -1,6 +1,6 @@
-function sort<T extends any>(array: T[], mode: 'up' | 'down'): T[];
-function sort<T extends any>(array: T[]): (mode: 'up' | 'down') => T[];
-function sort<T extends any>(array: T[], mode?: 'up' | 'down') {
+function sort<T>(array: T[], mode: 'up' | 'down'): T[];
+function sort<T>(array: T[]): (mode: 'up' | 'down') => T[];
+function sort<T>(array: T[], mode?: 'up' | 'down') {
     if (mode !== undefined) {
         if (mode === 'up') {
             return array.sort(function (a, b) {
