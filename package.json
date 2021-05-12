@@ -60,7 +60,6 @@
         "babel-plugin-minify-dead-code-elimination": "^0.5.1",
         "babel-plugin-minify-guarded-expressions": "^0.4.4",
         "babel-plugin-minify-mangle-names": "^0.5.0",
-        "babel-plugin-minify-simplify": "^0.5.1",
         "babel-plugin-remove-unused-vars": "^2.2.0",
         "babel-plugin-transform-inline-consecutive-adds": "^0.4.3",
         "babel-plugin-transform-inline-environment-variables": "^0.4.3",
