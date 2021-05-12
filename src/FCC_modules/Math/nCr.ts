@@ -5,6 +5,8 @@ interface NCR {
 }
 const nCr = curry2(function (n: number, r: number) {
     //nCr
+    n ||= 1;
+    r ||= 1;
     let x = 0,
         z = r,
         y = n,
