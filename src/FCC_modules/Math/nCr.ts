@@ -1,12 +1,13 @@
 import { curry2 } from '../Curry/';
-interface NCR {
+export interface NCR {
     (n: number, r: number): number;
     (n: number): (r: number) => number;
 }
-const nCr = curry2(function (n: number, r: number) {
+export const nCr = curry2(function (n: number, r: number) {
     //nCr
-    n ||= 1;
-    r ||= 1;
+    if (n === 0 || r === 0) {
+        return NaN;
+    }
     let x = 0,
         z = r,
         y = n,
@@ -33,4 +34,3 @@ const nCr = curry2(function (n: number, r: number) {
     y /= age;
     return y;
 }) as NCR;
-export { nCr };

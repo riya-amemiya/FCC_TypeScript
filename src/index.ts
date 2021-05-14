@@ -1,2 +1,3 @@
-export { Maths, Props, Control } from './FCC_modules';
-export * as FCC from './FCC_modules';
+import { Maths, Props } from './FCC_modules';
+export { Maths, Props };
+export const FCC = { Maths, Props };

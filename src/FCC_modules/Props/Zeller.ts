@@ -1,12 +1,10 @@
 import { curry3 } from '../Curry';
-interface ZELLER {
+export interface ZELLER {
     (y: number, m: number, d: number): {
         ja: string;
         en: string;
     };
-    (y: number, m: number): (
-        d: number,
-    ) => {
+    (y: number, m: number): (d: number) => {
         ja: string;
         en: string;
     };

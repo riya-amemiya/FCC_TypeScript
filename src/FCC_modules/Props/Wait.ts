@@ -1,5 +1,5 @@
 import { curry1 } from '../Curry';
-interface WAIT {
+export interface WAIT {
     (ms: number): Promise<void>;
     (): (ms: number) => Promise<void>;
 }

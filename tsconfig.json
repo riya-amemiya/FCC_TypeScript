@@ -3,6 +3,7 @@
     "src/**/*"
   ],
   "compilerOptions": {
+    "experimentalDecorators": true,
     "outDir": "build",
     "target": "ESNext",
     "module": "ESNext",

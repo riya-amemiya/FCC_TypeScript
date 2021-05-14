@@ -1,7 +1,11 @@
 import { curry2 } from '../Curry';
-const Pow = curry2(function (num: number, n: number) {
-    n ||= 1;
-    num ||= 1;
+export interface POW {
+    (a: number, b: number): number;
+    (a: number): (b: number) => number;
+}
+export const Pow = curry2(function (num: number, n: number) {
+    if (num === 0 && n === 0) {
+        return NaN;
+    }
     return num ** n;
-});
-export { Pow };
+}) as POW;

@@ -12,14 +12,13 @@ import { DuplicateDeletion } from './DuplicatDeletion';
 import { HowNumber } from './HowNumber';
 import { Pipe } from './Pipe';
 import { OptPipe } from './OptPipe';
-import { Immutable } from './Immutable';
 import { counter } from './counter';
 import { Between } from './Between';
 import { always } from './always';
 import { Max } from './Max';
 import { Min } from './Min';
-import { applyTo } from './applyTo';
-export {
+import { EncodeURI } from './EncodeURI';
+export const Props = {
     wait_callback,
     Zeller,
     HasZero,
@@ -34,11 +33,10 @@ export {
     HowNumber,
     Pipe,
     OptPipe,
-    Immutable,
     counter,
     Between,
     always,
     Max,
     Min,
-    applyTo,
+    EncodeURI,
 };

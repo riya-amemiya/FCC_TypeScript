@@ -9,7 +9,7 @@ import { curry2 } from '../Curry/curry2';
 import { add } from './add';
 import { dec } from './dec';
 import { product } from './product';
-interface SPEC {
+export interface SPEC {
     (x: number, y: number): {
         sum: number;
         difference: number;
@@ -25,9 +25,7 @@ interface SPEC {
         min: number;
         fact: number;
     };
-    (x: number): (
-        y: number,
-    ) => {
+    (x: number): (y: number) => {
         sum: number;
         difference: number;
         product: number;
@@ -71,11 +69,7 @@ interface SPEC {
         product: number;
         quotient: { answer: number; surplus: number };
     };
-    sdpq(
-        x: number,
-    ): (
-        y: number,
-    ) => {
+    sdpq(x: number): (y: number) => {
         sum: number;
         difference: number;
         product: number;

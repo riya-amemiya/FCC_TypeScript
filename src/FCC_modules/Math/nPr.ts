@@ -1,12 +1,13 @@
 import { curry2 } from '../Curry';
-interface NPR {
+export interface NPR {
     (n: number, r: number): number;
     (n: number): (r: number) => number;
 }
 export const nPr = curry2(function (n: number, r: number) {
     //nPr
-    n ||= 1;
-    r ||= 1;
+    if (n === 0 || r === 0) {
+        return NaN;
+    }
     let y = n,
         x = 0;
     while (x === 0) {

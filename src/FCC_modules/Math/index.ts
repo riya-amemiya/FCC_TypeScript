@@ -18,7 +18,7 @@ import { Spec } from './Spec';
 import { sum } from './sum';
 import { remove } from './remove';
 import { product } from './product';
-export {
+export const Maths = {
     add,
     dec,
     defaultTo,

@@ -1,6 +1,8 @@
-function sort<T>(array: T[], mode: 'up' | 'down'): T[];
-function sort<T>(array: T[]): (mode: 'up' | 'down') => T[];
-function sort<T>(array: T[], mode?: 'up' | 'down') {
+export interface SORT {
+    <T>(array: T[], mode: 'up' | 'down'): T[];
+    <T>(array: T[]): (mode: 'up' | 'down') => T[];
+}
+export const sort = function <T>(array: T[], mode?: 'up' | 'down') {
     if (mode !== undefined) {
         if (mode === 'up') {
             return array.sort(function (a, b) {
@@ -19,5 +21,4 @@ function sort<T>(array: T[], mode?: 'up' | 'down') {
     } else {
         return (mode: 'up' | 'down') => sort(array, mode);
     }
-}
-export { sort };
+} as SORT;

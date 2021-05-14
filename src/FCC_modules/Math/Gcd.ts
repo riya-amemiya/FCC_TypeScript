@@ -1,7 +1,12 @@
 import { curry2 } from '../Curry';
+export interface GCD {
+    (x: number, y: number): number;
+    (x: number): (y: number) => number;
+}
 export const Gcd = curry2(function (x: number, y: number) {
-    x ||= 1;
-    y ||= 1;
+    if (x === 0 || y === 0) {
+        return 0;
+    }
     //最大公約数
     let r: number, tmp: number;
     if (y < x) {
@@ -17,4 +22,4 @@ export const Gcd = curry2(function (x: number, y: number) {
         r = y % x;
     }
     return x;
-});
+}) as GCD;

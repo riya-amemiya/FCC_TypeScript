@@ -1,7 +1,9 @@
-function sort_obj<T extends any, K extends keyof T>(array: T[], key: K, mode: 'up' | 'down'): T[];
-function sort_obj<T extends any, K extends keyof T>(array: T[], key: K): (mode: 'up' | 'down') => T[];
-function sort_obj<T extends any, K extends keyof T>(array: T[]): (key: K, mode: 'up' | 'down') => T[];
-function sort_obj<T extends any, K extends keyof T>(array: T[], key?: K, mode?: 'up' | 'down') {
+export interface SORT_OBJ {
+    <T extends any, K extends keyof T>(array: T[], key: K, mode: 'up' | 'down'): T[];
+    <T extends any, K extends keyof T>(array: T[], key: K): (mode: 'up' | 'down') => T[];
+    <T extends any, K extends keyof T>(array: T[]): (key: K, mode: 'up' | 'down') => T[];
+}
+export const sort_obj = function <T extends any, K extends keyof T>(array: T[], key?: K, mode?: 'up' | 'down') {
     if (key !== undefined && mode !== undefined) {
         if (mode === 'up') {
             return array.sort(function (a, b) {
@@ -22,5 +24,4 @@ function sort_obj<T extends any, K extends keyof T>(array: T[], key?: K, mode?: 
     } else if (key === undefined && mode === undefined) {
         return <K extends keyof T>(key: K, mode: 'up' | 'down') => sort_obj(array, key, mode);
     }
-}
-export { sort_obj };
+} as SORT_OBJ;

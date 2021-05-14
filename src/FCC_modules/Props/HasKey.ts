@@ -1,4 +1,4 @@
-interface HASKEY {
+export interface HASKEY {
     <T extends object, K extends keyof T>(obj: T): K;
     <T extends object, K extends keyof T>(): (obj: T) => K;
 }

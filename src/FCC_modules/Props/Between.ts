@@ -5,7 +5,7 @@ import { curry3 } from '../Curry';
  * @param  {number} max
  * @param  {number} x
  */
-interface BETWEEN {
+export interface BETWEEN {
     (min: number, max: number, x: number): number;
     (min: number, max: number): (x: number) => number;
     (min: number): (max: number, x: number) => number;

@@ -1,5 +1,5 @@
-type ArgumentTypes<F extends Function> = F extends (...args: infer A) => any ? A : never;
-interface CURRY1 {
+export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => any ? A : never;
+export interface CURRY1 {
     <T extends (a: A) => ReturnType<T>, A>(fn: T): {
         (a: ArgumentTypes<typeof fn>[0]): ReturnType<T>;
         (): (a: ArgumentTypes<typeof fn>[0]) => ReturnType<T>;
@@ -13,7 +13,7 @@ const curry1 = (<T extends <A>(a: A) => ReturnType<T>>(fn: T) => {
     return function curry(a?: ArgumentTypes<typeof fn>[0]) {
         switch (arguments.length) {
             case 0:
-                return <A>(a: A) => curry(a);
+                return <B>(a: B) => curry(a);
             case 1:
                 return fn(a);
         }

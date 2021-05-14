@@ -1,5 +1,5 @@
 import { curry1 } from '../Curry';
-interface HEADUPPERCASE {
+export interface HEADUPPERCASE {
     (str: string): string;
     (): (str: string) => string;
 }

@@ -4,7 +4,7 @@ import { curry3 } from '../Curry';
  * @param  {number} mon
  * @param  {number} day
  */
-interface BIRTHDAY {
+export interface BIRTHDAY {
     (yer: number, mon: number, day: number): number;
     (yer: number, mon: number): (day: number) => number;
     (yer: number): (mon: number, day: number) => number;

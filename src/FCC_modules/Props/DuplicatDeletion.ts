@@ -1,4 +1,4 @@
-interface DUPLICATEDELETION {
+export interface DUPLICATEDELETION {
     <T>(array: T): T;
     <T>(): (array: T) => T;
 }
