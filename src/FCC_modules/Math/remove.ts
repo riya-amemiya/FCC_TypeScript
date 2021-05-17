@@ -1,10 +1,8 @@
 import { curry1 } from '../Curry';
 export interface REMOVE {
-    (a: number[]): number;
-    (): (a: number[]) => number;
+    (num: number[]): number;
+    (): (num: number[]) => number;
 }
-export const remove = curry1(function (a: number[]) {
-    let n = 0;
-    for (const k of a) n -= k;
-    return n;
+export const remove = curry1(function (num: number[]) {
+    return num.reduce((a: number, b: number) => a + b, 0);
 }) as REMOVE;

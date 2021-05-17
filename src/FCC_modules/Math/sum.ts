@@ -4,7 +4,7 @@ export interface SUM {
     (): (a: number[]) => number;
 }
 export const sum = curry1(function (a: number[]) {
-    let n = 0;
-    for (const k of a) n += k;
-    return n;
+    return a.reduce((a: number, b: number) => {
+        return a + b;
+    });
 }) as SUM;
