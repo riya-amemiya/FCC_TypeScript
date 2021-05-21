@@ -9,33 +9,50 @@ export interface BIRTHDAY {
     (yer: number, mon: number, day: number): number;
     (yer: number, mon: number): (day: number) => number;
     (yer: number): (mon: number, day: number) => number;
-    //[YY,YY]
-    (yer: [string, string], mon: number, day: number): number;
-    (yer: [string, string], mon: number): (day: number) => number;
-    (yer: [string, string]): (mon: number, day: number) => number;
-    //[YY] => number
-    (yer: [string], mon: number, day: number): number;
-    (yer: [string], mon: number): (day: number) => number;
-    (yer: [string]): (mon: number, day: number) => number;
+
+    //string1
+    (yer: string, mon: number, day: number): number;
+    (yer: string, mon: number): (day: number) => number;
+    (yer: string): (mon: number, day: number) => number;
+
+    (yer: number, mon: string, day: number): number;
+    (yer: number, mon: string): (day: number) => number;
+    (yer: number): (mon: string, day: number) => number;
+
+    (yer: number, mon: number, day: string): number;
+    (yer: number, mon: number): (day: string) => number;
+    (yer: number): (mon: number, day: string) => number;
+    //string2
+    (yer: string, mon: string, day: number): number;
+    (yer: string, mon: string): (day: number) => number;
+    (yer: string): (mon: string, day: number) => number;
+
+    (yer: string, mon: number, day: string): number;
+    (yer: string, mon: number): (day: string) => number;
+    (yer: string): (mon: number, day: string) => number;
+
+    (yer: number, mon: string, day: string): number;
+    (yer: number, mon: string): (day: string) => number;
+    (yer: number): (mon: string, day: string) => number;
+    //string3
+    (yer: string, mon: string, day: string): number;
+    (yer: string, mon: string): (day: string) => number;
+    (yer: string): (mon: string, day: string) => number;
 }
-export const birthday = curry3(function (yer: number | [string, string] | [string], mon: number, day: number) {
-    if (typeof yer === 'number') {
-        const birthday = new Date(yer < 1000 ? yer + 2000 : yer, mon - 1, day);
-        const now = new Date(Date.now() + (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000);
-        const y = now.getFullYear() - birthday.getFullYear();
-        return now < new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate()) ? y - 1 : y;
-    } else if (typeof yer[0] === 'string' && yer.length == 2) {
-        yer = Number(`${yer[0]}${yer[1]}`);
-        const birthday = new Date(yer < 1000 ? yer + 2000 : yer, mon - 1, day);
-        const now = new Date(Date.now() + (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000);
-        const y = now.getFullYear() - birthday.getFullYear();
-        return now < new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate()) ? y - 1 : y;
-    } else if (typeof yer[0] === 'string' && yer.length == 1) {
-        yer = Number(yer[0]);
-        yer = Number(`20${yer < 10 ? '0' + yer : yer}`);
-        const birthday = new Date(yer < 1000 ? yer + 2000 : yer, mon - 1, day);
-        const now = new Date(Date.now() + (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000);
-        const y = now.getFullYear() - birthday.getFullYear();
-        return now < new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate()) ? y - 1 : y;
+export const birthday = curry3(function (yer: number | string, mon: number | string, day: number | string) {
+    if (typeof yer === 'string') {
+        yer = Number(yer);
     }
+    if (typeof mon === 'string') {
+        mon = Number(mon);
+    }
+    if (typeof day === 'string') {
+        day = Number(day);
+    }
+
+    const birthday = new Date(yer < 0 ? -yer : yer, mon < 0 ? -mon - 1 : mon - 1, day < 0 ? -day : day);
+    const now = new Date(Date.now() + (new Date().getTimezoneOffset() + 9 * 60) * 60 * 1000);
+    const y = now.getFullYear() - birthday.getFullYear();
+    const r = now < new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate()) ? y - 1 : y;
+    return yer < 100 ? 1900 + y : r;
 }) as BIRTHDAY;

@@ -18,7 +18,29 @@ import { Spec } from './Spec';
 import { sum } from './sum';
 import { remove } from './remove';
 import { product } from './product';
-export const Maths = {
+export interface MathsType {
+    add: import('./add').ADD;
+    dec: import('./dec').DEC;
+    defaultTo: import('./defaultTo').DEFAULTtO;
+    Fact: import('./Fact').FACT;
+    Gcd: import('./Gcd').GCD;
+    k: import('./k').K;
+    Lcm: import('./Lcm').LCM;
+    Max: import('./Max').M_MAX;
+    Min: import('./Min').M_MIN;
+    nCr: import('./nCr').NCR;
+    nCrs: import('./nCrs').NCRS;
+    nPr: import('./nPr').NPR;
+    Pow: import('./Pow').POW;
+    quotient: import('./quotient').QUOTIENT;
+    Random: import('./Random').RANDOM;
+    Reduce: import('./Reduce').REDUCE;
+    Spec: import('./Spec').SPEC;
+    sum: import('./sum').SUM;
+    remove: import('./remove').REMOVE;
+    product: import('./product').PRODUCT;
+}
+export const Maths: MathsType = {
     add,
     dec,
     defaultTo,
